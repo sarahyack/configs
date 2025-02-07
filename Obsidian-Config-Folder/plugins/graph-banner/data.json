@@ -1,0 +1,6 @@
+{
+  "ignore": [
+    "M*.md"
+  ],
+  "timeToRemoveLeaf": 500
+}

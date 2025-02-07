@@ -1,0 +1,15 @@
+{
+  "accentColor": "",
+  "cssTheme": "AnuPpuccin",
+  "enabledCssSnippets": [
+    "extended-colorschemes",
+    "rainbow-tags",
+    "dashboard"
+  ],
+  "theme": "obsidian",
+  "showViewHeader": true,
+  "textFontFamily": "Rubik",
+  "interfaceFontFamily": "Overpass",
+  "monospaceFontFamily": "Noto Serif",
+  "showRibbon": false
+}

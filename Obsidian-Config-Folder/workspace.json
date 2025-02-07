@@ -1,0 +1,457 @@
+{
+  "main": {
+    "id": "c8ffb2d222746550",
+    "type": "split",
+    "children": [
+      {
+        "id": "52400a2d26d7e0e4",
+        "type": "split",
+        "children": [
+          {
+            "id": "415b00996daf5028",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1f528527986c87d5",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    },
+                    {
+                      "title": "2025-02-06",
+                      "icon": "lucide-file",
+                      "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025-02-06.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-02-06\"}",
+                      "eState": "{\"cursor\":{\"from\":{\"line\":29,\"ch\":371},\"to\":{\"line\":29,\"ch\":371}},\"scroll\":26.305989106496174}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "periodic/daily/2025-02-07.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "2025-02-07"
+                }
+              }
+            ]
+          },
+          {
+            "id": "ec5d377bcbf16305",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d6486ffabfc6122d",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "pinned": true,
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "lucide-git-fork",
+                  "title": "Graph view"
+                }
+              }
+            ],
+            "stacked": true
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "02e97724b75d47ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d5b0f0251c6605c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a16ecb8c9bb2e7b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4db6cf25bd474109",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "69eaa85844d2ddba",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "cc44263fd2c11b94",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a34b00f16ab50032",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8606024b1e95b3a0",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "pinned": true,
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "9ba81c81468d714f",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "timer-view",
+              "state": {},
+              "pinned": true,
+              "icon": "timer",
+              "title": "Timer"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 274.5
+  },
+  "right": {
+    "id": "396106eeeb24b742",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c1c83402d7245d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d26500203b16fef",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
+            }
+          },
+          {
+            "id": "b453be4fb4f99d86",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "periodic/daily/2025-02-04.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2025-02-04"
+            }
+          },
+          {
+            "id": "668889df273c4f4a",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "eb41674e1dabd316",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "periodic/daily/2025-02-04.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2025-02-04"
+            }
+          },
+          {
+            "id": "6af4806862293fc8",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "periodic/daily/2025-02-04.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2025-02-04"
+            }
+          },
+          {
+            "id": "4ef65ae7a6a9659b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "reference-map-view",
+              "state": {},
+              "icon": "ReferenceMapIconScroll",
+              "title": "Reference Map"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 251.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian42-brat:BRAT": false,
+      "widgets:Add widget": false,
+      "markdown-importer:Open format converter": false,
+      "publish:Publish changes...": false,
+      "random-note:Open random note": false,
+      "homepage:Open homepage": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "reference-map:Reference Map": false,
+      "tab-selector:Open tab selector": false,
+      "workspaces:Manage workspace layouts": false,
+      "pomodoro-timer:Toggle timer panel": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "1f528527986c87d5",
+  "ophidian:layout-settings": {
+    "pane-relief:focus-lock": false
+  },
+  "lastOpenFiles": [
+    "periodic/daily/2025-02-06.md",
+    "periodic/daily/2025-02-07.md",
+    "periodic/daily/2025-02-05.md",
+    "inbox/Toxemia.md",
+    "periodic/daily/2025-02-04.md",
+    "inbox/Zettelkasten & Thought-Taking.md",
+    "inbox/The Simple Route Not Taken.md",
+    "inbox/Complexity is Shiny-Object Syndrome.md",
+    "inbox/Our Brain's Own Flow.md",
+    "inbox/Organic Templates.md",
+    "references/literature/L5a - Structure vs Plans.md",
+    "inbox/Exogenous Focus & Technology.md",
+    "inbox/Endogenous Focus & Writing.md",
+    "inbox/Relieving the Brain.md",
+    "inbox/Two Focuses.md",
+    "references/quotes/Q1 Levy-2011.md",
+    "references/literature/L8 - Writing is Everything.md",
+    "inbox/AI And Repetition.md",
+    "templates/Daily-Template.md",
+    "templates",
+    "inbox/Conveying the Gist.md",
+    "inbox/GPT and Learning.md",
+    "inbox/Learn By Understanding.md",
+    "runbook/cheat-sheets/C1 - Dataview MetaData.md",
+    "periodic/yearly",
+    "periodic/monthly",
+    "periodic/weekly",
+    "periodic",
+    "todoist-backup-20252494535.json",
+    "runbook/cheat-sheets",
+    "runbook/how-tos",
+    "runbook",
+    "references/quotes/Q3 - Breault-Oars.md",
+    "periodic/daily",
+    "references/literature/L5 - Willpower and Notetaking.md",
+    "references/literature/L1 - Three types of Notetakers.md",
+    "Untitled.canvas"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "scanned": true,
+  "reminders": {
+    "projects/tasks/Weekly Review.md": [
+      {
+        "title": "WEEKLY REVIEW %%done_log%% 🆔 dnmsxz 🔺",
+        "time": "2025-03-23 17:13",
+        "rowNumber": 5
+      }
+    ],
+    "periodic/daily/2025/2025-03-17.md": [
+      {
+        "title": "Look into the Linking Your Thoughts method",
+        "time": "2025-03-23",
+        "rowNumber": 44
+      }
+    ]
+  },
+  "debug": false,
+  "settings": {
+    "reminderTime": "11:00",
+    "reminderTimeStep": 15,
+    "laters": "In 5 minutes\nIn 10 minutes\nIn 15 minutes\nIn 30 minutes\nIn 1 hour\nTomorrow\nNext week",
+    "useSystemNotification": false,
+    "autoCompleteTrigger": "(@",
+    "primaryReminderFormat": "TasksPluginReminderFormat",
+    "enableReminderPluginReminderFormat": true,
+    "dateFormat": "YYYY-MM-DD",
+    "dateTimeFormat": "YYYY-MM-DD HH:mm",
+    "strictDateFormat": false,
+    "linkDatesToDailyNotes": false,
+    "enableTasksPluginReminderFormat": true,
+    "useCustomEmojiForTasksPlugin": true,
+    "removeTagsForTasksPlugin": false,
+    "enableKanbanPluginReminderFormat": false,
+    "editDetectionSec": 10,
+    "reminderCheckIntervalSec": 5
+  }
+}

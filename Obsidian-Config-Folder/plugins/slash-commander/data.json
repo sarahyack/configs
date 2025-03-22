@@ -3,7 +3,7 @@
   "showDescriptions": true,
   "showSourcesForDuplicates": true,
   "debug": false,
-  "mainTrigger": "-",
+  "mainTrigger": "=",
   "extraTriggers": [],
   "useExtraTriggers": false,
   "triggerOnlyOnNewLine": true,
@@ -23,7 +23,8 @@
       "icon": "lucide-quote",
       "name": "Quote",
       "mode": "any",
-      "chosen": false
+      "chosen": false,
+      "selected": false
     },
     {
       "name": "Callout",
@@ -76,6 +77,14 @@
       "icon": "paperclip",
       "mode": "any",
       "triggerMode": "anywhere",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "id": "editor:cycle-list-checklist",
+      "icon": "lucide-check-square",
+      "name": "Cycle bullet/checkbox",
+      "mode": "any",
       "chosen": false,
       "selected": false
     }

@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1742171617537,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1742171627044,
+          "path": "templates/Daily-Template.md",
+          "title": "Daily-Template"
+        },
+        {
+          "type": "file",
+          "ctime": 1742171643068,
+          "path": "templates/Weekly-Template.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1742583276923,
+          "path": "templates/Monthly-Template.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1742583284262,
+          "path": "templates/Folder-Note-Template.md"
+        }
+      ],
+      "title": "templates"
+    }
+  ]
+}

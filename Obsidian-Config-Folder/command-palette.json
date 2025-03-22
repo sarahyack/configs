@@ -1,14 +1,15 @@
 {
   "pinned": [
-    "workspace:copy-url",
-    "workspace:copy-path",
     "workspaces:load",
     "workspaces:save",
-    "app:open-vault",
     "random-note",
-    "markdown:toggle-preview",
     "open-with-default-app:show",
-    "editor:toggle-highlight",
-    "open-with-default-app:open"
+    "open-with-default-app:open",
+    "open-with-nldates:open-daily-note",
+    "obsidian-day-planner:clock-in",
+    "obsidian-day-planner:clock-out",
+    "obsidian-day-planner:cancel-clock",
+    "obsidian-reminder-plugin:scan-reminders",
+    "obsidian-tasks-plugin:edit-task"
   ]
 }

@@ -3,7 +3,7 @@
   "search": "",
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": true,
   "colorGroups": [
@@ -16,6 +16,13 @@
     },
     {
       "query": "path:maps  ",
+      "color": {
+        "a": 1,
+        "rgb": 12588705
+      }
+    },
+    {
+      "query": "tag:#task/moc  ",
       "color": {
         "a": 1,
         "rgb": 12588705
@@ -111,6 +118,34 @@
         "a": 1,
         "rgb": 14701254
       }
+    },
+    {
+      "query": "path:references  ",
+      "color": {
+        "a": 1,
+        "rgb": 673840
+      }
+    },
+    {
+      "query": "path:periodic  ",
+      "color": {
+        "a": 1,
+        "rgb": 11709011
+      }
+    },
+    {
+      "query": "path:introduction  ",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "tag:#folder-note  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395026
+      }
     }
   ],
   "collapse-display": true,
@@ -119,10 +154,10 @@
   "nodeSizeMultiplier": 1.15968858131488,
   "lineSizeMultiplier": 1.46487889273356,
   "collapse-forces": true,
-  "centerStrength": 1,
-  "repelStrength": 13.0449826989619,
+  "centerStrength": 0.884948096885813,
+  "repelStrength": 14.5847750865052,
   "linkStrength": 1,
-  "linkDistance": 30,
-  "scale": 0.45050811767578436,
+  "linkDistance": 200,
+  "scale": 0.2292013594174945,
   "close": true
 }

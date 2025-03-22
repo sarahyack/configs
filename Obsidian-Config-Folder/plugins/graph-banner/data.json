@@ -1,6 +1,8 @@
 {
   "ignore": [
-    "M*.md"
+    "projects/tasks/*",
+    "projects/maintenance/*",
+    "templates/*"
   ],
   "timeToRemoveLeaf": 500
 }

@@ -4,84 +4,217 @@
     "type": "split",
     "children": [
       {
-        "id": "52400a2d26d7e0e4",
-        "type": "split",
+        "id": "415b00996daf5028",
+        "type": "tabs",
         "children": [
           {
-            "id": "415b00996daf5028",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "1f528527986c87d5",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    },
-                    {
-                      "title": "2025-02-06",
-                      "icon": "lucide-file",
-                      "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025-02-06.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-02-06\"}",
-                      "eState": "{\"cursor\":{\"from\":{\"line\":29,\"ch\":371},\"to\":{\"line\":29,\"ch\":371}},\"scroll\":26.305989106496174}"
-                    }
-                  ]
+            "id": "a92177cd53430c10",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
                 },
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "periodic/daily/2025-02-07.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
+                {
+                  "title": "2025-03-21",
                   "icon": "lucide-file",
-                  "title": "2025-02-07"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-21.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-21\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}}}"
+                },
+                {
+                  "title": "2025-03-20",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-20.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-20\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}},\"scroll\":1.9047619047619047}"
+                },
+                {
+                  "title": "2025-03-19",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-19.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-19\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}},\"scroll\":66.9414209796854}"
+                },
+                {
+                  "title": "2025-03-18",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-18.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-18\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":34,\"ch\":0},\"to\":{\"line\":34,\"ch\":0}},\"scroll\":23.862123727798462}"
+                },
+                {
+                  "title": "2025-03-17",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-17.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-17\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":2,\"ch\":0},\"to\":{\"line\":2,\"ch\":0}}}"
+                },
+                {
+                  "title": "2025-03-16",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-16.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-16\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":21,\"ch\":0},\"to\":{\"line\":21,\"ch\":0}},\"scroll\":16.824388202660895}"
                 }
-              }
-            ]
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2025/2025-03-22.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-03-22"
+            }
           },
           {
-            "id": "ec5d377bcbf16305",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "d6486ffabfc6122d",
-                "type": "leaf",
-                "pane-relief:history-v1": {
-                  "pos": 0,
-                  "stack": [
-                    {
-                      "state": "{}",
-                      "eState": "{}"
-                    }
-                  ]
-                },
-                "pinned": true,
-                "state": {
-                  "type": "graph",
-                  "state": {},
-                  "pinned": true,
-                  "icon": "lucide-git-fork",
-                  "title": "Graph view"
+            "id": "145b1b6877849fc9",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
                 }
-              }
-            ],
-            "stacked": true
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/maintenance/tag-pages/tag-pages.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "tag-pages"
+            }
+          },
+          {
+            "id": "99e56c8ef8cbfd0b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/tasks/calendar/calendar.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "calendar"
+            }
+          },
+          {
+            "id": "5a70db1bf5d9c348",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Invisible Caretaking.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Invisible Caretaking"
+            }
+          },
+          {
+            "id": "b8a693242b6b1480",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "New tab",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"beautitab-react-view\",\"state\":{},\"title\":\"New tab\"}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/tasks/by-topic-todo.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "by-topic-todo"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -162,134 +295,6 @@
             }
           },
           {
-            "id": "cc44263fd2c11b94",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          }
-        ]
-      },
-      {
-        "id": "a34b00f16ab50032",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8606024b1e95b3a0",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "pinned": true,
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "pinned": true,
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "9ba81c81468d714f",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "pinned": true,
-            "state": {
-              "type": "timer-view",
-              "state": {},
-              "pinned": true,
-              "icon": "timer",
-              "title": "Timer"
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 274.5
-  },
-  "right": {
-    "id": "396106eeeb24b742",
-    "type": "split",
-    "children": [
-      {
-        "id": "5c1c83402d7245d7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2d26500203b16fef",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "planner-timeline",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Timeline"
-            }
-          },
-          {
-            "id": "b453be4fb4f99d86",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "periodic/daily/2025-02-04.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 2025-02-04"
-            }
-          },
-          {
             "id": "668889df273c4f4a",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -328,7 +333,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "periodic/daily/2025-02-04.md",
+                "file": "projects/maintenance/tag-pages/tag-pages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -338,7 +343,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-02-04"
+              "title": "Backlinks for tag-pages"
             }
           },
           {
@@ -356,12 +361,141 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "periodic/daily/2025-02-04.md",
+                "file": "projects/maintenance/tag-pages/tag-pages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-02-04"
+              "title": "Outgoing links from tag-pages"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a34b00f16ab50032",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8606024b1e95b3a0",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "pinned": true,
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "d6c69f73d09ab015",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "timer-view",
+              "state": {},
+              "pinned": true,
+              "icon": "timer",
+              "title": "Timer"
+            }
+          },
+          {
+            "id": "74899c7a201923a1",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "New tab",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"beautitab-react-view\",\"state\":{},\"title\":\"New tab\"}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "4e9197552e0bfeec",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "reminder-list",
+              "state": {},
+              "pinned": true,
+              "icon": "clock",
+              "title": "Reminders"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 274.5
+  },
+  "right": {
+    "id": "396106eeeb24b742",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c1c83402d7245d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d26500203b16fef",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
             }
           },
           {
@@ -382,76 +516,144 @@
               "icon": "ReferenceMapIconScroll",
               "title": "Reference Map"
             }
+          },
+          {
+            "id": "ea04d8ec1221a004",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "Strange New Worlds",
+              "state": {},
+              "icon": "file-digit",
+              "title": "Strange New Worlds"
+            }
+          },
+          {
+            "id": "e29cef1aa170200b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "periodic/daily/2025/2025-03-21.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2025-03-21"
+            }
+          },
+          {
+            "id": "b5c549c352bafe7e",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 251.5
+    "width": 284.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "obsidian42-brat:BRAT": false,
-      "widgets:Add widget": false,
-      "markdown-importer:Open format converter": false,
-      "publish:Publish changes...": false,
       "random-note:Open random note": false,
-      "homepage:Open homepage": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
+      "widgets:Add widget": false,
       "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "reference-map:Reference Map": false,
+      "index-notes:New note by copying metadata of focused note": false,
+      "markdown-importer:Open format converter": false,
+      "switcher:Open quick switcher": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "graph:Open graph view": false,
+      "reference-map:Reference Map": true,
+      "tag-project-odaimoko:Tag Project Help Page": false,
+      "tag-project-odaimoko:Tag Project Manage Page": false,
       "tab-selector:Open tab selector": false,
       "workspaces:Manage workspace layouts": false,
-      "pomodoro-timer:Toggle timer panel": false,
+      "pomodoro-timer:Toggle timer panel": true,
       "obsidian-day-planner:Open Timeline": false,
       "obsidian-day-planner:Open Multi-Day View": false,
+      "templater-obsidian:Templater": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "1f528527986c87d5",
+  "active": "a92177cd53430c10",
   "ophidian:layout-settings": {
     "pane-relief:focus-lock": false
   },
   "lastOpenFiles": [
-    "periodic/daily/2025-02-06.md",
-    "periodic/daily/2025-02-07.md",
-    "periodic/daily/2025-02-05.md",
-    "inbox/Toxemia.md",
-    "periodic/daily/2025-02-04.md",
-    "inbox/Zettelkasten & Thought-Taking.md",
-    "inbox/The Simple Route Not Taken.md",
-    "inbox/Complexity is Shiny-Object Syndrome.md",
-    "inbox/Our Brain's Own Flow.md",
-    "inbox/Organic Templates.md",
-    "references/literature/L5a - Structure vs Plans.md",
-    "inbox/Exogenous Focus & Technology.md",
-    "inbox/Endogenous Focus & Writing.md",
-    "inbox/Relieving the Brain.md",
-    "inbox/Two Focuses.md",
-    "references/quotes/Q1 Levy-2011.md",
-    "references/literature/L8 - Writing is Everything.md",
-    "inbox/AI And Repetition.md",
+    "periodic/daily/2025/2025-03-21.md",
+    "periodic/daily/2025/2025-03-22.md",
+    "projects/tasks/by-topic-todo.md",
+    "inbox/Invisible Caretaking.md",
+    "projects/tasks/Weekly Review.md",
+    "projects/tasks/calendar/calendar.md",
+    "projects/tasks/archive.md",
     "templates/Daily-Template.md",
-    "templates",
-    "inbox/Conveying the Gist.md",
-    "inbox/GPT and Learning.md",
-    "inbox/Learn By Understanding.md",
-    "runbook/cheat-sheets/C1 - Dataview MetaData.md",
-    "periodic/yearly",
-    "periodic/monthly",
-    "periodic/weekly",
-    "periodic",
-    "todoist-backup-20252494535.json",
-    "runbook/cheat-sheets",
-    "runbook/how-tos",
-    "runbook",
-    "references/quotes/Q3 - Breault-Oars.md",
-    "periodic/daily",
-    "references/literature/L5 - Willpower and Notetaking.md",
-    "references/literature/L1 - Three types of Notetakers.md",
+    "projects/maintenance/tag-pages/tag-pages.md",
+    "templates/Folder-Note-Template.md",
+    "zettels/zettels.md",
+    "periodic/daily/2025/2025-03-20.md",
+    "periodic/daily/2025/2025-03-19.md",
+    "periodic/monthly/2025-02.md",
+    "periodic/monthly/2025-03.md",
+    "templates/Monthly-Template.md",
+    "periodic/daily/2025/2025-03-18.md",
+    "introduction/00 - Beehive.md",
+    "periodic/daily/2025/2025-02-06.md",
+    "periodic/daily/2025/2025-02-05.md",
+    "periodic/daily/2025/2025-02-04.md",
+    "periodic/weekly/2025-W06.md",
+    "inbox/Inserting Waypoint in a Template.md",
+    "periodic/daily/2025",
+    "projects/maintenance/maintenance.md",
+    "periodic/daily/2025/2025-03-17.md",
+    "projects/projects.md",
+    "introduction",
+    "projects/maintenance/tag-pages",
+    "main",
+    "4913",
+    "projects/tasks/calendar/view.js",
+    "projects/tasks/calendar/view.css",
+    "projects/tasks/calendar",
+    "projects/ideas",
+    "projects/design",
     "Untitled.canvas"
   ]
 }

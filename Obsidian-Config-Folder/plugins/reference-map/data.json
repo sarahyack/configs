@@ -17,7 +17,8 @@
   "zoteroGroups": [
     {
       "id": 1,
-      "name": "My Library"
+      "name": "My Library",
+      "lastUpdate": 1741021174624
     }
   ],
   "zoteroPort": "23119",

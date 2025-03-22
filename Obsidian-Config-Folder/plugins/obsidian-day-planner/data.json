@@ -8,7 +8,7 @@
   "startHour": 6,
   "timelineDateFormat": "YYYY-MM-DD",
   "centerNeedle": false,
-  "plannerHeading": "Day planner",
+  "plannerHeading": "",
   "plannerHeadingLevel": 1,
   "timelineColored": true,
   "timelineStartColor": "#006466",
@@ -27,7 +27,14 @@
   "pluginVersion": "0.27.0",
   "showCompletedTasks": true,
   "showSubtasksInTaskBlocks": true,
-  "icals": [],
+  "icals": [
+    {
+      "name": "Proton",
+      "email": "sarah@yack.email",
+      "url": "https://calendar.proton.me/api/calendar/v1/url/0KvIbmPqocRiFiliNnSldtpr0Iayv8v1LuXdAPVV2otYovEQFOryuDOuQFzj0oJpWl1vozaipGRkjlA6JwaDGw==/calendar.ics?CacheKey=naoZ5x3ihgSJbtbROHpgMA%3D%3D&PassphraseKey=nzaXoQACbDsE2fQzdJgK-AM5bXFwvmvqjarhBuziD6Q%3D",
+      "color": "#73099a"
+    }
+  ],
   "colorOverrides": [],
   "releaseNotes": true,
   "taskStatusOnCreation": " ",

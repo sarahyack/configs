@@ -7,6 +7,6 @@
   "newFileFolderPath": "inbox",
   "propertiesInDocument": "visible",
   "vimMode": true,
-  "showLineNumber": true,
+  "showLineNumber": false,
   "readableLineLength": false
 }

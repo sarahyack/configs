@@ -41,5 +41,8 @@
   "settings-profiles",
   "inbox-organiser",
   "templater-obsidian",
-  "tasks-packrat-plugin"
+  "tasks-packrat-plugin",
+  "local-backup",
+  "obsidian-task-archiver",
+  "obsidian-better-command-palette"
 ]

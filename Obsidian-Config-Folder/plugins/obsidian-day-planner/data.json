@@ -16,7 +16,7 @@
   "timestampFormat": "HH:mm",
   "hourFormat": "H",
   "dataviewSource": "",
-  "extendDurationUntilNext": true,
+  "extendDurationUntilNext": false,
   "defaultDurationMinutes": 30,
   "minimalDurationMinutes": 5,
   "showTimestampInTaskBlock": true,

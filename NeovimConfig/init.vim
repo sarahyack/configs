@@ -391,34 +391,31 @@ db.setup({
   theme = 'doom',
   config = {
     header = {
+      ' _   _      _ _           _____                 _            ',
+      '| | | |    | | |         /  ___|               | |           ',
+      '| |_| | ___| | | ___     \\ `--.  __ _ _ __ __ _| |__         ',
+      '|  _  |/ _ \\ | |/ _ \\     `--. \\/ _` | \'__/ _` | \'_ \\        ',
+      '| | | |  __/ | | (_) |   /\\__/ / (_| | | | (_| | | | |  _ _ _',
+      '\\_| |_/\\___|_|_|\\___/    \\____/ \\__,_|_|  \\__,_|_| |_| (_|_|_)',
+      '                                                      ',
       '',
-      '',
-      '',
-      '',
-      ' _   _            _   _ _           ',
-      '| \\ | |          | | | (_)          ',
-      '|  \\| | ___  ___ | | | |_ _ __ ___  ',
-      '| . ` |/ _ \\/ _ \\| | | | | \'_ ` _ \\ ',
-      '| |\\  |  __/ (_) \\ \\_/ / | | | | | |',
-      '\\_| \\_/\\___|\\___/ \\___/|_|_| |_| |_|',
-      '                                    ',
-      '                                    ',
     },
     center = {
-      { icon = '  ', desc = 'File Browser        ', action = 'Telescope file_browser', key = 'b' },
-      { icon = '  ', desc = 'Find Files          ', action = 'Telescope find_files', key = 'f' },
-      { icon = '  ', desc = 'Recent files        ', action = 'Telescope oldfiles', key = 'r' },
+      { icon = '  ', desc = 'File Browser        ', action = 'Telescope file_browser', key = 'b' },
+      { icon = '  ', desc = 'Find Files          ', action = 'Telescope find_files', key = 'f' },
+      { icon = '  ', desc = 'Recent files        ', action = 'Telescope oldfiles', key = 'r' },
+      { icon = '  ', desc = 'Projects            ', action = 'Telescope projects', key = 'a' },
       { icon = '  ', desc = 'New file            ', action = 'enew', key = 'n' },
       { icon = '  ', desc = 'Custom Shortcuts    ', action = 'ShowShortcuts', key = 's' },
-      { icon = '  ', desc = 'ToggleTerm          ', action = 'ToggleTerm', key = 'o' },
+      { icon = '  ', desc = 'ToggleTerm          ', action = 'ToggleTerm', key = 'o' },
       { icon = '  ', desc = 'Plugin Status       ', action = 'PlugStatus', key = 'p' },
       { icon = '  ', desc = 'Update Plugins      ', action = 'PlugUpdate', key = 'u' },
-      { icon = '  ', desc = 'Reload Config       ', action = 'source $MYVIMRC', key = 'v' },
+      { icon = '  ', desc = 'Reload Config       ', action = 'source $MYVIMRC', key = 'v' },
       { icon = '  ', desc = 'Change Theme        ', action = 'Themery', key = 't' },
       { icon = '  ', desc = 'Settings            ', action = 'edit $MYVIMRC', key = 'c' },
-      { icon = '  ', desc = 'Quit                ', action = 'q', key = 'q' },
+      { icon = '󱡝  ', desc = 'Quit                ', action = 'q', key = 'q' },
     },
-    footer = { '✪ Neovim_SarahYack' },
+    footer = { '✪ Neovim@SarahYack' },
   },
 
   packages = { enable = true }, 
@@ -626,7 +623,7 @@ function ShowShortcuts()
     "",
     "-- Editing",
     "--------------------",
-    "<C-A>       - Copy All",
+    "<C-a>       - Copy All",
     "<Leader>ae  - Add Empty Line Below",
     "<Leader>aE  - Add Empty Line Above",
     "<Leader>aw  - Add Empty Line Above and Below",
@@ -706,11 +703,11 @@ function ShowShortcuts()
     "",
     "-- Tabs",
     "--------------------",
-    "<Leader>tn  - Next Tab",
-    "<Leader>tp  - Previous Tab",
-    "<Leader>ts  - Switch to Specific Tab",
-    "<Leader>to  - Open New Tab",
-    "<Leader>tc  - Close Current Tab",
+    "tn  - Next Tab",
+    "tp  - Previous Tab",
+    "ts  - Switch to Specific Tab",
+    "to  - Open New Tab",
+    "tc  - Close Current Tab",
     "",
     "-- Buffers",
     "--------------------",
@@ -726,6 +723,7 @@ function ShowShortcuts()
     "-- Modes/Settings Toggles",
     "--------------------",
     "<Leader>mln - Toggle Relative Numbers",
+    "<Leader>mhl - Toggle Highlight Search",
     "<Leader>mlf - Change Line Ending Format - LF",
     "<Leader>ms  - Toggle Spell Check",
     "<Leader>mw  - Toggle Wrap",
@@ -733,8 +731,8 @@ function ShowShortcuts()
     "<Leader>mb  - Switch to Buffer Display - Tabby",
     "<Leader>f   - Focus Toggle",
     "<Leader>fe  - Focus Equalize",
-    "<Leader>g   - Glow (Current File)",
-    "<Leader>gs  - Glow (Specific)",
+    "<Leader>mp   - Glow (Current File)",
+    "<Leader>mps  - Glow (Specific)",
     "",
     "-- Plugin Management",
     "--------------------",
@@ -772,6 +770,7 @@ function ShowShortcuts()
     "",
     "-- Fuzzy Finder/Search",
     "--------------------",
+    "<Leader>nh  - No Highlight (Until Next Search)",
     "<Leader>sf  - Find Files",
     "<Leader>sh  - Recent Files",
     "<Leader>sg  - Live Grep",
@@ -939,7 +938,9 @@ nnoremap $ g$
 nnoremap ^ g^
 nnoremap g$ $
 nnoremap g^ ^
-nnoremap <C-a> ggvGy
+nnoremap L gt
+nnoremap H gT
+nnoremap <C-a> ggvG$y
 nnoremap <leader>ae o<ESC>k
 nnoremap <leader>aE O<ESC>j
 nnoremap <leader>aw o<ESC>kO<ESC>j
@@ -1014,11 +1015,11 @@ nnoremap <leader>ro :FlowLastOutput<CR>
 nnoremap <leader>rq :FlowRunQuickCmd<CR>
 
 " Tabs
-nnoremap <leader>tn :tabnext<CR>
-nnoremap <leader>tp :tabprevious<CR>
-nnoremap <leader>ts :tabn<Space>
-nnoremap <leader>to :tabnew<CR>
-nnoremap <leader>tc :tabclose<CR>
+nnoremap tn :tabnext<CR>
+nnoremap tp :tabprevious<CR>
+nnoremap ts :tabn<Space>
+nnoremap to :tabnew<CR>
+nnoremap tc :tabclose<CR>
 
 " Buffers
 nnoremap <leader>bb :ls<CR>
@@ -1033,6 +1034,7 @@ nnoremap <leader>bc :%bd\|e#<CR>
 
 " Modes/Settings Toggles
 nnoremap <leader>mln :set relativenumber!<CR>
+nnoremap <leader>mhl :set hlsearch!<CR>
 nnoremap <leader>mlf :set fileformat=unix<CR>
 nnoremap <leader>ms :set spell!<CR>
 nnoremap <leader>mw :set wrap!<CR>
@@ -1074,6 +1076,7 @@ nnoremap <leader>gu :GitSigns undo_stage_hunk<CR>
 nnoremap <leader>gp :GitSigns preview_hunk<CR>
 
 " Fuzzy Finder/Search
+nnoremap <leader>nh :noh<CR>
 nnoremap <leader>sf :Telescope find_files<CR>
 nnoremap <leader>sh :Telescope oldfiles<CR>
 nnoremap <leader>sg :Telescope live_grep<CR>

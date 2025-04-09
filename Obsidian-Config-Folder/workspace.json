@@ -18,6 +18,96 @@
                   "eState": "{}"
                 },
                 {
+                  "title": "2025-04-07",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-04-07.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-04-07\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "2025-04-04",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-04-04.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-04-04\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}}}"
+                },
+                {
+                  "title": "2025-04-03",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-04-03.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-04-03\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":13,\"ch\":0},\"to\":{\"line\":13,\"ch\":0}},\"scroll\":8.970052083333334}"
+                },
+                {
+                  "title": "2025-04-02",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-04-02.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-04-02\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":33,\"ch\":0},\"to\":{\"line\":33,\"ch\":0}},\"scroll\":26.074585416784238}"
+                },
+                {
+                  "title": "2025-04-01",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-04-01.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-04-01\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}},\"scroll\":0.9523809523809523}"
+                },
+                {
+                  "title": "2025-03-31",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-31.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-31\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}},\"scroll\":11.60095213052773}"
+                },
+                {
+                  "title": "2025-03-30",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-30.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-30\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}},\"scroll\":51.71411796159739}"
+                },
+                {
+                  "title": "2025-03-29",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-29.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-29\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}}}"
+                },
+                {
+                  "title": "2025-03-28",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-28.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-28\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}},\"scroll\":16.95516602436432}"
+                },
+                {
+                  "title": "2025-03-27",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-27.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-27\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}},\"scroll\":12.905639353226443}"
+                },
+                {
+                  "title": "2025-03-26",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-26.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-26\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":2,\"ch\":0},\"to\":{\"line\":2,\"ch\":0}}}"
+                },
+                {
+                  "title": "2025-03-25",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-25.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-25\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}}}"
+                },
+                {
+                  "title": "2025-03-24",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-24.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-24\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}}}"
+                },
+                {
+                  "title": "2025-03-23",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-23.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-23\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":30,\"ch\":0},\"to\":{\"line\":30,\"ch\":0}},\"scroll\":17.30475976823187}"
+                },
+                {
+                  "title": "2025-03-22",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-22.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-22\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}}}"
+                },
+                {
                   "title": "2025-03-21",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/daily/2025/2025-03-21.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":true,\"backlinkOpts\":{\"collapseAll\":false,\"extraContext\":false,\"sortOrder\":\"alphabetical\",\"showSearch\":false,\"searchQuery\":\"\",\"backlinkCollapsed\":false,\"unlinkedCollapsed\":true}},\"icon\":\"lucide-file\",\"title\":\"2025-03-21\"}",
@@ -58,7 +148,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2025/2025-03-22.md",
+                "file": "periodic/daily/2025/2025-04-08.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -73,7 +163,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-03-22"
+              "title": "2025-04-08"
             }
           },
           {
@@ -110,39 +200,6 @@
             }
           },
           {
-            "id": "99e56c8ef8cbfd0b",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/tasks/calendar/calendar.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "calendar"
-            }
-          },
-          {
             "id": "5a70db1bf5d9c348",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -176,7 +233,7 @@
             }
           },
           {
-            "id": "b8a693242b6b1480",
+            "id": "125131f3d7de9054",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -196,7 +253,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/tasks/by-topic-todo.md",
+                "file": "projects/tasks/chores.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -211,7 +268,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "by-topic-todo"
+              "title": "chores"
             }
           }
         ]
@@ -418,6 +475,27 @@
             }
           },
           {
+            "id": "2a7d16fb4ac523e8",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "reminder-list",
+              "state": {},
+              "pinned": true,
+              "icon": "clock",
+              "title": "Reminders"
+            }
+          },
+          {
             "id": "74899c7a201923a1",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -442,27 +520,6 @@
               "pinned": true,
               "icon": "lucide-git-fork",
               "title": "Graph view"
-            }
-          },
-          {
-            "id": "4e9197552e0bfeec",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "pinned": true,
-            "state": {
-              "type": "reminder-list",
-              "state": {},
-              "pinned": true,
-              "icon": "clock",
-              "title": "Reminders"
             }
           }
         ]
@@ -561,17 +618,8 @@
             }
           },
           {
-            "id": "b5c549c352bafe7e",
+            "id": "61a3b332cd56837b",
             "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
             "state": {
               "type": "all-properties",
               "state": {
@@ -609,42 +657,41 @@
       "pomodoro-timer:Toggle timer panel": true,
       "obsidian-day-planner:Open Timeline": false,
       "obsidian-day-planner:Open Multi-Day View": false,
-      "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "a92177cd53430c10",
+  "active": "8606024b1e95b3a0",
   "ophidian:layout-settings": {
     "pane-relief:focus-lock": false
   },
   "lastOpenFiles": [
-    "periodic/daily/2025/2025-03-21.md",
-    "periodic/daily/2025/2025-03-22.md",
-    "projects/tasks/by-topic-todo.md",
-    "inbox/Invisible Caretaking.md",
-    "projects/tasks/Weekly Review.md",
-    "projects/tasks/calendar/calendar.md",
-    "projects/tasks/archive.md",
+    "periodic/daily/2025/2025-04-08.md",
+    "periodic/daily/2025/2025-04-07.md",
+    "projects/tasks/chores.md",
     "templates/Daily-Template.md",
+    "periodic/daily/2025/2025-04-05.md",
+    "periodic/daily/2025/2025-04-06.md",
+    "periodic/daily/2025/2025-04-04.md",
+    "inbox/Invisible Caretaking.md",
+    "periodic/daily/2025/2025-04-03.md",
+    "periodic/daily/2025/2025-04-02.md",
+    "periodic/weekly/2025-W13.md",
+    "periodic/daily/2025/2025-04-01.md",
+    "periodic/daily/2025/2025-03-31.md",
+    "periodic/daily/2025/2025-03-30.md",
+    "projects/tasks/Weekly Review.md",
+    "projects/tasks/recurring.md",
+    "projects/tasks/inbox.md",
+    "periodic/daily/2025/2025-03-29.md",
     "projects/maintenance/tag-pages/tag-pages.md",
-    "templates/Folder-Note-Template.md",
-    "zettels/zettels.md",
-    "periodic/daily/2025/2025-03-20.md",
-    "periodic/daily/2025/2025-03-19.md",
-    "periodic/monthly/2025-02.md",
-    "periodic/monthly/2025-03.md",
-    "templates/Monthly-Template.md",
-    "periodic/daily/2025/2025-03-18.md",
-    "introduction/00 - Beehive.md",
-    "periodic/daily/2025/2025-02-06.md",
-    "periodic/daily/2025/2025-02-05.md",
-    "periodic/daily/2025/2025-02-04.md",
-    "periodic/weekly/2025-W06.md",
-    "inbox/Inserting Waypoint in a Template.md",
+    "templates/inbox-todos-template.md",
+    "inbox/Untitled.md",
+    "projects/tasks/archive.md",
+    "projects/tasks/by-topic-todo.md",
+    "projects/tasks/backlog.md",
+    "periodic/daily/2025/2025-03-26.md",
+    "periodic/daily/2025/2025-03-25.md",
     "periodic/daily/2025",
-    "projects/maintenance/maintenance.md",
-    "periodic/daily/2025/2025-03-17.md",
-    "projects/projects.md",
     "introduction",
     "projects/maintenance/tag-pages",
     "main",

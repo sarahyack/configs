@@ -1,6 +1,6 @@
 " Environment Variables
-let VIMRUNTIME="C:/Program Files/Neovim/share/nvim/runtime/"
-let g:python3_host_prog = 'C:/PythonShortcut/python.exe'
+let VIMRUNTIME="/usr/share/nvim/runtime"
+let g:python3_host_prog = '/usr/bin/python3'
 let g:loaded_perl_provider = 0
 let g:loaded_ruby_provider = 0
 
@@ -40,7 +40,7 @@ if exists("g:neovide")
 endif
 
 " Load/Install Plugins
-call plug#begin($HOME . '\AppData\Local\nvim\plugged') 
+call plug#begin($HOME . '/.local/share/nvim/plugged') 
 Plug 'nvimdev/dashboard-nvim'
 Plug 'junegunn/fzf', {'do': { -> fzf#install()}}
 Plug 'junegunn/fzf.vim'

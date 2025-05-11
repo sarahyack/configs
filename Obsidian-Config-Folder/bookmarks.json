@@ -29,6 +29,11 @@
           "type": "file",
           "ctime": 1743275732044,
           "path": "templates/inbox-todos-template.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1745624688687,
+          "path": "templates/book-note-template.md"
         }
       ],
       "title": "templates"
@@ -64,6 +69,12 @@
         }
       ],
       "title": "tasks"
+    },
+    {
+      "type": "file",
+      "ctime": 1745626304664,
+      "path": "references/books/files/How-to-Take-Smart-Notes-by-Sönke-Ahrens-40zol.pdf",
+      "title": "Smart Notes - Ahrens"
     }
   ]
 }

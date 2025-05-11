@@ -1,6 +1,6 @@
 {
-  "accentColor": "",
-  "cssTheme": "Nier",
+  "accentColor": "#29b397",
+  "cssTheme": "Border",
   "enabledCssSnippets": [
     "extended-colorschemes",
     "rainbow-tags",
@@ -8,8 +8,10 @@
   ],
   "theme": "obsidian",
   "showViewHeader": true,
-  "textFontFamily": "Rubik",
-  "interfaceFontFamily": "Overpass",
-  "monospaceFontFamily": "Noto Serif",
-  "showRibbon": false
+  "textFontFamily": "Architects Daughter,Rubik",
+  "interfaceFontFamily": "Architects Daughter,Overpass",
+  "monospaceFontFamily": "BigBlueTermPlus Nerd Font Mono,Noto Serif",
+  "showRibbon": true,
+  "baseFontSizeAction": true,
+  "baseFontSize": 16
 }

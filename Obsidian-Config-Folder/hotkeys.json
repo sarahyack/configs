@@ -266,14 +266,7 @@
       "key": "K"
     }
   ],
-  "editor:insert-link": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "]"
-    }
-  ],
+  "editor:insert-link": [],
   "editor:toggle-checklist-status": [
     {
       "modifiers": [
@@ -381,14 +374,7 @@
       "key": "E"
     }
   ],
-  "markdown:toggle-preview": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Q"
-    }
-  ],
+  "markdown:toggle-preview": [],
   "app:delete-file": [
     {
       "modifiers": [
@@ -871,5 +857,64 @@
     }
   ],
   "templater-obsidian:create-new-note-from-template": [],
-  "templater-obsidian:insert-templater": []
+  "templater-obsidian:insert-templater": [],
+  "omnisearch:show-modal-infile": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "]"
+    }
+  ],
+  "omnisearch:show-modal": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "["
+    }
+  ],
+  "obsidian-icons-plugin:open-icons-plugin-modal": [],
+  "mode-manager:switch-to-edit": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "mode-manager:switch-to-reading": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "obsidian-footnotes:insert-autonumbered-footnote": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "0"
+    }
+  ],
+  "obsidian-footnotes:insert-named-footnote": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "-"
+    }
+  ],
+  "obsidian-daily-stats:show-daily-stats-tracker-view": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "`"
+    }
+  ]
 }

@@ -1,15 +1,14 @@
 {
   "pinned": [
-    "workspaces:load",
-    "workspaces:save",
-    "random-note",
+    "app:open-vault",
     "open-with-default-app:show",
-    "open-with-default-app:open",
     "open-with-nldates:open-daily-note",
-    "obsidian-day-planner:clock-in",
-    "obsidian-day-planner:clock-out",
-    "obsidian-day-planner:cancel-clock",
-    "obsidian-reminder-plugin:scan-reminders",
-    "obsidian-tasks-plugin:edit-task"
+    "nldates-obsidian:nlp-picker",
+    "nldates-obsidian:nlp-now",
+    "obsidian-tasks-plugin:edit-task",
+    "obsidian-book-search-plugin:open-book-search-modal",
+    "bookshelf:open-library",
+    "bookshelf:open-statistics",
+    "bookshelf:open-book-modal"
   ]
 }

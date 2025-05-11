@@ -19,7 +19,14 @@
       "text": "Archived"
     }
   ],
-  "listItems": [],
+  "listItems": [
+    {
+      "text": "[[{{obsidianTasksCompletedDate}}]]"
+    },
+    {
+      "text": "[[{{sourceFilePath}}]]"
+    }
+  ],
   "indentationSettings": {
     "useTab": true,
     "tabSize": 4
@@ -34,6 +41,6 @@
     "replacementTest": "task #some-tag"
   },
   "useAdditionalTaskPattern": false,
-  "archiveUnderListItems": false,
+  "archiveUnderListItems": true,
   "archiveOnlyIfSubtasksAreDone": true
 }

@@ -13,14 +13,22 @@ set tabstop=4
 set showtabline=2
 set shiftwidth=4
 set autoindent
+set foldenable
+set foldlevel=99
+set foldlevelstart=99
+set foldcolumn=1
 set wildmode=longest,list
+set undofile
+set undodir=C:\Users\Sarah\AppData\Local\nvim\undo
 set cc=80
 filetype plugin indent on
 set clipboard=unnamedplus
 filetype plugin on
+set completeopt=menu
 set splitright
 set splitbelow
 set termguicolors
+set background=dark
 
 " Set Neovide Setings
 if exists("g:neovide")
@@ -43,65 +51,80 @@ endif
 
 " Load/Install Plugins
 call plug#begin('$HOME' . '\AppData\Local\nvim\plugged') 
-Plug 'nvimdev/dashboard-nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'tom-anders/telescope-vim-bookmarks.nvim'
-Plug 'nvim-telescope/telescope-file-browser.nvim'
-Plug 'nvim-telescope/telescope-ui-select.nvim'
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-Plug 'nvim-telescope/telescope-frecency.nvim'
-Plug 'tom-anders/telescope-vim-bookmarks.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-lualine/lualine.nvim'
+" DEPENDENCIES
 Plug 'nvim-lua/plenary.nvim'
-Plug 'echasnovski/mini.files', {'branch': 'stable'}
-Plug 'nvim-tree/nvim-tree.lua'
-Plug 'ahmedkhalf/project.nvim'
-Plug 'akinsho/toggleterm.nvim'
-Plug 'lewis6991/gitsigns.nvim'
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'}
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'rafamadriz/friendly-snippets'
-Plug 'dense-analysis/ale'
-Plug 'tpope/vim-commentary'
+Plug 'kevinhwang91/promise-async'
+
+" MISC
 Plug 'Exafunction/codeium.vim'
+Plug 'lowitea/aw-watcher.nvim'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
-Plug 'MattesGroeger/vim-bookmarks'
-Plug 'kylechui/nvim-surround'
-Plug 'lowitea/aw-watcher.nvim'
-Plug 'OXY2DEV/markview.nvim'
-Plug 'folke/trouble.nvim'
-Plug 'jose-elias-alvarez/null-ls.nvim'
-Plug 'arjunmahishi/flow.nvim'
-Plug 'windwp/nvim-autopairs'
-Plug 'fedepujol/move.nvim'
-" Plug 'folke/which-key.nvim' (NEED TO THINK ABOUT THIS)
+Plug 'ptdewey/pendulum-nvim'
+Plug 'y3owk1n/time-machine.nvim'
+Plug 'QuentinGruber/pomodoro.nvim'
 
+" UI
+Plug 'nvimdev/dashboard-nvim'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'OXY2DEV/markview.nvim'
 Plug 'nanozuki/tabby.nvim'
 Plug 'levouh/tint.nvim'
 Plug 'beauwilliams/focus.nvim'
 Plug 'ellisonleao/glow.nvim'
-
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'nvimdev/hlsearch.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'echasnovski/mini.icons', {'branch': 'stable'}
+Plug 'rktjmp/lush.nvim'
 
-Plug 'zaldih/themery.nvim'
-Plug 'morhetz/gruvbox'
-Plug 'slugbyte/lackluster.nvim'
-Plug 'mellow-theme/mellow.nvim'
-Plug 'sainnhe/gruvbox-material'
-Plug 'sainnhe/everforest'
-Plug 'sho-87/kanagawa-paper.nvim'
-Plug 'dgox16/oldworld.nvim'
-Plug 'Skalyaeve/a-nvim-theme'
-Plug 'scottmckendry/cyberdream.nvim'
-Plug 'catppuccin/nvim', {'as': 'catpuccin'}
-Plug 'maxmx03/fluoromachine.nvim'
-Plug 'folke/tokyonight.nvim'
+" SWITCHERS
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'tom-anders/telescope-vim-bookmarks.nvim'
+Plug 'nvim-telescope/telescope-ui-select.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-telescope/telescope-frecency.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'doctorfree/cheatsheet.nvim'
+
+" LSP
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'lewis6991/gitsigns.nvim'
+
+" SNIPPETS
+Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'}
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'rafamadriz/friendly-snippets'
+
+" FILES
+Plug 'echasnovski/mini.files', {'branch': 'stable'}
+Plug 'vifm/vifm.vim'
+Plug 'stevearc/oil.nvim'
+Plug 'refractalize/oil-git-status.nvim'
+Plug 'ahmedkhalf/project.nvim'
+Plug 'CRAG666/code_runner.nvim'
+Plug 'dzfrias/arena.nvim'
+
+" EDITING
+Plug 'MattesGroeger/vim-bookmarks'
+Plug 'akinsho/toggleterm.nvim'
+Plug 'kevinhwang91/nvim-ufo'
+Plug 'chrisgrieser/nvim-origami'
+Plug 'tpope/vim-commentary'
+Plug 'kylechui/nvim-surround'
+Plug 'folke/trouble.nvim'
+Plug 'windwp/nvim-autopairs'
+Plug 'fedepujol/move.nvim'
+Plug 'RRethy/vim-illuminate'
+Plug 'folke/todo-comments.nvim'
+
+" THEMES
+Plug 'LmanTW/themify.nvim'
+
 call plug#end()
 
 " Plugin Setup
@@ -116,56 +139,49 @@ let g:bookmark_auto_close = 1
 
 lua << EOF
 local minif = require('mini.files')
-minif.setup{}
+minif.setup()
 
-local HEIGHT_RATIO = 0.8  -- You can change this
-local WIDTH_RATIO = 0.5   -- You can change this too
+local minic = require('mini.icons')
+minic.setup()
 
-require('nvim-tree').setup({
-  view = {
-    float = {
-      enable = true,
-      open_win_config = function()
-        local screen_w = vim.opt.columns:get()
-        local screen_h = vim.opt.lines:get() - vim.opt.cmdheight:get()
-        local window_w = screen_w * WIDTH_RATIO
-        local window_h = screen_h * HEIGHT_RATIO
-        local window_w_int = math.floor(window_w)
-        local window_h_int = math.floor(window_h)
-        local center_x = (screen_w - window_w) / 2
-        local center_y = ((vim.opt.lines:get() - window_h) / 2)
-                         - vim.opt.cmdheight:get()
-        return {
-          border = 'rounded',
-          relative = 'editor',
-          row = center_y,
-          col = center_x,
-          width = window_w_int,
-          height = window_h_int,
-        }
-        end,
-    },
-    width = function()
-      return math.floor(vim.opt.columns:get() * WIDTH_RATIO)
-    end,
+local oil = require('oil')
+oil.setup({
+  win_options = {
+      signcolumn = "yes:2",
+  },
+  keymaps = {
+    ['H'] = 'actions.parent',
+    ['L'] = 'actions.select',
   },
 })
 
-local tree_api = require("nvim-tree")
-local tree_view = require("nvim-tree.view")
+local oil_git = require('oil-git-status')
+oil_git.setup()
 
-vim.api.nvim_create_augroup("NvimTreeResize", {
-  clear = true,
+local arena = require('arena')
+arena.setup()
+
+local todo = require('todo-comments')
+todo.setup()
+
+local ufo = require('ufo')
+ufo.setup({
+  provider_selector = function(bufnr, filetype, buftype)
+    return {'treesitter', 'indent'}
+  end
 })
 
-vim.api.nvim_create_autocmd({ "VimResized" }, {
-  group = "NvimTreeResize",
-  callback = function()
-    if tree_view.is_visible() then
-      tree_view.close()
-      tree_api.open()
-    end
-  end
+local origami = require('origami')
+origami.setup()
+
+local pomodoro = require('pomodoro')
+pomodoro.setup({
+    start_at_launch = true,
+    work_duration = 30,
+    break_duration = 5,
+    delay_duration = 5,
+    long_break_duration = 25,
+    breaks_before_long = 4,
 })
 
 local project = require('project_nvim')
@@ -175,20 +191,23 @@ local telescope = require('telescope')
 telescope.setup {
   defaults = {
     initial_mode = "normal",
+    results_title = false,
     layout_strategy = "vertical",
     layout_config = {
       prompt_position = "top",
     },
     sorting_strategy = "ascending",
     mappings = {
-      i = {
-        ["<Esc>"] = require("telescope.actions").close, -- Make Esc close it
-      },
     },
+    preview = {
+        timeout = 300,
+        filesize_limit = 5,
+    }
   },
   pickers = {
     find_files = { hidden = true }, -- Show hidden files
     live_grep = { initial_mode = "insert" }, -- Live Grep stays in insert mode
+    lsp_document_symbols = { initial_mode = "normal", layout_strategy = "center", symbols = { "Class", "Function", "Method", "Constructor", "Interface", "Module", "Struct", "Trait" }, previewer = false, }
   },
   extensions = {
     ["ui-select"] = { require("telescope.themes").get_dropdown() }, -- Nicer UI for selections
@@ -201,11 +220,26 @@ telescope.load_extension('fzf')
 telescope.load_extension('frecency')
 telescope.load_extension('ui-select')
 telescope.load_extension('vim_bookmarks')
-telescope.load_extension('file_browser')
 telescope.load_extension('projects')
+
+local pendulum = require('pendulum')
+pendulum.setup({
+    log_file = "C:/05_Support/nvim/pendulum/pendulum.log",
+    time_format = "24h",
+    time_zone = "America/Denver",
+})
+
+local timemachine = require('time-machine')
+timemachine.setup({})
 
 local glow = require('glow')
 glow.setup{style = "dark"}
+
+local blankline = require("ibl")
+blankline.setup()
+
+local hsearch = require("hlsearch")
+hsearch.setup()
 
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup{}
@@ -258,13 +292,6 @@ local bundle_path = 'C:/05_Support/powershell/PowerShellEditorServices/PowerShel
   filetypes = { 'ps1', 'psm1', 'psd1' }
 }
  
-vim.g.ale_linters = { rust = { 'cargo', 'clippy' } }
-vim.g.ale_fix_on_save = 1
-vim.g.ale_fixers = { rust = { 'rustfmt' } }
-vim.g.ale_open_list = 1
-vim.g.ale_sign_error = '✗'
-vim.g.ale_sign_warning = '⚠'
-
 local trouble = require('trouble')
 trouble.setup{
   position = "bottom",
@@ -342,28 +369,26 @@ cmp.setup({
   },
 })
 
-local null = require('null-ls')
-null.setup({
-    sources = {
-        null.builtins.code_actions.gitsigns,
-        null.builtins.code_actions.eslint,
-        null.builtins.code_actions.shellcheck,
-        null.builtins.code_actions.proselint,
-        null.builtins.diagnostics.actionlint,
-        null.builtins.diagnostics.checkmake,
-        null.builtins.diagnostics.cmake_lint,
-        null.builtins.diagnostics.eslint,
-        null.builtins.diagnostics.cppcheck,
-        null.builtins.formatting.prettier,
-        null.builtins.formatting.astyle,
-        null.builtins.formatting.autopep8,
-    },
+local runner = require('code_runner')
+runner.setup({
+  filetype = {
+    java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    cpp = "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
+    python = "python $fileName",
+    go = "go run $fileName",
+    rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
+    sh = "bash $fileName",
+    c = "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
+    js = "node $fileName",
+    ts = "node $fileName",
+    php = "php $fileName",
+    html = "start $fileName",
+  }
 })
 
 local autopairs = require("nvim-autopairs")
 autopairs.setup({
-  check_ts = true,    -- optional: enable Treesitter-based checks
-  -- You can also add any other config options here
+  check_ts = true,
 })
 
 local Rule = require("nvim-autopairs.rule")
@@ -374,17 +399,15 @@ autopairs.add_rule(Rule("'", "'", '-vim'))
 
 local toggleterm = require('toggleterm')
 toggleterm.setup({
-    size = 20,
-    open_mapping = [[<C-\>]], -- Customize this to your preferred keybinding
+    shell = 'powershell',
+    size = 50,
+    open_mapping = [[<C-\>]],
     shade_filetypes = {},
     shade_terminals = true,
     start_in_insert = true,
     persist_size = true,
-    direction = "horizontal", -- Options: 'vertical', 'horizontal', 'float'
+    direction = "float", -- Options: 'vertical', 'horizontal', 'float'
 })
-
-local flow = require('flow')
-flow.setup{}
 
 local db = require('dashboard')
 db.setup({
@@ -401,7 +424,7 @@ db.setup({
       '',
     },
     center = {
-      { icon = '  ', desc = 'File Browser        ', action = 'Telescope file_browser', key = 'b' },
+      { icon = '  ', desc = 'File Browser        ', action = 'Oil --float', key = 'b' },
       { icon = '  ', desc = 'Find Files          ', action = 'Telescope find_files', key = 'f' },
       { icon = '  ', desc = 'Recent files        ', action = 'Telescope oldfiles', key = 'r' },
       { icon = '  ', desc = 'Projects            ', action = 'Telescope projects', key = 'a' },
@@ -411,7 +434,7 @@ db.setup({
       { icon = '  ', desc = 'Plugin Status       ', action = 'PlugStatus', key = 'p' },
       { icon = '  ', desc = 'Update Plugins      ', action = 'PlugUpdate', key = 'u' },
       { icon = '  ', desc = 'Reload Config       ', action = 'source $MYVIMRC', key = 'v' },
-      { icon = '  ', desc = 'Change Theme        ', action = 'Themery', key = 't' },
+      { icon = '  ', desc = 'Change Theme        ', action = 'Themify', key = 't' },
       { icon = '  ', desc = 'Settings            ', action = 'edit $MYVIMRC', key = 'c' },
       { icon = '󱡝  ', desc = 'Quit                ', action = 'q', key = 'q' },
     },
@@ -437,89 +460,33 @@ db.setup({
 
 local tabby = require('tabby')
 tabby.setup{
-  tabline = {
-    hl = 'TabLine',
-    layout = 'active_wins_at_tail',
-    head = {
-      { '  ', hl = 'TabLineSel' },
-      { 'Neovim', hl = 'TabLine' },
-      { '', hl = 'TabLineFill' },
-    },
-    active_tab = {
-      label = function(tabid)
-        return {
-          '  ' .. vim.api.nvim_tabpage_get_number(tabid) .. ' ',
-          hl = 'TabLineSel',
-        }
-      end,
-      left_sep = { '', hl = 'TabLineSel' },
-      right_sep = { '', hl = 'TabLineFill' },
-    },
-    inactive_tab = {
-      label = function(tabid)
-        return {
-          '  ' .. vim.api.nvim_tabpage_get_number(tabid) .. ' ',
-          hl = 'TabLine',
-        }
-      end,
-      left_sep = { '', hl = 'TabLine' },
-      right_sep = { '', hl = 'TabLineFill' },
-    },
-    top_win = {
-      label = function(winid)
-        return {
-          '  ' .. vim.api.nvim_win_get_number(winid) .. ' ',
-          hl = 'TabLine',
-        }
-      end,
-      left_sep = { '', hl = 'TabLine' },
-      right_sep = { '', hl = 'TabLineFill' },
-    },
-    win = {
-      label = function(winid)
-        return {
-          '  ' .. vim.api.nvim_win_get_number(winid) .. ' ',
-          hl = 'TabLine',
-        }
-      end,
-      left_sep = { '', hl = 'TabLine' },
-      right_sep = { '', hl = 'TabLineFill' },
-    },
-    tail = {
-      { '', hl = 'TabLineFill' },
-      { ' 🐾 ', hl = 'TabLine' },
-    },
-  }
+  preset = 'active_wins_at_tail',
 }
-
-function SetTabbyMode(mode)
-  if mode == "tabs" then
-    require('tabby').setup {
-      tabline = require('tabby.presets').tab_only,
-    }
-    print("Switched to Tabs Mode")
-  elseif mode == "buffers" then
-    require('tabby').setup {
-      tabline = require('tabby.presets').buffer_tabs,
-    }
-    print("Switched to Buffers Mode")
-  else
-    print("Invalid mode! Use 'tabs' or 'buffers'.")
-  end
-end
-
-vim.keymap.set('n', '<leader>mt', function() SetTabbyMode("tabs") end, {noremap = true, silent = true, desc = "Switch to Tab Display - Tabby"})
-vim.keymap.set('n', '<leader>mb', function() SetTabbyMode("buffers") end, {noremap=true, silent=true, desc = "Switch to Buffer Display - Tabby"})
 
 local lualine = require('lualine')
 lualine.setup({
+  options = {
+      globalstatus = true,
+  },
   sections = {
-    lualine_a = {'mode'},
+    lualine_a = {{'mode', separator = {left = ' ⏽', right = '󰿟'}}},
     lualine_b = {'branch'},
-    lualine_c = {'filename'},
-    lualine_x = {'filetype'},
-    lualine_y = {'progress'},
-    lualine_z = {'location'}
+    lualine_c = {},
+    lualine_x = {
+        function ()
+            return pomodoro.get_pomodoro_status(" ", " ", " ")
+        end,
+    },
+    lualine_y = {{'fileformat', separator = {left = ""}}},
+    lualine_z = {{'datetime', style = "%H:%M", separator = {left = ' ', right = ''}}}
+  },
+  winbar = {
+      lualine_a = {{'lsp_status', separator = {left = '⏽', right = '󰿟'}}},
+      lualine_b = {{'searchcount', separator = {left = '', right = '⏽'}}, {'selectioncount', separator = {left = '', right = '⏽'}}},
+      lualine_c = {'diagnostics', 'diff'},
+      lualine_x = {'filename', 'filesize', 'filetype'},
+      lualine_y = {},
+      lualine_z = {{'progress', separator = {left = '⏽', right = ''}}, {'location', separator = {left = '', right = '⏽'}}}
   },
 })
 
@@ -538,25 +505,71 @@ tint.setup({
     saturation = 0.4,
 })
 
-local themery = require'themery'
-themery.setup({
-    themes = {"gruvbox",
-    "lackluster",
-    "mellow",
-    "gruvbox-material",
-    "everforest",
-    "kanagawa-paper",
-    "oldworld",
-    "neon",
-    "cyberdream",
-    "fluoromachine",
-    "catppuccin-latte",
-    "catppuccin-frappe",
-    "catppuccin-macchiato",
-    "catppuccin-mocha",
-    "tokyonight",
+local themify = require('themify')
+themify.setup({
+    'default',
+    {'folke/tokyonight.nvim', blacklist = {'tokyonight-day'}},
+    {'EdenEast/nightfox.nvim', blacklist = {'dawnfox', 'dayfox'}},
+    'kyazdani42/blue-moon',
+    {'darkvoid-theme/darkvoid.nvim',
+        before = function(theme)
+            require('darkvoid').setup({
+                glow = true,
+            })
+        end    
     },
-    livePrevew = true,
+    'morhetz/gruvbox',
+    'sainnhe/gruvbox-material',
+    'maxmx03/dracula.nvim',
+    'LunarVim/horizon.nvim',
+    'samharju/serene.nvim',
+    {'sho-87/kanagawa-paper.nvim', blacklist = {'kanagawa-paper-canvas'}},
+    {'scottmckendry/cyberdream.nvim',
+        blacklist = {'cyberdream-light'},
+        before = function(theme)
+            require('cyberdream').setup({
+                transparent = true,
+                italic_comments = true,
+                borderless_pickers = true
+            })
+        end
+    },
+    'rafamadriz/neon',
+    'killitar/obscure.nvim',
+    'slugbyte/lackluster.nvim',
+    'sainnhe/everforest',
+    {'everviolet/nvim', 
+        blacklist = {'evergarden-summer'},
+        before = function(theme)
+            require('evergarden').setup({
+                editor = {
+                    transparent_background = true,
+                    float = {
+                        invert_border = true,
+                    },
+                },
+            })
+        end
+    },
+    'https://codeberg.org/jthvai/lavender.nvim',
+    'ray-x/aurora',
+    'maxmx03/fluoromachine.nvim',
+    'samharju/synthweave.nvim',
+    {'fynnfluegge/monet.nvim',
+        before = function(theme)
+            require('monet').setup({
+                transparent_background = true,
+                italic_comments = true,
+                borderless_pickers = true
+            })
+        end
+    },
+    'savq/melange-nvim',
+    'xero/miasma.nvim',
+    'bakageddy/alduin.nvim',
+    {'zenbones-theme/zenbones.nvim', blacklist = {'vimbones', 'randombones'}},
+    async = true,
+    activity = true,
 })
 
 function ToggleTransparency(value)
@@ -581,7 +594,6 @@ end
 function ShowShortcuts()
   local buf = vim.api.nvim_create_buf(false, true)
   
-  
   local shortcuts = {
     "Custom Keybindings:",
     "--------------------",
@@ -591,7 +603,7 @@ function ShowShortcuts()
     "1. Window/Split Management",
     "2. Editing",
     "3. Bookmarks",
-    "4. Dashboard",
+    "4. Overseer",
     "5. Quit/Save",
     "6. Config/Commands",
     "7. File Management",
@@ -610,7 +622,7 @@ function ShowShortcuts()
     "-- Window/Split Management",
     "--------------------",
     "<Leader>v   - Vertical Split",
-    "<Leader>h   - Horizontal Split",
+    "<Leader>z   - Horizontal Split",
     "<A-H>       - Move Split Left",
     "<A-J>       - Move Split Down",
     "<A-K>       - Move Split Up",
@@ -624,6 +636,7 @@ function ShowShortcuts()
     "-- Editing",
     "--------------------",
     "<C-a>       - Copy All",
+    "<Leader>u   - Time Machine",
     "<Leader>ae  - Add Empty Line Below",
     "<Leader>aE  - Add Empty Line Above",
     "<Leader>aw  - Add Empty Line Above and Below",
@@ -663,9 +676,16 @@ function ShowShortcuts()
     "<Leader>ld  - Bookmark Move Down",
     "<Leader>lm  - Bookmark Move to Specific Line",
     "",
-    "-- Dashboard",
+    "-- Overseer",
     "--------------------",
     "<Leader>D   - Open Dashboard",
+    ",s          - Start Pomodoro",
+    ",q          - Stop Pomodoro",
+    ",t          - Pomodoro UI",
+    ",d          - Delay Pomodoro Break",
+    ",f          - Force Default Break",
+    ",b          - Break Pomodoro (args: break duration)",
+    ",k          - Skip Pomodoro Break",
     "",
     "-- Quit/Save",
     "--------------------",
@@ -692,25 +712,30 @@ function ShowShortcuts()
     "-- File Management",
     "--------------------",
     "<Leader>w   - Save",
-    "<Leader>wa  - Save All Buffers",
+    "<Leader>W  - Save All Buffers",
     "<Leader>e   - Open File",
-    "<Leader>rf  - Run File",
-    "<Leader>rs  - Run Selected",
-    "<Leader>ri  - Run Interactive",
-    "<Leader>rl  - Run Last Command",
-    "<Leader>ro  - Open Last Output",
-    "<Leader>rq  - Run Quick Command",
+    "<A-t>       - Open TODO Quickfix",
+    "<A-T>       - Open TODO Location List",
+    "<Leader>t   - Open TODO Telescope",
+    "<Leader>rr  - Run Code",
+    "<Leader>rf  - Run File in Terminal",
+    "<Leader>rt  - Run File in New Tab",
+    "<Leader>rp  - Run Project in New Tab",
+    "<Leader>rc  - Close Runner",
     "",
     "-- Tabs",
     "--------------------",
+    "tl  - Tabby Picker",
     "tn  - Next Tab",
     "tp  - Previous Tab",
-    "ts  - Switch to Specific Tab",
     "to  - Open New Tab",
     "tc  - Close Current Tab",
+    "tj  - Jump to Specific Tab",
+    "tr  - Rename Tab",
     "",
     "-- Buffers",
     "--------------------",
+    "<Leader>bm  - Toggle Arena",
     "<Leader>bb  - List Buffers", 
     "<Leader>bo  - Open New Buffer",
     "<Leader>bn  - Next Buffer",
@@ -722,15 +747,14 @@ function ShowShortcuts()
     "",
     "-- Modes/Settings Toggles",
     "--------------------",
-    "<Leader>mln - Toggle Relative Numbers",
-    "<Leader>mhl - Toggle Highlight Search",
-    "<Leader>mlf - Change Line Ending Format - LF",
-    "<Leader>ms  - Toggle Spell Check",
-    "<Leader>mw  - Toggle Wrap",
-    "<Leader>mt  - Switch to Tab Display - Tabby",
-    "<Leader>mb  - Switch to Buffer Display - Tabby",
-    "<Leader>f   - Focus Toggle",
-    "<Leader>fe  - Focus Equalize",
+    "<Leader>ml   - Toggle Relative Numbers",
+    "<Leader>mu   - Change Line Ending Format - LF",
+    "<Leader>mw   - Change Line Ending Format - CRLF",
+    "<Leader>ms   - Toggle Spell Check",
+    "<Leader>mt   - Switch to Tab Display - Tabby",
+    "<Leader>mb   - Switch to Buffer Display - Tabby",
+    "<Leader>f    - Focus Toggle",
+    "<Leader>fe   - Focus Equalize",
     "<Leader>mp   - Glow (Current File)",
     "<Leader>mps  - Glow (Specific)",
     "",
@@ -743,11 +767,9 @@ function ShowShortcuts()
     "",
     "-- Errors",
     "--------------------",
+    "<Leader>le  - Copy Last Error Message",
     "<Leader>en  - Next Error",
     "<Leader>ep  - Previous Error",
-    "<Leader>ean - Next ALE Error",
-    "<Leader>eap - Previous ALE Error",
-    "<Leader>ef  - ALE Fix",
     "<Leader>el  - Set Error List",
     "<Leader>eq  - Set Quickfix List",
     "<Leader>et  - Toggle Error List",
@@ -770,7 +792,6 @@ function ShowShortcuts()
     "",
     "-- Fuzzy Finder/Search",
     "--------------------",
-    "<Leader>nh  - No Highlight (Until Next Search)",
     "<Leader>sf  - Find Files",
     "<Leader>sh  - Recent Files",
     "<Leader>sg  - Live Grep",
@@ -796,7 +817,7 @@ function ShowShortcuts()
     "",
     "-- Theme and Appearance",
     "--------------------",
-    "<Leader>cs  - Open Themery",
+    "<Leader>cs  - Open Themify",
     "<Leader>o1  - Set Transparency to 0.0",
     "<Leader>o2  - Set Transparency to 0.2",
     "<Leader>o3  - Set Transparency to 0.4",
@@ -807,8 +828,9 @@ function ShowShortcuts()
     "-- File Explorer",
     "--------------------",
     "-           - Toggle Mini-Files",
-    "=           - Toggle File Browser",
-    "<Leader>=   - Toggle Neotree",
+    "=           - Toggle Oil",
+    "<Leader>-   - Toggle Telescope Outline",
+    "<Leader>=   - Toggle Vifm",
     "<Leader>pwd - Print CWD",
     "<Leader>cd  - Set CWD",
     "<Leader>ld  - Set LWD",
@@ -849,7 +871,7 @@ function ShowShortcuts()
   vim.api.nvim_buf_set_keymap(buf, 'n', '1', ':lua GoToSection("-- Window/Split Management")<CR>', { noremap = true, silent = true })
   vim.api.nvim_buf_set_keymap(buf, 'n', '2', ':lua GoToSection("-- Editing")<CR>', { noremap = true, silent = true })
   vim.api.nvim_buf_set_keymap(buf, 'n', '3', ':lua GoToSection("-- Bookmarks")<CR>', { noremap = true, silent = true })
-  vim.api.nvim_buf_set_keymap(buf, 'n', '4', ':lua GoToSection("-- Dashboard")<CR>', { noremap = true, silent = true })
+  vim.api.nvim_buf_set_keymap(buf, 'n', '4', ':lua GoToSection("-- Overseer")<CR>', { noremap = true, silent = true })
   vim.api.nvim_buf_set_keymap(buf, 'n', '5', ':lua GoToSection("-- Quit/Save")<CR>', { noremap = true, silent = true })
   vim.api.nvim_buf_set_keymap(buf, 'n', '6', ':lua GoToSection("-- Config/Commands")<CR>', { noremap = true, silent = true })
   vim.api.nvim_buf_set_keymap(buf, 'n', '7', ':lua GoToSection("-- File Management")<CR>', { noremap = true, silent = true })
@@ -900,30 +922,16 @@ function! ShowBookmarksInBuffer()
     nnoremap <buffer> <CR> <CR>:cclose<CR>
 endfunction
 
-" function! ShowBookmarksInBuffer()
-"     let signs = sign_getplaced(bufnr('%'), {'group': ''})[0].signs
-
-"     if empty(signs)
-"         echo "No bookmarks in this buffer."
-"     else
-"         for sign in signs
-"             if sign.name == 'Bookmark'
-"                 let line_content = getline(sign.lnum)
-"                 echo printf("Line %d: %s", sign.lnum, line_content)
-"             endif 
-"         endfor
-"     endif
-" endfunction 
 
 " Key Remappings
 
 " Window/Split Management
 nnoremap <leader>v :vsplit<CR>
-nnoremap <leader>h :split<CR>
-nnoremap <A-h> <C-W>H
-nnoremap <A-j> <C-W>J
-nnoremap <A-k> <C-W>K
-nnoremap <A-l> <C-W>L
+nnoremap <leader>z :split<CR>
+nnoremap <A-H> <C-W>H
+nnoremap <A-J> <C-W>J
+nnoremap <A-K> <C-W>K
+nnoremap <A-L> <C-W>L
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -938,9 +946,10 @@ nnoremap $ g$
 nnoremap ^ g^
 nnoremap g$ $
 nnoremap g^ ^
-nnoremap L gt
-nnoremap H gT
+nnoremap Y y$
+nnoremap yc vy
 nnoremap <C-a> ggvG$y
+nnoremap <leader>u :TimeMachineToggle<CR>
 nnoremap <leader>ae o<ESC>k
 nnoremap <leader>aE O<ESC>j
 nnoremap <leader>aw o<ESC>kO<ESC>j
@@ -980,8 +989,15 @@ nnoremap <leader>lu :BookmarkMoveUp<CR>
 nnoremap <leader>ld :BookmarkMoveDown<CR>
 nnoremap <leader>lm :BookmarkMoveToLine<Space>
 
-" Dashboard
+" Overseer
 nnoremap <leader>D :Dashboard<CR>
+nnoremap ,s :PomodoroStart<CR>
+nnoremap ,q :PomodoroStop<CR>
+nnoremap ,t :PomodoroUI<CR>
+nnoremap ,d :PomodoroDelayBreak<CR>
+nnoremap ,f :PomodoroForceBreak<CR>
+nnoremap ,b :PomodoroForceBreak<Space>
+nnoremap ,k :PomodoroSkipBreak<CR>
 
 " Quit/Save
 nnoremap <leader>q :wq<CR>
@@ -1005,23 +1021,28 @@ nnoremap <leader>cp :checkhealth<Space>
 
 " File Management
 nnoremap <leader>w :w<CR>
-nnoremap <leader>wa :wa<CR>
+nnoremap <leader>W :wa<CR>
 nnoremap <leader>e :e<Space>
-nnoremap <leader>rf :FlowRunFile<CR>
-nnoremap <leader>rs :FlowRunSelected<CR>
-nnoremap <leader>ri :FlowLauncher<CR>
-nnoremap <leader>rl :FlowRunLastCmd<CR>
-nnoremap <leader>ro :FlowLastOutput<CR>
-nnoremap <leader>rq :FlowRunQuickCmd<CR>
+nnoremap <A-t> :TodoQuickFix<CR>
+nnoremap <A-T> :TodoLocList<CR>
+nnoremap <leader>t :TodoTelescope<CR>
+nnoremap <leader>rr :RunCode<CR>
+nnoremap <leader>rf :RunFile toggleterm<CR>
+nnoremap <leader>rt :RunFile tab<CR>
+nnoremap <leader>rp :RunProject tab<CR>
+nnoremap <leader>rc :RunClose<CR>
 
 " Tabs
+nnoremap tl :Tabby pick_window<CR>
 nnoremap tn :tabnext<CR>
 nnoremap tp :tabprevious<CR>
-nnoremap ts :tabn<Space>
 nnoremap to :tabnew<CR>
 nnoremap tc :tabclose<CR>
+nnoremap tj :Tabby jump_to_tab<CR>
+nnoremap tr :Tabby rename_tab<Space>
 
 " Buffers
+nnoremap <leader>bm :ArenaToggle<CR>
 nnoremap <leader>bb :ls<CR>
 nnoremap <leader>be :enew<CR>
 nnoremap <leader>bo :e<Space>
@@ -1033,11 +1054,10 @@ nnoremap <leader>bl :bprev \| if buflisted(bufnr('#')) \| bdelete # \| endif<CR>
 nnoremap <leader>bc :%bd\|e#<CR>
 
 " Modes/Settings Toggles
-nnoremap <leader>mln :set relativenumber!<CR>
-nnoremap <leader>mhl :set hlsearch!<CR>
-nnoremap <leader>mlf :set fileformat=unix<CR>
+nnoremap <leader>ml :set relativenumber!<CR>
+nnoremap <leader>mu :set fileformat=unix<CR>
+nnoremap <leader>mw :set fileformat=windows<CR>
 nnoremap <leader>ms :set spell!<CR>
-nnoremap <leader>mw :set wrap!<CR>
 nnoremap <leader>f :FocusToggle<CR>
 nnoremap <leader>fe :FocusEqualise<CR>
 nnoremap <leader>mp :Glow<CR>
@@ -1050,11 +1070,9 @@ nnoremap <leader>pc :PlugClean<CR>
 nnoremap <leader>ps :PlugStatus<CR>
 
 " Errors
+nnoremap <leader>le :let @* = execute('echo v:errmsg')<CR>
 nnoremap <leader>en :lua vim.diagnostic.goto_next()<CR>
 nnoremap <leader>ep :lua vim.diagnostic.goto_prev()<CR>
-nnoremap <leader>ean :ALENext<CR>
-nnoremap <leader>eap :ALEPrevious<CR>
-nnoremap <leader>ef :ALEFix<CR>
 nnoremap <leader>el :lua vim.diagnostic.setloclist()<CR>
 nnoremap <leader>eq :lua vim.diagnostic.setqflist()<CR>
 nnoremap <leader>et :TroubleToggle<CR>
@@ -1076,7 +1094,6 @@ nnoremap <leader>gu :GitSigns undo_stage_hunk<CR>
 nnoremap <leader>gp :GitSigns preview_hunk<CR>
 
 " Fuzzy Finder/Search
-nnoremap <leader>nh :noh<CR>
 nnoremap <leader>sf :Telescope find_files<CR>
 nnoremap <leader>sh :Telescope oldfiles<CR>
 nnoremap <leader>sg :Telescope live_grep<CR>
@@ -1101,12 +1118,13 @@ nnoremap <leader>sp :Telescope projects<CR>
 nnoremap <leader>stp :Telescope pickers<CR>
 
 " Theme and Appearance
-nnoremap <leader>cs :Themery<CR>
+nnoremap <leader>cs :Themify<CR>
 
 " File Explorer
 nnoremap - :lua MiniFiles.open()<CR>
-nnoremap = :Telescope file_browser<CR>
-nnoremap <leader>= :NvimTreeToggle<CR>
+nnoremap = :Oil --float<CR>
+nnoremap <leader>= :Vifm<CR>
+nnoremap <leader>- :Telescope lsp_document_symbols<CR>
 nnoremap <leader>pwd :pwd<CR>
 nnoremap <leader>cd :cd<Space>
 nnoremap <leader>lcd :lcd<Space>

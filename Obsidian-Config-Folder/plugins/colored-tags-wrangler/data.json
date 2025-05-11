@@ -1,0 +1,244 @@
+{
+  "TagColors": {
+    "ColorPicker": [
+      {
+        "tag_name": "mood/administrator",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "background_color": {
+          "r": 32,
+          "g": 42,
+          "b": 68
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/companion",
+        "color": {
+          "r": 149,
+          "g": 69,
+          "b": 53
+        },
+        "background_color": {
+          "r": 216,
+          "g": 188,
+          "b": 171
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/composer",
+        "color": {
+          "r": 229,
+          "g": 183,
+          "b": 35
+        },
+        "background_color": {
+          "r": 4,
+          "g": 2,
+          "b": 115
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/constructor",
+        "color": {
+          "r": 201,
+          "g": 151,
+          "b": 0
+        },
+        "background_color": {
+          "r": 203,
+          "g": 65,
+          "b": 84
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/creator",
+        "color": {
+          "r": 255,
+          "g": 184,
+          "b": 28
+        },
+        "background_color": {
+          "r": 0,
+          "g": 168,
+          "b": 201
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/curator",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 240
+        },
+        "background_color": {
+          "r": 101,
+          "g": 0,
+          "b": 11
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/dancer",
+        "color": {
+          "r": 75,
+          "g": 0,
+          "b": 130
+        },
+        "background_color": {
+          "r": 242,
+          "g": 130,
+          "b": 127
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/delver",
+        "color": {
+          "r": 197,
+          "g": 208,
+          "b": 206
+        },
+        "background_color": {
+          "r": 6,
+          "g": 8,
+          "b": 15
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/dreamer",
+        "color": {
+          "r": 178,
+          "g": 164,
+          "b": 212
+        },
+        "background_color": {
+          "r": 155,
+          "g": 211,
+          "b": 221
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/janitor",
+        "color": {
+          "r": 187,
+          "g": 189,
+          "b": 189
+        },
+        "background_color": {
+          "r": 240,
+          "g": 216,
+          "b": 195
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/nomad",
+        "color": {
+          "r": 222,
+          "g": 205,
+          "b": 190
+        },
+        "background_color": {
+          "r": 178,
+          "g": 172,
+          "b": 136
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/remnant",
+        "color": {
+          "r": 195,
+          "g": 194,
+          "b": 166
+        },
+        "background_color": {
+          "r": 54,
+          "g": 69,
+          "b": 79
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "mood/revenant",
+        "color": {
+          "r": 167,
+          "g": 166,
+          "b": 157
+        },
+        "background_color": {
+          "r": 90,
+          "g": 38,
+          "b": 83
+        },
+        "luminance_offset": 0.15
+      }
+    ],
+    "EnableMultipleTags": true,
+    "EnableSeparateBackground": false,
+    "EnableBackgroundOpacity": false,
+    "Values": {
+      "BackgroundOpacity": 0.75,
+      "LuminanceOffset": 0.15
+    }
+  },
+  "CSS": {
+    "NoteTags": true,
+    "NoteProperties": true,
+    "NoteBackgrounds": false,
+    "TagsNoWrap": true,
+    "TagsNoWrapText": "pre"
+  },
+  "FolderNote": {
+    "Enable": true,
+    "FolderTagLinks": [],
+    "EnableAutoDetect": true,
+    "EnableBackgroundOpacity": true,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "ForceImportant": true,
+      "BorderRadius": "12px",
+      "Padding": "5px"
+    }
+  },
+  "Kanban": {
+    "Enable": true,
+    "EnableCards": true,
+    "EnableLists": false,
+    "HideHashtags": true,
+    "EnableBackgroundOpacity": false,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "CardBackgroundOpacity": 0.2,
+      "CardBorderOpacity": 0.3,
+      "ListBackgroundOpacity": 0.2,
+      "ListBorderOpacity": 0.3
+    }
+  },
+  "Canvas": {
+    "Enable": true,
+    "EnableBackgroundOpacity": false,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "CardBorderOpacity": 0.3,
+      "CardBackgroundLuminanceOffset": 0.15
+    }
+  },
+  "Debug": {
+    "Enable": false,
+    "EnableExperimentalCommands": false
+  },
+  "Info": {
+    "SettingsVersion": 14
+  }
+}

@@ -8,5 +8,6 @@
   "propertiesInDocument": "visible",
   "vimMode": true,
   "showLineNumber": false,
-  "readableLineLength": false
+  "readableLineLength": false,
+  "defaultViewMode": "source"
 }

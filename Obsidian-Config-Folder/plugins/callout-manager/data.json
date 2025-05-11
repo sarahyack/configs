@@ -1,0 +1,44 @@
+{
+  "callouts": {
+    "custom": [
+      "waypoint",
+      "comic-panel"
+    ],
+    "settings": {
+      "comic-panel": [
+        {
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": ""
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "158, 158, 158"
+          }
+        }
+      ],
+      "waypoint": [
+        {
+          "changes": {
+            "icon": "lucide-map-pinned",
+            "color": "196, 139, 243"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}

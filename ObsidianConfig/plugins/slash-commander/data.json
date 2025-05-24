@@ -1,0 +1,92 @@
+{
+  "confirmDeletion": false,
+  "showDescriptions": true,
+  "showSourcesForDuplicates": true,
+  "debug": false,
+  "mainTrigger": "=",
+  "extraTriggers": [],
+  "useExtraTriggers": false,
+  "triggerOnlyOnNewLine": true,
+  "queryPattern": {},
+  "bindings": [
+    {
+      "name": "Property",
+      "id": "markdown:add-metadata-property",
+      "icon": "plus-circle",
+      "mode": "any",
+      "triggerMode": "anywhere",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "id": "editor:toggle-blockquote",
+      "icon": "lucide-quote",
+      "name": "Quote",
+      "mode": "any",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "name": "Callout",
+      "id": "editor:insert-callout",
+      "icon": "indent",
+      "mode": "any",
+      "triggerMode": "anywhere",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "name": "Code",
+      "id": "editor:insert-codeblock",
+      "icon": "terminal",
+      "mode": "any",
+      "triggerMode": "anywhere",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "name": "Math",
+      "id": "editor:insert-mathblock",
+      "icon": "percent",
+      "mode": "any",
+      "triggerMode": "anywhere",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "name": "Table",
+      "id": "editor:insert-table",
+      "icon": "table-2",
+      "mode": "any",
+      "triggerMode": "anywhere",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "name": "Embed",
+      "id": "editor:insert-embed",
+      "icon": "sticky-note",
+      "mode": "any",
+      "triggerMode": "anywhere",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "name": "Attachment",
+      "id": "editor:attach-file",
+      "icon": "paperclip",
+      "mode": "any",
+      "triggerMode": "anywhere",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "id": "editor:cycle-list-checklist",
+      "icon": "lucide-check-square",
+      "name": "Cycle bullet/checkbox",
+      "mode": "any",
+      "chosen": false,
+      "selected": false
+    }
+  ]
+}

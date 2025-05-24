@@ -1,0 +1,19 @@
+{
+  "workLen": 25,
+  "breakLen": 5,
+  "autostart": false,
+  "useStatusBarTimer": true,
+  "notificationSound": true,
+  "customSound": "projects/maintenance/assets/mixkit-happy-bells-notification-937",
+  "showTaskProgress": true,
+  "enableTaskTracking": true,
+  "logFile": "DAILY",
+  "logFocused": true,
+  "logPath": "",
+  "logLevel": "ALL",
+  "logTemplate": "",
+  "logFormat": "VERBOSE",
+  "useSystemNotification": false,
+  "taskFormat": "TASKS",
+  "lowFps": true
+}

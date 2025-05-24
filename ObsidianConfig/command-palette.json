@@ -1,0 +1,14 @@
+{
+  "pinned": [
+    "app:open-vault",
+    "open-with-default-app:show",
+    "open-with-nldates:open-daily-note",
+    "nldates-obsidian:nlp-picker",
+    "nldates-obsidian:nlp-now",
+    "obsidian-tasks-plugin:edit-task",
+    "obsidian-book-search-plugin:open-book-search-modal",
+    "bookshelf:open-library",
+    "bookshelf:open-statistics",
+    "bookshelf:open-book-modal"
+  ]
+}

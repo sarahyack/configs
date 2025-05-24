@@ -1,0 +1,80 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1742171617537,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1742171627044,
+          "path": "templates/Daily-Template.md",
+          "title": "Daily-Template"
+        },
+        {
+          "type": "file",
+          "ctime": 1742171643068,
+          "path": "templates/Weekly-Template.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1742583276923,
+          "path": "templates/Monthly-Template.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1742583284262,
+          "path": "templates/Folder-Note-Template.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1743275732044,
+          "path": "templates/inbox-todos-template.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1745624688687,
+          "path": "templates/book-note-template.md"
+        }
+      ],
+      "title": "templates"
+    },
+    {
+      "type": "group",
+      "ctime": 1743272537610,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1743272548541,
+          "path": "projects/tasks/backlog.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1743272577933,
+          "path": "projects/tasks/inbox.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1743272587546,
+          "path": "projects/tasks/recurring.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1743272598488,
+          "path": "projects/tasks/Weekly Review.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1743272609419,
+          "path": "projects/tasks/by-topic-todo.md"
+        }
+      ],
+      "title": "tasks"
+    },
+    {
+      "type": "file",
+      "ctime": 1745626304664,
+      "path": "references/books/files/How-to-Take-Smart-Notes-by-Sönke-Ahrens-40zol.pdf",
+      "title": "Smart Notes - Ahrens"
+    }
+  ]
+}

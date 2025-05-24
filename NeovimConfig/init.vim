@@ -20,7 +20,6 @@ set foldcolumn=1
 set wildmode=longest,list
 set undofile
 set undodir=C:\Users\Sarah\AppData\Local\nvim\undo
-set cc=80
 filetype plugin indent on
 set clipboard=unnamedplus
 filetype plugin on
@@ -33,7 +32,7 @@ set background=dark
 " Set Neovide Setings
 if exists("g:neovide")
     if empty(argv()) " Change to workspace only if cwd is home and no files are passed
-        autocmd VimEnter * silent! cd C:\01_Workspace
+        autocmd VimEnter * silent! cd D:\
     endif 
     set guifont=Terminess\ Nerd\ Font:h13
     let g:neovide_font_ligatures=1
@@ -54,6 +53,7 @@ call plug#begin('$HOME' . '\AppData\Local\nvim\plugged')
 " DEPENDENCIES
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kevinhwang91/promise-async'
+Plug 'tjdevries/colorbuddy.nvim'
 
 " MISC
 Plug 'Exafunction/codeium.vim'
@@ -78,6 +78,7 @@ Plug 'nvimdev/hlsearch.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'echasnovski/mini.icons', {'branch': 'stable'}
 Plug 'rktjmp/lush.nvim'
+Plug 'brianhuster/live-preview.nvim'
 
 " SWITCHERS
 Plug 'nvim-telescope/telescope.nvim'
@@ -507,37 +508,54 @@ tint.setup({
 
 local themify = require('themify')
 themify.setup({
+    -- For When Nothing Works
     'default',
+    -- Night-Based Themes, Mostly Blue & Lower Saturation
     {'folke/tokyonight.nvim', blacklist = {'tokyonight-day'}},
     {'EdenEast/nightfox.nvim', blacklist = {'dawnfox', 'dayfox'}},
+    'oxfist/night-owl.nvim',
     'kyazdani42/blue-moon',
-    {'darkvoid-theme/darkvoid.nvim',
+    'rafamadriz/neon',
+    {'yorik1984/newpaper.nvim',
         before = function(theme)
-            require('darkvoid').setup({
-                glow = true,
-            })
-        end    
-    },
-    'morhetz/gruvbox',
-    'sainnhe/gruvbox-material',
-    'maxmx03/dracula.nvim',
-    'LunarVim/horizon.nvim',
-    'samharju/serene.nvim',
-    {'sho-87/kanagawa-paper.nvim', blacklist = {'kanagawa-paper-canvas'}},
-    {'scottmckendry/cyberdream.nvim',
-        blacklist = {'cyberdream-light'},
-        before = function(theme)
-            require('cyberdream').setup({
-                transparent = true,
-                italic_comments = true,
-                borderless_pickers = true
+            require('newpaper').setup({
+                style = 'dark',
+                -- transparent = true,
             })
         end
     },
-    'rafamadriz/neon',
-    'killitar/obscure.nvim',
-    'slugbyte/lackluster.nvim',
+    'shaunsingh/nord.nvim',
+    'AlexvZyl/nordic.nvim',
+    {'sho-87/kanagawa-paper.nvim', blacklist = {'kanagawa-paper-canvas'}},
+    -- Brown Themes
+    'morhetz/gruvbox',
+    'sainnhe/gruvbox-material',
+    'mikesmithgh/gruvsquirrel.nvim',
+    'savq/melange-nvim',
+    'xero/miasma.nvim',
+    'bakageddy/alduin.nvim',
+    -- Softer Themes: Rose-Based
+    'maxmx03/dracula.nvim',
+    'LunarVim/horizon.nvim',
+    'lancewilhelm/horizon-extended.nvim',
+    'samharju/serene.nvim',
+    'water-sucks/darkrose.nvim',
+    'anAcc22/sakura.nvim',
+    'DanielEliasib/sweet-fusion',
+    'comfysage/cuddlefish.nvim',
+    'egerhether/heatherfield.nvim',
+    -- Softer Themes: Green-Based
+    {'Allianaab2m/penumbra.nvim',
+        before = function(theme)
+            require('penumbra').setup({
+                lualine_bg_color = '#3E4044',
+                contrast = 'plus',
+                italic_comment = true,
+            })
+        end
+    },
     'sainnhe/everforest',
+    'RomanAverin/charleston.nvim',
     {'everviolet/nvim', 
         blacklist = {'evergarden-summer'},
         before = function(theme)
@@ -551,10 +569,35 @@ themify.setup({
             })
         end
     },
+    -- Synthwave Themes: Higher Saturation
     'https://codeberg.org/jthvai/lavender.nvim',
+    'b0o/lavi.nvim',
     'ray-x/aurora',
+    {'barrientosvctor/abyss.nvim',
+        before = function(theme)
+            require('abyss').setup({
+                italic = true,
+                bold = true,
+                -- transparent = true,
+            })
+        end
+    },
     'maxmx03/fluoromachine.nvim',
     'samharju/synthweave.nvim',
+    -- Solarized Themes
+    'svrana/neosolarized.nvim',
+    -- Transparent-First Themes
+    'paulo-granthon/hyper.nvim',
+    'thedenisnikulin/vim-cyberpunk',
+    {'mrjones2014/lighthaus.nvim',
+        before = function(theme)
+            require('lighthaus').setup({
+                italic_comments = true,
+                italic_keywords = true,
+            })
+        end
+    },
+    '2nthony/vitesse.nvim',
     {'fynnfluegge/monet.nvim',
         before = function(theme)
             require('monet').setup({
@@ -564,13 +607,39 @@ themify.setup({
             })
         end
     },
-    'savq/melange-nvim',
-    'xero/miasma.nvim',
-    'bakageddy/alduin.nvim',
+    'luisiacc/the-matrix.nvim',
+    'forest-nvim/sequoia.nvim',
+    '2giosangmitom/nightfall.nvim',
+    {'scottmckendry/cyberdream.nvim',
+        blacklist = {'cyberdream-light'},
+        before = function(theme)
+            require('cyberdream').setup({
+                transparent = true,
+                italic_comments = true,
+                borderless_pickers = true
+            })
+        end
+    },
+    -- Paper-Like Glowy Themes: Super Low Saturation
+    'killitar/obscure.nvim',
+    'DeviusVim/deviuspro.nvim',
+    {'darkvoid-theme/darkvoid.nvim',
+        before = function(theme)
+            require('darkvoid').setup({
+                glow = true,
+            })
+        end    
+    },
+    'wnkz/monoglow.nvim',
+    'slugbyte/lackluster.nvim',
     {'zenbones-theme/zenbones.nvim', blacklist = {'vimbones', 'randombones'}},
+    'ntk148v/komau.vim',
+    'drewxs/ash.nvim',
+    'bettervim/yugen.nvim',
     async = true,
     activity = true,
 })
+
 
 function ToggleTransparency(value)
     vim.g.neovide_transparency = value
@@ -751,8 +820,7 @@ function ShowShortcuts()
     "<Leader>mu   - Change Line Ending Format - LF",
     "<Leader>mw   - Change Line Ending Format - CRLF",
     "<Leader>ms   - Toggle Spell Check",
-    "<Leader>mt   - Switch to Tab Display - Tabby",
-    "<Leader>mb   - Switch to Buffer Display - Tabby",
+    "<Leader>mc   - Set Column Limit",
     "<Leader>f    - Focus Toggle",
     "<Leader>fe   - Focus Equalize",
     "<Leader>mp   - Glow (Current File)",
@@ -1049,7 +1117,7 @@ nnoremap <leader>bo :e<Space>
 nnoremap <leader>bn :bnext<CR>
 nnoremap <leader>bp :bprevious<CR>
 nnoremap <leader>bs :b<Space>
-nnoremap <leader>bd :bdelete<CR>
+nnoremap <leader>bd :bd!<CR>
 nnoremap <leader>bl :bprev \| if buflisted(bufnr('#')) \| bdelete # \| endif<CR>
 nnoremap <leader>bc :%bd\|e#<CR>
 
@@ -1057,6 +1125,7 @@ nnoremap <leader>bc :%bd\|e#<CR>
 nnoremap <leader>ml :set relativenumber!<CR>
 nnoremap <leader>mu :set fileformat=unix<CR>
 nnoremap <leader>mw :set fileformat=windows<CR>
+nnoremap <leader>mc :if &colorcolumn == '80' \| set colorcolumn= \| else \| set colorcolumn=80 \| endif<CR>
 nnoremap <leader>ms :set spell!<CR>
 nnoremap <leader>f :FocusToggle<CR>
 nnoremap <leader>fe :FocusEqualise<CR>

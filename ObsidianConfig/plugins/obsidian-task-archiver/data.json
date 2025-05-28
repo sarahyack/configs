@@ -13,7 +13,7 @@
   "obsidianTasksCompletedDateFormat": "YYYY-MM-DD",
   "archiveUnderHeading": true,
   "dateFormat": "YYYY-MM-DD",
-  "defaultArchiveFileName": "projects/tasks/archive",
+  "defaultArchiveFileName": "archive/tasks/archive.md",
   "headings": [
     {
       "text": "Archived"

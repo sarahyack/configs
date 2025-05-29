@@ -1,7 +1,0 @@
-{
-  "templateHeading": "# Rollovers",
-  "deleteOnComplete": false,
-  "removeEmptyTodos": true,
-  "rolloverChildren": true,
-  "rolloverOnFileCreate": true
-}

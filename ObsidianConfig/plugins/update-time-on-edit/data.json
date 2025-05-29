@@ -45,7 +45,7 @@
     "projects/maintenance/tag-pages/tag-pages.md": "5a87ece085d7766317242bc41234704be76548ea3496df2d5a28f86519bd94ef",
     "projects/maintenance/maintenance.md": "ea713afe25976f1a4364229113c54d1e96a599a308d5acd8d33009818d6a9c29",
     "periodic/periodic.md": "a1221c34f019dac4692b711cf51e847e5484da050198dff3f658b6faa15467b7",
-    "inbox/inbox.md": "f903ffb9b64c7b2eaa97fbd5e4735320fb4beb0b583994e3033eb4440221e654",
+    "inbox/inbox.md": "c1b4f349dc539e08fa882d505b35a932b1e0f588340238d85708783d6b8dd39e",
     "maps/maps.md": "e07aaee59401cb3c967470afad39179b11c2cef86671cad631ca837ec056fbe2",
     "projects/projects.md": "31e8fb014ecafd93f916044acb0201a99a1310067bff5947fd3778121595cd0f",
     "templates/Folder-Note-Template.md": "8af942db202cd3cff063375c1531977112b84b96709263df08a492edad5e0028",
@@ -275,9 +275,13 @@
     "periodic/2025/2025-05/2025-W21/2025-05-24.md": "ef31a3deef04a92a302d451adf9dfebb689ff93cfb9fe4df1a5f5c25ec7b655a",
     "inbox/Untitled.md": "3d72d7b94394464da01f074904f9289ac840cb36e1e38cc43e32af11fd5ef518",
     "inbox/Untitled 1.md": "5c685cfb70426d2fd46cb5185f0253d281ccc75f70eae11a8265c79a9ef5cba1",
-    "inbox/Untitled 2.md": "09e63f82e49f1e791436cd7ebcf058516dc6371614fb8b46d86e7e256f8af28c",
-    "inbox/Untitled 3.md": "3ee000033e8ff49ba77917acffff4237ce8f024b0091f2d6a5b79473dcec1969",
+    "inbox/Untitled 2.md": "17faebea133f058f984eb68b272aab6b0fed904474cb29f036b7111127bdc448",
+    "inbox/Untitled 3.md": "d6f18c21bce26312ce4cab575d66649c2aa1cbf0c40982e871841427516d2724",
     "archive/tasks/archive.md": "204e6b2f6efc26fb933dc5e1d7c67a96f98eb2b43f54672cfac0e7586a0733c8",
-    "archive/tasks/by-topic-completed.md": "3f781b9f9bfca92790ffceeb96afd2146ddb1f68ef1c61a3d729b43d501ae451"
+    "archive/tasks/by-topic-completed.md": "3f781b9f9bfca92790ffceeb96afd2146ddb1f68ef1c61a3d729b43d501ae451",
+    "inbox/Untitled 4.md": "3e0ec4cca9a914ec05fee22c33c8f994e5ec3d13ca5bba23c691f95c743b2a35",
+    "inbox/Untitled 5.md": "ba33cc314fa8df753c10746cbc45fdfd22a14227c8000f7e64ac0a46e49a1226",
+    "inbox/Untitled 6.md": "88094243b07a7254948e18eda5f6baf3a46dd2a8e232b1f5ce48db9e251a790b",
+    "inbox/Untitled 7.md": "07815328f5f009b53a037a741ebcbaf10f73037b0682c357918fe5ad6cc71123"
   }
 }

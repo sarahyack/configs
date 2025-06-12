@@ -526,6 +526,7 @@ themify.setup({
     },
     'shaunsingh/nord.nvim',
     'AlexvZyl/nordic.nvim',
+    'challenger-deep-theme/vim',
     {'sho-87/kanagawa-paper.nvim', blacklist = {'kanagawa-paper-canvas'}},
     -- Brown Themes
     'morhetz/gruvbox',
@@ -534,6 +535,10 @@ themify.setup({
     'savq/melange-nvim',
     'xero/miasma.nvim',
     'bakageddy/alduin.nvim',
+    {'ribru17/bamboo.nvim', blacklist = {'bamboo-light'}},
+    -- Softer Themes: Pastel-Based
+    'Biscuit-Theme/nvim',
+    'ilof2/posterpole.nvim',
     -- Softer Themes: Rose-Based
     'maxmx03/dracula.nvim',
     'LunarVim/horizon.nvim',
@@ -586,6 +591,7 @@ themify.setup({
     'samharju/synthweave.nvim',
     -- Solarized Themes
     'svrana/neosolarized.nvim',
+    'Badacadabra/vim-archery',
     -- Transparent-First Themes
     'paulo-granthon/hyper.nvim',
     'thedenisnikulin/vim-cyberpunk',
@@ -597,6 +603,7 @@ themify.setup({
             })
         end
     },
+    'dasupradyumna/midnight.nvim',
     '2nthony/vitesse.nvim',
     {'fynnfluegge/monet.nvim',
         before = function(theme)

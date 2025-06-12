@@ -1,6 +1,0 @@
-{
-    "rust-analyzer.serverPath": "rust-analyzer",
-    "rust-analyzer.cargo.autoreload": true,
-    "rust-analyzer.checkOnSave.command": "clippy",
-    "rust-analyzer.rustfmt.extraArgs": ["--edition=2021"],
-}

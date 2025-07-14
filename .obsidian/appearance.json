@@ -1,0 +1,16 @@
+{
+  "accentColor": "#29b397",
+  "cssTheme": "Blue Topaz",
+  "enabledCssSnippets": [
+    "extended-colorschemes",
+    "rainbow-tags"
+  ],
+  "theme": "obsidian",
+  "showViewHeader": true,
+  "textFontFamily": "Terminess Nerd Font,Architects Daughter,Rubik",
+  "interfaceFontFamily": "Architects Daughter,Terminess Nerd Font,Overpass",
+  "monospaceFontFamily": "BigBlueTermPlus Nerd Font Mono,Noto Serif",
+  "showRibbon": true,
+  "baseFontSizeAction": true,
+  "baseFontSize": 16
+}

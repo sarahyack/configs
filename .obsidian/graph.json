@@ -1,0 +1,163 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:inbox  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:maps  ",
+      "color": {
+        "a": 1,
+        "rgb": 12588705
+      }
+    },
+    {
+      "query": "tag:#task/moc  ",
+      "color": {
+        "a": 1,
+        "rgb": 12588705
+      }
+    },
+    {
+      "query": "path:zettels  ",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "path:references/resources  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:references/literature  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:references/quotes  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:references/education  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "path:references/definitions  ",
+      "color": {
+        "a": 1,
+        "rgb": 5086543
+      }
+    },
+    {
+      "query": "path:periodic/daily  ",
+      "color": {
+        "a": 1,
+        "rgb": 9130720
+      }
+    },
+    {
+      "query": "path:periodic/weekly  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:periodic/monthly  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:periodic/yearly  ",
+      "color": {
+        "a": 1,
+        "rgb": 14606418
+      }
+    },
+    {
+      "query": "path:projects/maintenance  ",
+      "color": {
+        "a": 1,
+        "rgb": 14715730
+      }
+    },
+    {
+      "query": "path:runbook  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "path:templates  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701254
+      }
+    },
+    {
+      "query": "path:references  ",
+      "color": {
+        "a": 1,
+        "rgb": 673840
+      }
+    },
+    {
+      "query": "path:periodic  ",
+      "color": {
+        "a": 1,
+        "rgb": 11709011
+      }
+    },
+    {
+      "query": "path:introduction  ",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "tag:#folder-note  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395026
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.15968858131488,
+  "lineSizeMultiplier": 0.232317073170732,
+  "collapse-forces": true,
+  "centerStrength": 0.884948096885813,
+  "repelStrength": 14.5847750865052,
+  "linkStrength": 1,
+  "linkDistance": 200,
+  "scale": 0.1634837056722068,
+  "close": true
+}

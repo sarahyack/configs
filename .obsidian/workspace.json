@@ -1,0 +1,727 @@
+{
+  "main": {
+    "id": "c8ffb2d222746550",
+    "type": "split",
+    "children": [
+      {
+        "id": "415b00996daf5028",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b482129a4f04e606",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/2025/2025-06/2025-06.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-06"
+            }
+          },
+          {
+            "id": "19f9e39d268074e0",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/2025/2025-07/2025-W27/2025-07-02.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-07-02"
+            }
+          },
+          {
+            "id": "e56c6d6829f82046",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "2025-07-05",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W27/2025-07-05.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-05\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":33,\"ch\":2},\"to\":{\"line\":33,\"ch\":2}},\"scroll\":21.961206749843505}"
+                },
+                {
+                  "title": "2025-07-02",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W27/2025-07-02.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-02\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":28,\"ch\":60},\"to\":{\"line\":28,\"ch\":60}},\"scroll\":22.29310332353844}"
+                },
+                {
+                  "title": "2025-07-04",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W27/2025-07-04.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-04\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":8,\"ch\":0},\"to\":{\"line\":8,\"ch\":0}},\"scroll\":35.808314366299925}"
+                },
+                {
+                  "title": "2025-07-03",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W27/2025-07-03.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-03\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":42,\"ch\":0},\"to\":{\"line\":42,\"ch\":0}},\"scroll\":27.700000603993733}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/2025/2025-07/2025-W28/2025-07-06.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-07-06"
+            }
+          },
+          {
+            "id": "1792dada4ae537fa",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Mom's Birthday GIF.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": true,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Mom's Birthday GIF"
+            }
+          },
+          {
+            "id": "a3c9b8deb7ab27fa",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Moving Thoughts.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Moving Thoughts"
+            }
+          },
+          {
+            "id": "de521daafa8e1e0d",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/The Loveland House.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "The Loveland House"
+            }
+          },
+          {
+            "id": "a0f4b59ec53a6a34",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "templates/Daily-Template.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Daily-Template"
+            }
+          },
+          {
+            "id": "1ecf74edb8688df2",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Open Dev Console in Obsidian.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Open Dev Console in Obsidian"
+            }
+          },
+          {
+            "id": "b5839450bf15050b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Mom's Quotes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Mom's Quotes"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "02e97724b75d47ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d5b0f0251c6605c",
+        "type": "tabs",
+        "dimension": 51.34228187919464,
+        "children": [
+          {
+            "id": "7a16ecb8c9bb2e7b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4db6cf25bd474109",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "69eaa85844d2ddba",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "668889df273c4f4a",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "00def0ca4181ad30",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a34b00f16ab50032",
+        "type": "tabs",
+        "dimension": 48.65771812080536,
+        "children": [
+          {
+            "id": "8606024b1e95b3a0",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "pinned": true,
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "d6c69f73d09ab015",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "timer-view",
+              "state": {},
+              "pinned": true,
+              "icon": "timer",
+              "title": "Timer"
+            }
+          },
+          {
+            "id": "74899c7a201923a1",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "f186b9db6b52b0a4",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "Timer",
+              "state": {},
+              "icon": "alarm-clock",
+              "title": "Timer"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 301.5
+  },
+  "right": {
+    "id": "396106eeeb24b742",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c1c83402d7245d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e29cef1aa170200b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "periodic/2025/2025-05/2025-W19/2025-05-04.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2025-05-04"
+            }
+          },
+          {
+            "id": "ea04d8ec1221a004",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "Strange New Worlds",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "e04436ad40536aae",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "on-this-day-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "21497463f8393c39",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "friend-tracker-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "e0dcce0b9bf8d074",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "inbox/Git - Add Remote Branch.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Git - Add Remote Branch"
+            }
+          },
+          {
+            "id": "f1d36859b1ff0541",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "inbox/Git - Add Remote Branch.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Git - Add Remote Branch"
+            }
+          },
+          {
+            "id": "78d2670bec48736d",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "Strange New Worlds",
+              "state": {},
+              "icon": "file-digit",
+              "title": "Strange New Worlds"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 255.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "remotely-save:Remotely Save": false,
+      "graph:Open graph view": false,
+      "random-note:Open random note": false,
+      "canvas:Create new canvas": false,
+      "markdown-importer:Open format converter": true,
+      "switcher:Open quick switcher": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "workspaces:Manage workspace layouts": true,
+      "pomodoro-timer:Toggle timer panel": false,
+      "templater-obsidian:Templater": false,
+      "on-this-day:Open panel": false,
+      "callout-manager:Insert Callout": false,
+      "omnisearch:Omnisearch": false,
+      "history-today:On this day": false,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "timer:Open timer": false,
+      "bookshelf:Open Bookshelf library": false,
+      "bookshelf:Open Bookshelf statistics": false,
+      "task-board:Open task board": false,
+      "periodic-notes:Open today": false,
+      "friend-tracker:Open friend tracker": false
+    }
+  },
+  "active": "e56c6d6829f82046",
+  "lastOpenFiles": [
+    "inbox/Mom's Quotes.md",
+    "periodic/2025/2025-07/2025-W28/2025-07-06.md",
+    "periodic/2025/2025-07/2025-W27/2025-07-05.md",
+    "periodic/2025/2025-07/2025-W28",
+    "periodic/2025/2025-07/2025-W27/2025-07-02.md",
+    "periodic/2025/2025-07/2025-W27/2025-07-04.md",
+    "periodic/2025/2025-07/2025-W27/2025-07-03.md",
+    "templates/Daily-Template.md",
+    "inbox/Open Dev Console in Obsidian.md",
+    "periodic/2025/2025-07/2025-W27/2025-07-01.md",
+    "inbox/The Loveland House.md",
+    "inbox/Thoughts On Temptations & New Beginnings.md",
+    "projects/tasks/Weekly Review.md",
+    "projects/tasks/recurring.md",
+    "projects/tasks/chores.md",
+    "inbox/Activating Windows.md",
+    "inbox/Windows LTSC Download.md",
+    "projects/gamedev/glitchwing/Glitchwing GDD.md",
+    "inbox/Arch Linux - Pacman Remove.md",
+    "inbox/Untitled 1.md",
+    "inbox/List of Games I Have Planned.md",
+    "periodic/2025/2025-05/~syncthing~2025-05.md.tmp",
+    "periodic/~syncthing~periodic.md.tmp",
+    "periodic/2025/2025-05/~syncthing~2025-05.md.edtz.tmp",
+    "references/~syncthing~references.md.tmp",
+    "references/~syncthing~references.md.edtz.tmp",
+    "periodic/~syncthing~periodic.md.edtz.tmp",
+    "periodic/2025/2025-03/2025-W12/~syncthing~2025-W12.md.tmp",
+    "projects/~syncthing~projects.md.tmp",
+    "periodic/2025/2025-04/2025-04.md.edtz",
+    "inbox/Brain Dump/Ideas/Text-Based Game Ideas.md",
+    "inbox/Brain Dump/Ideas/Software Ideas.md",
+    "inbox/Brain Dump/Ideas/Deadwood.md",
+    "inbox/Scheduling/Task Logs/Weekly Reviews.md",
+    "inbox/Scheduling/Self Instructions/PDF Sections Read List.md",
+    "inbox/Resources/Learning Resources.md",
+    "inbox/Notes/ArtBox/attachments/ArtBox-Mockup.png",
+    "projects/gamedev/glitchwing/attachments/Themes Brainstorming_scaled_6x_pngcrushed.png",
+    "references/books/covers/Game Design Workshop - Tracy Fullerton.jpg",
+    "references/books/covers/The Art of Game Design - Jesse Schell.jpg",
+    "references/books/covers/The Ultimate Guide to Video Game Writing and Design - Flint Dille John Zuur Platten.jpg",
+    "references/books/covers/Speech and Language Processing - Daniel Jurafsky James H Martin.jpg",
+    "references/books/covers/Software Engineering - Ian Sommerville.jpg",
+    "references/books/covers/Rules of Play - Katie Salen Tekinbas Eric Zimmerman.jpg",
+    "references/books/covers/Introduction to Algorithms third edition - Thomas H Cormen Charles E Leiserson Ronald L Rivest Clifford Stein.jpg",
+    "references/books/covers/Computer Networking - James F Kurose Keith W Ross.jpg",
+    "Untitled.canvas"
+  ]
+}

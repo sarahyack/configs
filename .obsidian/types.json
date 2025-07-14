@@ -28,6 +28,9 @@
     "rating": "number",
     "week": "text",
     "month": "text",
-    "year": "text"
+    "year": "text",
+    "topic": "multitext",
+    "price": "number",
+    "discounted-price": "number"
   }
 }

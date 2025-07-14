@@ -1,3 +1,29 @@
+" Determine Platform
+" WORK IN PROGRESS
+
+" Detect Windows (classic, WSL, MSYS, etc.)
+function! IsWindows() abort
+  return has('win32')                " Regular Windows build
+        \ || has('win64')            " 64-bit Windows build
+        \ || has('win32unix')        " Unix-like layer on Windows (WSL, MSYS, Cygwin)
+endfunction
+
+" Detect macOS
+function! IsMac() abort
+  return has('macunix')              " Set when running on macOS
+endfunction
+
+" Detect Linux (and only Linux)
+function! IsLinux() abort
+  " 'unix' is true for all Unix-likes (macOS, BSD, Linux, …).
+  " We exclude Windows layers and macOS so we’re left with Linux/BSD.
+  return has('unix') && !IsWindows() && !IsMac()
+endfunction
+
+if IsWindows()
+    !echo "Windows" > "C:\\Users\\Sarah\\Desktop\\log.txt"
+endif
+
 " Environment Variables
 let VIMRUNTIME="C:/Program Files/Neovim/share/nvim/runtime/"
 let g:python3_host_prog = 'C:/PythonShortcut/python.exe'
@@ -1131,7 +1157,7 @@ nnoremap <leader>bc :%bd\|e#<CR>
 " Modes/Settings Toggles
 nnoremap <leader>ml :set relativenumber!<CR>
 nnoremap <leader>mu :set fileformat=unix<CR>
-nnoremap <leader>mw :set fileformat=windows<CR>
+nnoremap <leader>mw :set fileformat=dos<CR>
 nnoremap <leader>mc :if &colorcolumn == '80' \| set colorcolumn= \| else \| set colorcolumn=80 \| endif<CR>
 nnoremap <leader>ms :set spell!<CR>
 nnoremap <leader>f :FocusToggle<CR>

@@ -32,31 +32,7 @@
             }
           },
           {
-            "id": "19f9e39d268074e0",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/2025/2025-07/2025-W27/2025-07-02.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-07-02"
-            }
-          },
-          {
-            "id": "e56c6d6829f82046",
+            "id": "6aedd2bffb256d01",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -66,41 +42,41 @@
                   "eState": "{}"
                 },
                 {
-                  "title": "2025-07-05",
+                  "title": "2025-07-13",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W27/2025-07-05.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-05\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":33,\"ch\":2},\"to\":{\"line\":33,\"ch\":2}},\"scroll\":21.961206749843505}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W29/2025-07-13.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-13\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":9,\"ch\":0},\"to\":{\"line\":9,\"ch\":0}},\"scroll\":12.320833115350633}"
                 },
                 {
-                  "title": "2025-07-02",
+                  "title": "2025-07-12",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W27/2025-07-02.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-02\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":28,\"ch\":60},\"to\":{\"line\":28,\"ch\":60}},\"scroll\":22.29310332353844}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W28/2025-07-12.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-12\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":8,\"ch\":0},\"to\":{\"line\":8,\"ch\":0}},\"scroll\":32.37499745686849}"
                 },
                 {
-                  "title": "2025-07-04",
+                  "title": "2025-07-11",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W27/2025-07-04.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-04\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":8,\"ch\":0},\"to\":{\"line\":8,\"ch\":0}},\"scroll\":35.808314366299925}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W28/2025-07-11.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-11\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":9,\"ch\":0},\"to\":{\"line\":9,\"ch\":0}},\"scroll\":0}"
                 },
                 {
-                  "title": "2025-07-03",
+                  "title": "2025-07-10",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W27/2025-07-03.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-03\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":42,\"ch\":0},\"to\":{\"line\":42,\"ch\":0}},\"scroll\":27.700000603993733}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W28/2025-07-10.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-10\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":39,\"ch\":173},\"to\":{\"line\":39,\"ch\":173}},\"scroll\":4.287437323948846}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/2025/2025-07/2025-W28/2025-07-06.md",
+                "file": "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-14.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-06"
+              "title": "2025-07-14"
             }
           },
           {
@@ -137,102 +113,6 @@
             }
           },
           {
-            "id": "a3c9b8deb7ab27fa",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Moving Thoughts.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Moving Thoughts"
-            }
-          },
-          {
-            "id": "de521daafa8e1e0d",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/The Loveland House.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "The Loveland House"
-            }
-          },
-          {
-            "id": "a0f4b59ec53a6a34",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/Daily-Template.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Daily-Template"
-            }
-          },
-          {
-            "id": "1ecf74edb8688df2",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Open Dev Console in Obsidian.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Open Dev Console in Obsidian"
-            }
-          },
-          {
             "id": "b5839450bf15050b",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -255,9 +135,189 @@
               "icon": "lucide-file",
               "title": "Mom's Quotes"
             }
+          },
+          {
+            "id": "0328abe6084c9d54",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/The Arch Linux Package Manager (Pacman).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "The Arch Linux Package Manager (Pacman)"
+            }
+          },
+          {
+            "id": "0eb31064cacf6ac3",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/inbox.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "inbox"
+            }
+          },
+          {
+            "id": "83ed4391a27389e0",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Install-Winget",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"runbook/systems/windows/Install-Winget.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Install-Winget\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":20,\"ch\":0},\"to\":{\"line\":20,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "Activate-Windows",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"runbook/systems/windows/Activate-Windows.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Activating Windows\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":8,\"ch\":0},\"to\":{\"line\":8,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "NuGet-Package-Install-Failure",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"runbook/dev-tools/dotnet/NuGet-Package-Install-Failure.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"NuGet Won't Install Package\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":10,\"ch\":0},\"to\":{\"line\":10,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "Windows - Hiberfil.sys",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"inbox/Windows - Hiberfil.sys.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Windows - Hiberfil.sys\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "VirtualBox - Shared Folders",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"inbox/VirtualBox - Shared Folders.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"VirtualBox - Shared Folders\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}},\"scroll\":10.309523769877487}"
+                },
+                {
+                  "title": "VirtualBox - Enumerate USB Error",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"wiki/casefiles/software/virtualbox/VirtualBox - Enumerate USB Error.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"VirtualBox - Enumerate USB Error\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":7,\"ch\":0},\"to\":{\"line\":7,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "Arch Linux - Mesa Driver Issue",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"wiki/casefiles/linux/Arch Linux - Mesa Driver Issue.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Arch Linux - Mesa Driver Issue\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":7,\"ch\":0},\"to\":{\"line\":7,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "Arch Linux - Downgrading Packages",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"inbox/Arch Linux - Downgrading Packages.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Arch Linux - Downgrading Packages\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":14,\"ch\":0},\"to\":{\"line\":14,\"ch\":0}},\"scroll\":31.850000619888306}"
+                },
+                {
+                  "title": "Arch Linux - Folder Access Permissions",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"inbox/Arch Linux - Folder Access Permissions.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Arch Linux - Folder Access Permissions\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":14,\"ch\":0},\"to\":{\"line\":14,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "Arch Linux - Downgrading Packages",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"inbox/Arch Linux - Downgrading Packages.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Arch Linux - Downgrading Packages\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":41,\"ch\":10},\"to\":{\"line\":41,\"ch\":10}},\"scroll\":31.850000619888306}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/pacman.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "pacman"
+            }
+          },
+          {
+            "id": "46cc19f57bda6755",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "admin/productivity/Mood Based Productivity.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Mood Based Productivity"
+            }
+          },
+          {
+            "id": "bf56b16976523d86",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "admin/productivity/Productivity Guide.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Productivity Guide"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -269,7 +329,6 @@
       {
         "id": "3d5b0f0251c6605c",
         "type": "tabs",
-        "dimension": 51.34228187919464,
         "children": [
           {
             "id": "7a16ecb8c9bb2e7b",
@@ -310,7 +369,7 @@
               "state": {
                 "query": "",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -386,11 +445,159 @@
             }
           }
         ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 264.5
+  },
+  "right": {
+    "id": "396106eeeb24b742",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c1c83402d7245d7",
+        "type": "tabs",
+        "dimension": 56.930693069306926,
+        "children": [
+          {
+            "id": "e29cef1aa170200b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "zettels/17 - Invisible Caretaking.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 17 - Invisible Caretaking"
+            }
+          },
+          {
+            "id": "ea04d8ec1221a004",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "Strange New Worlds",
+              "state": {},
+              "icon": "file-digit",
+              "title": "Strange New Worlds"
+            }
+          },
+          {
+            "id": "e04436ad40536aae",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "on-this-day-view",
+              "state": {},
+              "icon": "notebook-pen",
+              "title": "On this day"
+            }
+          },
+          {
+            "id": "21497463f8393c39",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "friend-tracker-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "e0dcce0b9bf8d074",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "references/websites/W10 - a16z NFT Canon.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for W10 - a16z NFT Canon"
+            }
+          },
+          {
+            "id": "f1d36859b1ff0541",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "admin/templates/daily-template.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from daily-template"
+            }
+          }
+        ],
+        "currentTab": 5
       },
       {
-        "id": "a34b00f16ab50032",
+        "id": "d72c567c17f3bed2",
         "type": "tabs",
-        "dimension": 48.65771812080536,
+        "dimension": 43.06930693069307,
         "children": [
           {
             "id": "8606024b1e95b3a0",
@@ -454,208 +661,24 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
-          },
-          {
-            "id": "f186b9db6b52b0a4",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "Timer",
-              "state": {},
-              "icon": "alarm-clock",
-              "title": "Timer"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
-  },
-  "right": {
-    "id": "396106eeeb24b742",
-    "type": "split",
-    "children": [
-      {
-        "id": "5c1c83402d7245d7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e29cef1aa170200b",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "periodic/2025/2025-05/2025-W19/2025-05-04.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 2025-05-04"
-            }
-          },
-          {
-            "id": "ea04d8ec1221a004",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "Strange New Worlds",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "e04436ad40536aae",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "on-this-day-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "21497463f8393c39",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "friend-tracker-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "e0dcce0b9bf8d074",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "inbox/Git - Add Remote Branch.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Git - Add Remote Branch"
-            }
-          },
-          {
-            "id": "f1d36859b1ff0541",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "inbox/Git - Add Remote Branch.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Git - Add Remote Branch"
-            }
-          },
-          {
-            "id": "78d2670bec48736d",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "Strange New Worlds",
-              "state": {},
-              "icon": "file-digit",
-              "title": "Strange New Worlds"
-            }
-          }
-        ],
-        "currentTab": 5
-      }
-    ],
-    "direction": "horizontal",
-    "width": 255.5,
+    "width": 279.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "remotely-save:Remotely Save": false,
+      "omnisearch:Omnisearch": false,
+      "remotely-save:Remotely Save": true,
+      "bookshelf:Open Bookshelf library": false,
+      "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "random-note:Open random note": false,
       "canvas:Create new canvas": false,
       "markdown-importer:Open format converter": true,
-      "switcher:Open quick switcher": true,
       "templates:Insert template": true,
       "command-palette:Open command palette": true,
       "workspaces:Manage workspace layouts": true,
@@ -663,65 +686,63 @@
       "templater-obsidian:Templater": false,
       "on-this-day:Open panel": false,
       "callout-manager:Insert Callout": false,
-      "omnisearch:Omnisearch": false,
       "history-today:On this day": false,
       "obsidian-book-search-plugin:Create new book note": false,
-      "timer:Open timer": false,
-      "bookshelf:Open Bookshelf library": false,
       "bookshelf:Open Bookshelf statistics": false,
       "task-board:Open task board": false,
       "periodic-notes:Open today": false,
       "friend-tracker:Open friend tracker": false
     }
   },
-  "active": "e56c6d6829f82046",
+  "active": "6aedd2bffb256d01",
   "lastOpenFiles": [
-    "inbox/Mom's Quotes.md",
-    "periodic/2025/2025-07/2025-W28/2025-07-06.md",
-    "periodic/2025/2025-07/2025-W27/2025-07-05.md",
-    "periodic/2025/2025-07/2025-W28",
-    "periodic/2025/2025-07/2025-W27/2025-07-02.md",
-    "periodic/2025/2025-07/2025-W27/2025-07-04.md",
-    "periodic/2025/2025-07/2025-W27/2025-07-03.md",
-    "templates/Daily-Template.md",
-    "inbox/Open Dev Console in Obsidian.md",
-    "periodic/2025/2025-07/2025-W27/2025-07-01.md",
-    "inbox/The Loveland House.md",
-    "inbox/Thoughts On Temptations & New Beginnings.md",
-    "projects/tasks/Weekly Review.md",
-    "projects/tasks/recurring.md",
-    "projects/tasks/chores.md",
-    "inbox/Activating Windows.md",
-    "inbox/Windows LTSC Download.md",
-    "projects/gamedev/glitchwing/Glitchwing GDD.md",
-    "inbox/Arch Linux - Pacman Remove.md",
-    "inbox/Untitled 1.md",
-    "inbox/List of Games I Have Planned.md",
-    "periodic/2025/2025-05/~syncthing~2025-05.md.tmp",
-    "periodic/~syncthing~periodic.md.tmp",
-    "periodic/2025/2025-05/~syncthing~2025-05.md.edtz.tmp",
-    "references/~syncthing~references.md.tmp",
-    "references/~syncthing~references.md.edtz.tmp",
-    "periodic/~syncthing~periodic.md.edtz.tmp",
-    "periodic/2025/2025-03/2025-W12/~syncthing~2025-W12.md.tmp",
-    "projects/~syncthing~projects.md.tmp",
-    "periodic/2025/2025-04/2025-04.md.edtz",
-    "inbox/Brain Dump/Ideas/Text-Based Game Ideas.md",
-    "inbox/Brain Dump/Ideas/Software Ideas.md",
-    "inbox/Brain Dump/Ideas/Deadwood.md",
-    "inbox/Scheduling/Task Logs/Weekly Reviews.md",
-    "inbox/Scheduling/Self Instructions/PDF Sections Read List.md",
-    "inbox/Resources/Learning Resources.md",
+    "admin/productivity/Mood Based Productivity.md",
+    "admin/productivity/Productivity Guide.md",
+    "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-14.md",
+    "periodic/2025/2025-07/2025-W29/2025-07-13.md",
+    "periodic/2025/2025-Q3/2025-07/2025-W29",
+    "periodic/2025/2025-Q3/2025-07",
+    "periodic/2025/2025-Q3",
+    "inbox/pacman.md",
+    "admin/tasks/Weekly Review.md",
+    "archive/tasks/archive.md",
+    "admin/tasks/recurring.md",
+    "admin/tasks/inbox.md",
+    "admin/tasks/chores.md",
+    "admin/tasks/backlog.md",
+    "inbox/PowerShell - Get PowerShell Version.md",
+    "inbox/PowerShell - Display All Env Variables.md",
+    "references/cheat-sheets/S1 - Dataview MetaData.md",
+    "references/cheat-sheets/S2 - Cargo Commands.md",
+    "references/cheat-sheets/S3 - Windows Activation Keys.md",
+    "runbook/systems/windows/Install-Winget.md",
+    "inbox/Winget is Unusable.md",
+    "runbook/systems/windows/Activate-Windows.md",
+    "runbook/dev-tools/dotnet/NuGet-Package-Install-Failure.md",
+    "admin/templates/weekly-template.md",
+    "admin/templates/daily-template.md",
+    "admin",
+    "inbox/Rust - Cargo fetch.md",
+    "wiki/command-library/cargo/cargo-fetch.md",
+    "admin/templates/command-card-template.md",
+    "wiki/command-library/cargo/Untitled.md",
+    "wiki/command-library/cargo",
+    "wiki/command-library",
+    "wiki/tech/languages/rust",
+    "runbook/editors/obsidian/usage",
+    "runbook/editors/obsidian/config",
+    "runbook/editors/obsidian",
+    "runbook/art/production/tilemaps/examples/Tileset Arrangement.png",
+    "runbook/art/production/tilemaps/examples/Top-Down Tileset Arrangement.png",
+    "references/websites/Untitled.canvas",
+    "references/books/covers/The 4-hour Workweek - Timothy Ferriss.jpg",
+    "references/books/covers/Steal Like An Artist - Austin Kleon.jpg",
+    "references/books/covers/Show Your Work! - Austin Kleon.jpg",
     "inbox/Notes/ArtBox/attachments/ArtBox-Mockup.png",
     "projects/gamedev/glitchwing/attachments/Themes Brainstorming_scaled_6x_pngcrushed.png",
     "references/books/covers/Game Design Workshop - Tracy Fullerton.jpg",
     "references/books/covers/The Art of Game Design - Jesse Schell.jpg",
     "references/books/covers/The Ultimate Guide to Video Game Writing and Design - Flint Dille John Zuur Platten.jpg",
-    "references/books/covers/Speech and Language Processing - Daniel Jurafsky James H Martin.jpg",
-    "references/books/covers/Software Engineering - Ian Sommerville.jpg",
-    "references/books/covers/Rules of Play - Katie Salen Tekinbas Eric Zimmerman.jpg",
-    "references/books/covers/Introduction to Algorithms third edition - Thomas H Cormen Charles E Leiserson Ronald L Rivest Clifford Stein.jpg",
-    "references/books/covers/Computer Networking - James F Kurose Keith W Ross.jpg",
     "Untitled.canvas"
   ]
 }

@@ -7,33 +7,33 @@
         {
           "type": "file",
           "ctime": 1742171627044,
-          "path": "templates/Daily-Template.md",
+          "path": "admin/templates/daily-template.md",
           "title": "Daily-Template"
         },
         {
           "type": "file",
           "ctime": 1742171643068,
-          "path": "templates/Weekly-Template.md"
+          "path": "admin/templates/weekly-template.md"
         },
         {
           "type": "file",
           "ctime": 1742583276923,
-          "path": "templates/Monthly-Template.md"
+          "path": "admin/templates/monthly-template.md"
         },
         {
           "type": "file",
           "ctime": 1742583284262,
-          "path": "templates/Folder-Note-Template.md"
+          "path": "admin/templates/folder-note-template.md"
         },
         {
           "type": "file",
           "ctime": 1743275732044,
-          "path": "templates/inbox-todos-template.md"
+          "path": "admin/templates/inbox-todos-template.md"
         },
         {
           "type": "file",
           "ctime": 1745624688687,
-          "path": "templates/book-note-template.md"
+          "path": "admin/templates/book-note-template.md"
         }
       ],
       "title": "templates"
@@ -45,27 +45,27 @@
         {
           "type": "file",
           "ctime": 1743272548541,
-          "path": "projects/tasks/backlog.md"
+          "path": "admin/tasks/backlog.md"
         },
         {
           "type": "file",
           "ctime": 1743272577933,
-          "path": "projects/tasks/inbox.md"
+          "path": "admin/tasks/inbox.md"
         },
         {
           "type": "file",
           "ctime": 1743272587546,
-          "path": "projects/tasks/recurring.md"
+          "path": "admin/tasks/recurring.md"
         },
         {
           "type": "file",
           "ctime": 1743272598488,
-          "path": "projects/tasks/Weekly Review.md"
+          "path": "admin/tasks/Weekly Review.md"
         },
         {
           "type": "file",
           "ctime": 1743272609419,
-          "path": "projects/tasks/by-topic-todo.md"
+          "path": "admin/tasks/by-topic-todo.md"
         }
       ],
       "title": "tasks"
@@ -75,6 +75,23 @@
       "ctime": 1745626304664,
       "path": "references/books/files/How-to-Take-Smart-Notes-by-Sönke-Ahrens-40zol.pdf",
       "title": "Smart Notes - Ahrens"
+    },
+    {
+      "type": "group",
+      "ctime": 1752203591009,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1752203602856,
+          "path": "admin/productivity/Mood Based Productivity.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1752203609259,
+          "path": "admin/productivity/Productivity Guide.md"
+        }
+      ],
+      "title": "quick-access"
     }
   ]
 }

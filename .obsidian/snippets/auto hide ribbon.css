@@ -1,0 +1,105 @@
+/* @settings
+
+name: Border Theme ribbon auto-hide
+id: Components
+settings:
+    - 
+        id: Ribbon-autohide
+        title: Auto hide left ribbon menu
+        title.zh: 自动隐藏 左侧功能区菜单
+        description: creds to Akifyss' Border Theme :D
+        type: class-toggle
+*/
+
+/*====== Animations ======*/
+body {
+    /* Animations */
+    --anim-speed: 1;
+    --anim-duration-superfast: calc(75ms / var(--anim-speed));
+    --anim-duration-fast: calc(150ms / var(--anim-speed));
+    --anim-duration-moderate: calc(300ms / var(--anim-speed));
+    --anim-duration-slow: calc(600ms / var(--anim-speed));
+    --anim-in: var(--anim-duration-fast) var(--anim-duration-superfast) var(--anim-motion-swing);
+    --anim-out: var(--anim-duration-moderate) var(--anim-duration-slow) var(--anim-motion-swing);
+}
+
+/*body:not(.is-phone, .extra-anim-remove) .graph-controls:not(.is-close),
+body:not(.is-phone, .extra-anim-remove) .popover:not(.svelte-1xg3ic1),
+body:not(.is-phone, .extra-anim-remove) .modal:not(:has(.checkbox-container)),
+body:not(.is-phone, .extra-anim-remove) .menu:not(.mk-style-menu, .svelte-1xg3ic1),
+body:not(.is-phone, .extra-anim-remove) .suggestion-container:not([data-popper-placement="bottom-start"]),*/
+body:not(.is-phone, .extra-anim-remove) .prompt,
+body:not(.is-mobile, .extra-anim-remove) .document-search-container {
+    -webkit-animation: scale-up var(--anim-duration-fast) cubic-bezier(0.175, 0.885, 0.320, 1.095) both;
+    animation: scale-up var(--anim-duration-fast) cubic-bezier(0.175, 0.885, 0.320, 1.095) both;
+}
+
+/*autohide transition*/
+body:not(.is-mobile) .workspace::before {
+    transition: width var(--anim-out), height var(--anim-out);
+}
+
+body:not(.is-mobile):has(.mod-top>.workspace-tab-header-container:hover, .titlebar-button-container:hover, .status-bar:hover) .workspace::before {
+    transition: width var(--anim-out), height var(--anim-in);
+}
+
+body:not(.is-mobile):has(.workspace-ribbon.side-dock-ribbon:hover) .workspace::before {
+    transition: width var(--anim-in), height var(--anim-out);
+}
+
+/*ribbon autohide*/
+body:not(.is-mobile).Ribbon-autohide.show-ribbon .workspace-ribbon.side-dock-ribbon.mod-left {
+    --ribbon-width: 16px;
+    transition: all var(--anim-out);
+}
+
+body:not(.is-mobile).Ribbon-autohide.show-ribbon .workspace-ribbon.side-dock-ribbon.mod-left:hover {
+    --ribbon-width: 44px;
+    transition: all var(--anim-in);
+}
+
+body:not(.is-mobile).Ribbon-autohide.show-ribbon .workspace-ribbon.side-dock-ribbon.mod-left>* {
+    opacity: 0;
+    transition: all var(--anim-out);
+}
+
+body:not(.is-mobile).Ribbon-autohide.show-ribbon .workspace-ribbon.side-dock-ribbon.mod-left:hover>* {
+    opacity: 1;
+    transition: all var(--anim-in);
+}
+
+body:not(.is-mobile).Ribbon-autohide.show-ribbon .workspace::before {
+    width: calc(100% - 16px);
+}
+
+body:not(.is-mobile).Ribbon-autohide.show-ribbon:has(.workspace-ribbon.side-dock-ribbon:hover) .workspace::before {
+    width: calc(100% - 44px);
+}
+
+/* macos autohide fix*/
+body:not(.is-mobile):not(.is-popout-window).Ribbon-autohide.show-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen) .mod-left-split .mod-top-left-space .workspace-tab-header-container,
+body:not(.is-mobile):not(.is-popout-window).Ribbon-autohide.show-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen) .workspace:not(.is-left-sidedock-open) .sidebar-toggle-button.mod-left {
+    margin-left: 28px;
+}
+
+body:not(.is-mobile):not(.is-popout-window).Ribbon-autohide.show-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen):has(.workspace-ribbon.side-dock-ribbon:hover) .mod-left-split .mod-top-left-space .workspace-tab-header-container,
+body:not(.is-mobile):not(.is-popout-window).Ribbon-autohide.show-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen):has(.workspace-ribbon.side-dock-ribbon:hover) .workspace:not(.is-left-sidedock-open) .sidebar-toggle-button.mod-left {
+    margin-left: 0px;
+}
+
+body:not(.is-mobile):not(.is-popout-window).Ribbon-autohide.show-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen) .mod-left-split .mod-top-left-space .workspace-tab-header-container,
+body:not(.is-mobile):not(.is-popout-window).Ribbon-autohide.show-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen) .workspace:not(.is-left-sidedock-open) .sidebar-toggle-button.mod-left,
+body:not(.is-mobile):not(.is-popout-window).tab-autohide.mod-macos.is-hidden-frameless:not(.is-fullscreen) .mod-left-split .mod-top-left-space .workspace-tab-header-container,
+body:not(.is-mobile):not(.is-popout-window).tab-autohide.mod-macos.is-hidden-frameless:not(.is-fullscreen) .workspace:not(.is-left-sidedock-open) .sidebar-toggle-button.mod-left {
+    transition: height var(--anim-out), opacity var(--anim-out), margin-left var(--anim-out);
+}
+
+body:not(.is-mobile):not(.is-popout-window).Ribbon-autohide.show-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen):has(.workspace-ribbon.side-dock-ribbon:hover) .mod-left-split .mod-top-left-space .workspace-tab-header-container,
+body:not(.is-mobile):not(.is-popout-window).Ribbon-autohide.show-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen):has(.workspace-ribbon.side-dock-ribbon:hover) .workspace:not(.is-left-sidedock-open) .sidebar-toggle-button.mod-left {
+    transition: height var(--anim-out), opacity var(--anim-out), margin-left var(--anim-in);
+}
+
+body:not(.is-mobile):not(.is-popout-window).tab-autohide.mod-macos.is-hidden-frameless:not(.is-fullscreen):has(.mod-top>.workspace-tab-header-container:hover, .titlebar-button-container:hover) .mod-left-split .mod-top-left-space .workspace-tab-header-container,
+body:not(.is-mobile):not(.is-popout-window).tab-autohide.mod-macos.is-hidden-frameless:not(.is-fullscreen):has(.mod-top>.workspace-tab-header-container:hover, .titlebar-button-container:hover) .workspace:not(.is-left-sidedock-open) .sidebar-toggle-button.mod-left {
+    transition: height var(--anim-in), opacity var(--anim-in), margin-left var(--anim-out);
+}

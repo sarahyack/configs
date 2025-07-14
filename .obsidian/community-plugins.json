@@ -51,7 +51,6 @@
   "block-link-plus",
   "remove-unused-block-ids",
   "tinychart",
-  "timer",
   "obsidian-grandfather",
   "mode-manager",
   "rich-foot",
@@ -63,5 +62,6 @@
   "project-tasks",
   "creases",
   "obsidian-minimal-settings",
-  "remotely-save"
+  "remotely-save",
+  "background-image"
 ]

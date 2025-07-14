@@ -1,9 +1,10 @@
 {
   "accentColor": "#29b397",
-  "cssTheme": "Blue Topaz",
+  "cssTheme": "AnuPpuccin",
   "enabledCssSnippets": [
     "extended-colorschemes",
-    "rainbow-tags"
+    "rainbow-tags",
+    "auto hide ribbon"
   ],
   "theme": "obsidian",
   "showViewHeader": true,
@@ -12,5 +13,5 @@
   "monospaceFontFamily": "BigBlueTermPlus Nerd Font Mono,Noto Serif",
   "showRibbon": true,
   "baseFontSizeAction": true,
-  "baseFontSize": 16
+  "baseFontSize": 15
 }

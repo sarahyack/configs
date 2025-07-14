@@ -161,30 +161,6 @@
             }
           },
           {
-            "id": "0eb31064cacf6ac3",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/inbox.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "inbox"
-            }
-          },
-          {
             "id": "83ed4391a27389e0",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -269,7 +245,7 @@
             }
           },
           {
-            "id": "46cc19f57bda6755",
+            "id": "89586977e8fe983a",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -281,39 +257,10 @@
               ]
             },
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "admin/productivity/Mood Based Productivity.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Mood Based Productivity"
-            }
-          },
-          {
-            "id": "bf56b16976523d86",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "admin/productivity/Productivity Guide.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Productivity Guide"
+              "title": "New tab"
             }
           }
         ],
@@ -696,9 +643,9 @@
   },
   "active": "6aedd2bffb256d01",
   "lastOpenFiles": [
+    "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-14.md",
     "admin/productivity/Mood Based Productivity.md",
     "admin/productivity/Productivity Guide.md",
-    "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-14.md",
     "periodic/2025/2025-07/2025-W29/2025-07-13.md",
     "periodic/2025/2025-Q3/2025-07/2025-W29",
     "periodic/2025/2025-Q3/2025-07",

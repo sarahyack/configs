@@ -309,7 +309,7 @@ local on_attach = function(client, bufnr)
 end
 
 -- The bundle_path is where PowerShell Editor Services was installed
-if vim.g.SYSTEM == "windows"
+if vim.g.SYSTEM == "windows" then
     local bundle_path = vim.g.PWSHLSPATH
     
      lspconfig.powershell_es.setup {
@@ -330,6 +330,7 @@ if vim.g.SYSTEM == "windows"
       end,
       filetypes = { 'ps1', 'psm1', 'psd1' }
     }
+end
  
 local trouble = require('trouble')
 trouble.setup{

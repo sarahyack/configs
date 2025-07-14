@@ -3,30 +3,41 @@
 
 " Detect Windows (classic, WSL, MSYS, etc.)
 function! IsWindows() abort
-  return has('win32')                " Regular Windows build
-        \ || has('win64')            " 64-bit Windows build
-        \ || has('win32unix')        " Unix-like layer on Windows (WSL, MSYS, Cygwin)
+  return has('win32')
+        \ || has('win64')
+        \ || has('win32unix')
 endfunction
 
 " Detect macOS
 function! IsMac() abort
-  return has('macunix')              " Set when running on macOS
+  return has('macunix')
 endfunction
 
 " Detect Linux (and only Linux)
 function! IsLinux() abort
-  " 'unix' is true for all Unix-likes (macOS, BSD, Linux, …).
-  " We exclude Windows layers and macOS so we’re left with Linux/BSD.
   return has('unix') && !IsWindows() && !IsMac()
 endfunction
 
 if IsWindows()
-    !echo "Windows" > "C:\\Users\\Sarah\\Desktop\\log.txt"
+    let VIMRUNTIME="C:/Program Files/Neovim/share/nvim/runtime/"
+    let g:python3_host_prog = 'C:/PythonShortcut/python.exe'
+    let g:SYSTEM = "windows"
+    let g:HOME = "C/Users/Sarah/"
+    let g:UNDODIR = "C:/Users/Sarah/AppData/Local/nvim/undo"
+    let g:PENDIR = "C:/05_Support/nvim/pendulum/pendulum.log"
+    let g:PLUGDIR = "C:/Users/Sarah/AppData/Local/nvim/plugged"
+    let g:PWSHLSPATH = "C:/05_Support/powershell/PowerShellEditorServices/PowerShellEditorServices"
+    let g:PWSHPATH = "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
+    let g:WORKDIR = "D:/"
+    let g:SHELL = "powershell"
+elseif IsLinux()
+    let g:SYSTEM = "linux"
+    let g:HOME = "/home/sarah"
+    let g:UNDODIR = "/home/sarah/.local/share/nvim/undo"
+    let g:PENDIR = "/home/sarah/.local/share/nvim/pendulum/pendulum.log"
+    let g:PLUGDIR = "/home/sarah/.local/share/nvim/site/plug"
 endif
 
-" Environment Variables
-let VIMRUNTIME="C:/Program Files/Neovim/share/nvim/runtime/"
-let g:python3_host_prog = 'C:/PythonShortcut/python.exe'
 let g:loaded_perl_provider = 0
 let g:loaded_ruby_provider = 0
 
@@ -45,7 +56,7 @@ set foldlevelstart=99
 set foldcolumn=1
 set wildmode=longest,list
 set undofile
-set undodir=C:\Users\Sarah\AppData\Local\nvim\undo
+set undodir=UNDODIR
 filetype plugin indent on
 set clipboard=unnamedplus
 filetype plugin on
@@ -58,7 +69,7 @@ set background=dark
 " Set Neovide Setings
 if exists("g:neovide")
     if empty(argv()) " Change to workspace only if cwd is home and no files are passed
-        autocmd VimEnter * silent! cd D:\
+        autocmd VimEnter * silent! cd g:WORKDIR
     endif 
     set guifont=Terminess\ Nerd\ Font:h13
     let g:neovide_font_ligatures=1
@@ -75,7 +86,7 @@ if exists("g:neovide")
 endif
 
 " Load/Install Plugins
-call plug#begin('$HOME' . '\AppData\Local\nvim\plugged') 
+call plug#begin(g:PLUGDIR) 
 " DEPENDENCIES
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kevinhwang91/promise-async'
@@ -251,7 +262,7 @@ telescope.load_extension('projects')
 
 local pendulum = require('pendulum')
 pendulum.setup({
-    log_file = "C:/05_Support/nvim/pendulum/pendulum.log",
+    log_file = vim.g.PENDIR,
     time_format = "24h",
     time_zone = "America/Denver",
 })
@@ -298,26 +309,27 @@ local on_attach = function(client, bufnr)
 end
 
 -- The bundle_path is where PowerShell Editor Services was installed
-local bundle_path = 'C:/05_Support/powershell/PowerShellEditorServices/PowerShellEditorServices'
-
- lspconfig.powershell_es.setup {
-  on_attach = on_attach,
-  cmd = {
-    'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE',
-    '-NoLogo',
-    '-NoProfile',
-    '-Command',
-    string.format(
-      '%s/Start-EditorServices.ps1 -BundledModulesPath %s/Modules -LogPath %s/logs/log.txt -SessionDetailsPath %s/session.json -HostName nvim -HostProfileId 0 -HostVersion 1.0.0 -Stdio',
-      bundle_path, bundle_path, bundle_path, bundle_path
-    )
-  },
-  root_dir = function(fname)
-    -- Use the directory of the file for single-file mode
-    return lspconfig.util.root_pattern('.git')(fname) or lspconfig.util.path.dirname(fname)
-  end,
-  filetypes = { 'ps1', 'psm1', 'psd1' }
-}
+if vim.g.SYSTEM == "windows"
+    local bundle_path = vim.g.PWSHLSPATH
+    
+     lspconfig.powershell_es.setup {
+      on_attach = on_attach,
+      cmd = {
+        vim.g.PWSHPATH,
+        '-NoLogo',
+        '-NoProfile',
+        '-Command',
+        string.format(
+          '%s/Start-EditorServices.ps1 -BundledModulesPath %s/Modules -LogPath %s/logs/log.txt -SessionDetailsPath %s/session.json -HostName nvim -HostProfileId 0 -HostVersion 1.0.0 -Stdio',
+          bundle_path, bundle_path, bundle_path, bundle_path
+        )
+      },
+      root_dir = function(fname)
+        -- Use the directory of the file for single-file mode
+        return lspconfig.util.root_pattern('.git')(fname) or lspconfig.util.path.dirname(fname)
+      end,
+      filetypes = { 'ps1', 'psm1', 'psd1' }
+    }
  
 local trouble = require('trouble')
 trouble.setup{
@@ -426,7 +438,7 @@ autopairs.add_rule(Rule("'", "'", '-vim'))
 
 local toggleterm = require('toggleterm')
 toggleterm.setup({
-    shell = 'powershell',
+    shell = vim.g.SHELL,
     size = 50,
     open_mapping = [[<C-\>]],
     shade_filetypes = {},

@@ -42,6 +42,12 @@
                   "eState": "{}"
                 },
                 {
+                  "title": "2025-07-14",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-14.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-14\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":9,\"ch\":0},\"to\":{\"line\":9,\"ch\":0}}}"
+                },
+                {
                   "title": "2025-07-13",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W29/2025-07-13.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-13\"}",
@@ -70,13 +76,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-14.md",
+                "file": "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-15.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-14"
+              "title": "2025-07-15"
             }
           },
           {
@@ -257,10 +263,111 @@
               ]
             },
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "ad911b8cda2c2fc5",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 1"
+            }
+          },
+          {
+            "id": "d8b57a5ccda173e7",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 2.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 2"
+            }
+          },
+          {
+            "id": "662f98ce3dd17fc5",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Vimscript set option to global variable.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Vimscript set option to global variable"
+            }
+          },
+          {
+            "id": "ea8b087b111478f8",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Nvim-surround commands.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Nvim-surround commands"
             }
           }
         ],
@@ -643,7 +750,16 @@
   },
   "active": "6aedd2bffb256d01",
   "lastOpenFiles": [
+    "inbox/Nvim-surround commands.md",
+    "inbox/Vimscript set option to global variable.md",
+    "inbox/Untitled 2.md",
+    "inbox/HP - HP 3D DriveGuard Boot Error (BSOD).md",
+    "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-15.md",
+    "inbox/MSINFO32.md",
     "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-14.md",
+    "periodic/2025/2025-Q3/2025-07/2025-W29/~syncthing~2025-07-14.md.tmp",
+    "inbox/Untitled 1.md",
+    "inbox/Untitled.md",
     "admin/productivity/Mood Based Productivity.md",
     "admin/productivity/Productivity Guide.md",
     "periodic/2025/2025-07/2025-W29/2025-07-13.md",
@@ -664,21 +780,12 @@
     "references/cheat-sheets/S3 - Windows Activation Keys.md",
     "runbook/systems/windows/Install-Winget.md",
     "inbox/Winget is Unusable.md",
-    "runbook/systems/windows/Activate-Windows.md",
-    "runbook/dev-tools/dotnet/NuGet-Package-Install-Failure.md",
-    "admin/templates/weekly-template.md",
-    "admin/templates/daily-template.md",
     "admin",
-    "inbox/Rust - Cargo fetch.md",
-    "wiki/command-library/cargo/cargo-fetch.md",
-    "admin/templates/command-card-template.md",
-    "wiki/command-library/cargo/Untitled.md",
     "wiki/command-library/cargo",
     "wiki/command-library",
     "wiki/tech/languages/rust",
     "runbook/editors/obsidian/usage",
     "runbook/editors/obsidian/config",
-    "runbook/editors/obsidian",
     "runbook/art/production/tilemaps/examples/Tileset Arrangement.png",
     "runbook/art/production/tilemaps/examples/Top-Down Tileset Arrangement.png",
     "references/websites/Untitled.canvas",

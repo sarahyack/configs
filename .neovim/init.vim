@@ -1,5 +1,4 @@
 " Determine Platform
-" WORK IN PROGRESS
 
 " Detect Windows (classic, WSL, MSYS, etc.)
 function! IsWindows() abort
@@ -56,7 +55,7 @@ set foldlevelstart=99
 set foldcolumn=1
 set wildmode=longest,list
 set undofile
-set undodir=UNDODIR
+let &undodir=g:UNDODIR
 filetype plugin indent on
 set clipboard=unnamedplus
 filetype plugin on
@@ -93,10 +92,7 @@ Plug 'kevinhwang91/promise-async'
 Plug 'tjdevries/colorbuddy.nvim'
 
 " MISC
-Plug 'Exafunction/codeium.vim'
 Plug 'lowitea/aw-watcher.nvim'
-Plug 'tpope/vim-dadbod'
-Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'ptdewey/pendulum-nvim'
 Plug 'y3owk1n/time-machine.nvim'
 Plug 'QuentinGruber/pomodoro.nvim'
@@ -109,7 +105,6 @@ Plug 'OXY2DEV/markview.nvim'
 Plug 'nanozuki/tabby.nvim'
 Plug 'levouh/tint.nvim'
 Plug 'beauwilliams/focus.nvim'
-Plug 'ellisonleao/glow.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvimdev/hlsearch.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -128,23 +123,13 @@ Plug 'doctorfree/cheatsheet.nvim'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'lewis6991/gitsigns.nvim'
-
-" SNIPPETS
-Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'}
-Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'rafamadriz/friendly-snippets'
 
 " FILES
 Plug 'echasnovski/mini.files', {'branch': 'stable'}
-Plug 'vifm/vifm.vim'
 Plug 'stevearc/oil.nvim'
 Plug 'refractalize/oil-git-status.nvim'
 Plug 'ahmedkhalf/project.nvim'
-Plug 'CRAG666/code_runner.nvim'
 Plug 'dzfrias/arena.nvim'
 
 " EDITING
@@ -154,7 +139,6 @@ Plug 'kevinhwang91/nvim-ufo'
 Plug 'chrisgrieser/nvim-origami', {'tag': 'v1.9'}
 Plug 'tpope/vim-commentary'
 Plug 'kylechui/nvim-surround'
-Plug 'folke/trouble.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'fedepujol/move.nvim'
 Plug 'RRethy/vim-illuminate'
@@ -270,11 +254,12 @@ pendulum.setup({
 local timemachine = require('time-machine')
 timemachine.setup({})
 
-local glow = require('glow')
-glow.setup{style = "dark"}
-
 local blankline = require("ibl")
-blankline.setup()
+blankline.setup({
+    exclude = {
+        filetypes = { "dashboard" },
+    }
+})
 
 local hsearch = require("hlsearch")
 hsearch.setup()
@@ -332,23 +317,6 @@ if vim.g.SYSTEM == "windows" then
     }
 end
  
-local trouble = require('trouble')
-trouble.setup{
-  position = "bottom",
-  height = 10,
-  icons = true,
-  mode = "workspace_diagnostics",
-  fold_open = "",
-  fold_closed = "",
-  action_keys = {
-    close = "q",
-    cancel = "<esc>",
-    refresh = "r",
-    jump = {"<cr>", "<tab>"},
-  },
-  use_diagnostic_signs = true
-}
-
 local surround = require('nvim-surround')
 surround.setup{}
 
@@ -357,73 +325,6 @@ move.setup({
   char = {
       enable = true,
       } 
-})
-
-local cmp = require('cmp')
-local luasnip = require('luasnip')
-cmp.setup({
-  snippet = {
-    expand = function(args)
-        luasnip.lsp_expand(args.body)
-    end
-  },
-  mapping = {
-    ['<CR>'] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-            if luasnip.expandable() then
-                luasnip.expand()
-            else
-                cmp.confirm({
-                    select = true,
-                })
-            end
-        else
-            fallback()
-        end
-    end),
-
-    ["<Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif luasnip.locally_jumpable(1) then
-        luasnip.jump(1)
-      else
-        fallback()
-      end
-    end, { "i", "s" }),
-
-    ["<S-Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item()
-      elseif luasnip.locally_jumpable(-1) then
-        luasnip.jump(-1)
-      else
-        fallback()
-      end
-    end, { "i", "s" }),
-  },
-  sources = {
-    { name = 'nvim_lsp' },
-    { name = 'luasnip' },
-    { name = 'buffer'},
-  },
-})
-
-local runner = require('code_runner')
-runner.setup({
-  filetype = {
-    java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    cpp = "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
-    python = "python $fileName",
-    go = "go run $fileName",
-    rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
-    sh = "bash $fileName",
-    c = "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
-    js = "node $fileName",
-    ts = "node $fileName",
-    php = "php $fileName",
-    html = "start $fileName",
-  }
 })
 
 local autopairs = require("nvim-autopairs")
@@ -454,12 +355,14 @@ db.setup({
   theme = 'doom',
   config = {
     header = {
+      '                                                             ',
+      '                                                             ',
       ' _   _      _ _           _____                 _            ',
       '| | | |    | | |         /  ___|               | |           ',
       '| |_| | ___| | | ___     \\ `--.  __ _ _ __ __ _| |__         ',
       '|  _  |/ _ \\ | |/ _ \\     `--. \\/ _` | \'__/ _` | \'_ \\        ',
       '| | | |  __/ | | (_) |   /\\__/ / (_| | | | (_| | | | |  _ _ _',
-      '\\_| |_/\\___|_|_|\\___/    \\____/ \\__,_|_|  \\__,_|_| |_| (_|_|_)',
+      ' \\_| |_/\\___|_|_|\\___/    \\____/ \\__,_|_|  \\__,_|_| |_| (_|_|_)',
       '                                                      ',
       '',
     },
@@ -751,7 +654,6 @@ function ShowShortcuts()
     "-- Editing",
     "--------------------",
     "<C-a>       - Copy All",
-    "<Leader>u   - Time Machine",
     "<Leader>ae  - Add Empty Line Below",
     "<Leader>aE  - Add Empty Line Above",
     "<Leader>aw  - Add Empty Line Above and Below",
@@ -832,11 +734,6 @@ function ShowShortcuts()
     "<A-t>       - Open TODO Quickfix",
     "<A-T>       - Open TODO Location List",
     "<Leader>t   - Open TODO Telescope",
-    "<Leader>rr  - Run Code",
-    "<Leader>rf  - Run File in Terminal",
-    "<Leader>rt  - Run File in New Tab",
-    "<Leader>rp  - Run Project in New Tab",
-    "<Leader>rc  - Close Runner",
     "",
     "-- Tabs",
     "--------------------",
@@ -869,8 +766,6 @@ function ShowShortcuts()
     "<Leader>mc   - Set Column Limit",
     "<Leader>f    - Focus Toggle",
     "<Leader>fe   - Focus Equalize",
-    "<Leader>mp   - Glow (Current File)",
-    "<Leader>mps  - Glow (Specific)",
     "",
     "-- Plugin Management",
     "--------------------",
@@ -944,7 +839,7 @@ function ShowShortcuts()
     "-           - Toggle Mini-Files",
     "=           - Toggle Oil",
     "<Leader>-   - Toggle Telescope Outline",
-    "<Leader>=   - Toggle Vifm",
+    "<Leader>=   - Toggle Time Machine",
     "<Leader>pwd - Print CWD",
     "<Leader>cd  - Set CWD",
     "<Leader>ld  - Set LWD",
@@ -1063,7 +958,6 @@ nnoremap g^ ^
 nnoremap Y y$
 nnoremap yc vy
 nnoremap <C-a> ggvG$y
-nnoremap <leader>u :TimeMachineToggle<CR>
 nnoremap <leader>ae o<ESC>k
 nnoremap <leader>aE O<ESC>j
 nnoremap <leader>aw o<ESC>kO<ESC>j
@@ -1140,11 +1034,6 @@ nnoremap <leader>e :e<Space>
 nnoremap <A-t> :TodoQuickFix<CR>
 nnoremap <A-T> :TodoLocList<CR>
 nnoremap <leader>t :TodoTelescope<CR>
-nnoremap <leader>rr :RunCode<CR>
-nnoremap <leader>rf :RunFile toggleterm<CR>
-nnoremap <leader>rt :RunFile tab<CR>
-nnoremap <leader>rp :RunProject tab<CR>
-nnoremap <leader>rc :RunClose<CR>
 
 " Tabs
 nnoremap tl :Tabby pick_window<CR>
@@ -1175,8 +1064,6 @@ nnoremap <leader>mc :if &colorcolumn == '80' \| set colorcolumn= \| else \| set 
 nnoremap <leader>ms :set spell!<CR>
 nnoremap <leader>f :FocusToggle<CR>
 nnoremap <leader>fe :FocusEqualise<CR>
-nnoremap <leader>mp :Glow<CR>
-nnoremap <leader>mps :Glow<Space>
 
 " Plugin Management
 nnoremap <leader>pi :PlugInstall<CR>
@@ -1238,7 +1125,7 @@ nnoremap <leader>cs :Themify<CR>
 " File Explorer
 nnoremap - :lua MiniFiles.open()<CR>
 nnoremap = :Oil --float<CR>
-nnoremap <leader>= :Vifm<CR>
+nnoremap <leader>= :TimeMachineToggle<CR>
 nnoremap <leader>- :Telescope lsp_document_symbols<CR>
 nnoremap <leader>pwd :pwd<CR>
 nnoremap <leader>cd :cd<Space>

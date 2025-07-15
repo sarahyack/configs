@@ -35,6 +35,7 @@ elseif IsLinux()
     let g:UNDODIR = "/home/sarah/.local/share/nvim/undo"
     let g:PENDIR = "/home/sarah/.local/share/nvim/pendulum/pendulum.log"
     let g:PLUGDIR = "/home/sarah/.local/share/nvim/site/plug"
+    let g:WORKDIR = "$WORKDRIVE"
 endif
 
 let g:loaded_perl_provider = 0
@@ -68,7 +69,7 @@ set background=dark
 " Set Neovide Setings
 if exists("g:neovide")
     if empty(argv()) " Change to workspace only if cwd is home and no files are passed
-        autocmd VimEnter * silent! cd g:WORKDIR
+        autocmd VimEnter * silent! execute 'cd' g:WORKDIR
     endif 
     set guifont=Terminess\ Nerd\ Font:h13
     let g:neovide_font_ligatures=1

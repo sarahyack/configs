@@ -42,6 +42,24 @@
                   "eState": "{}"
                 },
                 {
+                  "title": "2025-07-15",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-15.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-15\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":9,\"ch\":0},\"to\":{\"line\":9,\"ch\":0}}}"
+                },
+                {
+                  "title": "2025-W27",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-07/2025-W27/2025-W27.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-W27\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}},\"scroll\":1.5193277567374606}"
+                },
+                {
+                  "title": "2025-07-15",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-15.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-15\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":26,\"ch\":100},\"to\":{\"line\":26,\"ch\":100}},\"scroll\":42.16409699406958}"
+                },
+                {
                   "title": "2025-07-14",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-14.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-14\"}",
@@ -50,25 +68,25 @@
                 {
                   "title": "2025-07-13",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W29/2025-07-13.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-13\"}",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-13.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-13\"}",
                   "eState": "{\"cursor\":{\"from\":{\"line\":9,\"ch\":0},\"to\":{\"line\":9,\"ch\":0}},\"scroll\":12.320833115350633}"
                 },
                 {
                   "title": "2025-07-12",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W28/2025-07-12.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-12\"}",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-12.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-12\"}",
                   "eState": "{\"cursor\":{\"from\":{\"line\":8,\"ch\":0},\"to\":{\"line\":8,\"ch\":0}},\"scroll\":32.37499745686849}"
                 },
                 {
                   "title": "2025-07-11",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W28/2025-07-11.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-11\"}",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-11.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-11\"}",
                   "eState": "{\"cursor\":{\"from\":{\"line\":9,\"ch\":0},\"to\":{\"line\":9,\"ch\":0}},\"scroll\":0}"
                 },
                 {
                   "title": "2025-07-10",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-07/2025-W28/2025-07-10.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-10\"}",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-10.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-07-10\"}",
                   "eState": "{\"cursor\":{\"from\":{\"line\":39,\"ch\":173},\"to\":{\"line\":39,\"ch\":173}},\"scroll\":4.287437323948846}"
                 }
               ]
@@ -76,13 +94,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-15.md",
+                "file": "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-16.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-15"
+              "title": "2025-07-16"
             }
           },
           {
@@ -140,30 +158,6 @@
               },
               "icon": "lucide-file",
               "title": "Mom's Quotes"
-            }
-          },
-          {
-            "id": "0328abe6084c9d54",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/The Arch Linux Package Manager (Pacman).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "The Arch Linux Package Manager (Pacman)"
             }
           },
           {
@@ -251,7 +245,7 @@
             }
           },
           {
-            "id": "89586977e8fe983a",
+            "id": "0328abe6084c9d54",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -265,17 +259,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled.md",
+                "file": "inbox/Bash - Set Permanent Env Variables.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Bash - Set Permanent Env Variables"
             }
           },
           {
-            "id": "ad911b8cda2c2fc5",
+            "id": "05e5821b6299ec8f",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -289,17 +283,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 1.md",
+                "file": "inbox/TODO Browser Links.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "TODO Browser Links"
             }
           },
           {
-            "id": "d8b57a5ccda173e7",
+            "id": "a90f70c5902a1d92",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -313,65 +307,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 2.md",
+                "file": "inbox/Essential Software.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 2"
-            }
-          },
-          {
-            "id": "662f98ce3dd17fc5",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Vimscript set option to global variable.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Vimscript set option to global variable"
-            }
-          },
-          {
-            "id": "ea8b087b111478f8",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Nvim-surround commands.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Nvim-surround commands"
+              "title": "Essential Software"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -748,25 +694,33 @@
       "friend-tracker:Open friend tracker": false
     }
   },
-  "active": "6aedd2bffb256d01",
+  "active": "a90f70c5902a1d92",
   "lastOpenFiles": [
+    "inbox/Essential Software.md",
+    "inbox/TODO Browser Links.md",
+    "inbox/Bash - Set Permanent Env Variables.md",
+    "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-16.md",
+    "inbox/Git Status --porcelain.md",
+    "inbox/pacman.md",
+    "inbox/PowerShell - Write-Host Multi-line Strings.md",
+    "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-15.md",
+    "periodic/2025/2025-Q1",
+    "periodic/2025/2025-Q2",
+    "periodic/2025/2025-Q3/2025-07/2025-W27/2025-W27.md",
+    "periodic/2025/2025-Q3/2025-07/2025-W27/2025-07-01.md",
+    "inbox/Arch Linux - Folder Access Permissions.md",
     "inbox/Nvim-surround commands.md",
     "inbox/Vimscript set option to global variable.md",
-    "inbox/Untitled 2.md",
     "inbox/HP - HP 3D DriveGuard Boot Error (BSOD).md",
-    "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-15.md",
     "inbox/MSINFO32.md",
     "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-14.md",
     "periodic/2025/2025-Q3/2025-07/2025-W29/~syncthing~2025-07-14.md.tmp",
-    "inbox/Untitled 1.md",
-    "inbox/Untitled.md",
     "admin/productivity/Mood Based Productivity.md",
     "admin/productivity/Productivity Guide.md",
-    "periodic/2025/2025-07/2025-W29/2025-07-13.md",
+    "periodic/2025/2025-Q3/2025-07/2025-W29/2025-07-13.md",
     "periodic/2025/2025-Q3/2025-07/2025-W29",
     "periodic/2025/2025-Q3/2025-07",
     "periodic/2025/2025-Q3",
-    "inbox/pacman.md",
     "admin/tasks/Weekly Review.md",
     "archive/tasks/archive.md",
     "admin/tasks/recurring.md",
@@ -774,18 +728,10 @@
     "admin/tasks/chores.md",
     "admin/tasks/backlog.md",
     "inbox/PowerShell - Get PowerShell Version.md",
-    "inbox/PowerShell - Display All Env Variables.md",
-    "references/cheat-sheets/S1 - Dataview MetaData.md",
-    "references/cheat-sheets/S2 - Cargo Commands.md",
-    "references/cheat-sheets/S3 - Windows Activation Keys.md",
-    "runbook/systems/windows/Install-Winget.md",
-    "inbox/Winget is Unusable.md",
     "admin",
     "wiki/command-library/cargo",
     "wiki/command-library",
     "wiki/tech/languages/rust",
-    "runbook/editors/obsidian/usage",
-    "runbook/editors/obsidian/config",
     "runbook/art/production/tilemaps/examples/Tileset Arrangement.png",
     "runbook/art/production/tilemaps/examples/Top-Down Tileset Arrangement.png",
     "references/websites/Untitled.canvas",

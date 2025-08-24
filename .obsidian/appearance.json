@@ -8,10 +8,11 @@
   ],
   "theme": "obsidian",
   "showViewHeader": true,
-  "textFontFamily": "Terminess Nerd Font,Architects Daughter,Rubik",
+  "textFontFamily": "Architects Daughter,Terminess Nerd Font,Rubik",
   "interfaceFontFamily": "Architects Daughter,Terminess Nerd Font,Overpass",
   "monospaceFontFamily": "BigBlueTermPlus Nerd Font Mono,Noto Serif",
   "showRibbon": true,
   "baseFontSizeAction": true,
-  "baseFontSize": 15
+  "baseFontSize": 18,
+  "nativeMenus": false
 }

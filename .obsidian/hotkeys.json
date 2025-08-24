@@ -310,7 +310,8 @@
   "bookmarks:bookmark-current-view": [
     {
       "modifiers": [
-        "Alt"
+        "Alt",
+        "Shift"
       ],
       "key": "E"
     }
@@ -575,7 +576,7 @@
   "editor:toggle-blockquote": [
     {
       "modifiers": [
-        "Alt"
+        "Mod"
       ],
       "key": "Q"
     }
@@ -711,15 +712,6 @@
         "Shift"
       ],
       "key": "J"
-    }
-  ],
-  "obsidian-editor-shortcuts:selectAllOccurrences": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "R"
     }
   ],
   "obsidian-editor-shortcuts:selectWordOrNextOccurrence": [
@@ -878,8 +870,7 @@
   "mode-manager:switch-to-edit": [
     {
       "modifiers": [
-        "Alt",
-        "Shift"
+        "Alt"
       ],
       "key": "E"
     }
@@ -887,10 +878,9 @@
   "mode-manager:switch-to-reading": [
     {
       "modifiers": [
-        "Alt",
-        "Shift"
+        "Alt"
       ],
-      "key": "R"
+      "key": "Q"
     }
   ],
   "obsidian-footnotes:insert-autonumbered-footnote": [
@@ -915,6 +905,68 @@
         "Alt"
       ],
       "key": "`"
+    }
+  ],
+  "pomodoro-timer:reset-timer": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "pomodoro-timer:toggle-timer": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "pomodoro-timer:toggle-mode": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "obsidian-editor-shortcuts:selectAllOccurrences": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "A"
+    }
+  ],
+  "mode-manager:switch-to-source": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
+  ],
+  "mode-manager:switch-to-next-mode": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "X"
+    }
+  ],
+  "mode-manager:switch-to-live-preview": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "Z"
     }
   ]
 }

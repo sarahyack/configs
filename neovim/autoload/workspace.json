@@ -1,0 +1,524 @@
+{
+  "main": {
+    "id": "c8ffb2d222746550",
+    "type": "split",
+    "children": [
+      {
+        "id": "415b00996daf5028",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02b429b0c797dc48",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "2025-08-22",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-08/2025-W34/2025-08-22.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-08-22\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":44,\"ch\":7},\"to\":{\"line\":44,\"ch\":7}},\"scroll\":32.64351851851852}"
+                },
+                {
+                  "title": "2025-08-21",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-08/2025-W34/2025-08-21.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-08-21\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":9,\"ch\":0},\"to\":{\"line\":9,\"ch\":0}},\"scroll\":28.34967377887498}"
+                },
+                {
+                  "title": "index",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"index.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"index\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":23,\"ch\":0},\"to\":{\"line\":23,\"ch\":0}},\"scroll\":1.1471698113207547}"
+                },
+                {
+                  "title": "Master Bugs Document",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"projects/gamedev/bug-buster/bestiary/Master Bugs Document.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Master Bugs Document\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}}}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/2025/2025-Q3/2025-08/2025-W34/2025-08-23.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-08-23"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "02e97724b75d47ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d5b0f0251c6605c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a16ecb8c9bb2e7b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4db6cf25bd474109",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "69eaa85844d2ddba",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "668889df273c4f4a",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "00def0ca4181ad30",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e61aab5e7454fd96",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+              "state": {},
+              "icon": "longform",
+              "title": "Longform"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 264.5
+  },
+  "right": {
+    "id": "396106eeeb24b742",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c1c83402d7245d7",
+        "type": "tabs",
+        "dimension": 56.930693069306926,
+        "children": [
+          {
+            "id": "e29cef1aa170200b",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "periodic/2025/2025-Q3/2025-08/2025-W34/2025-08-23.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2025-08-23"
+            }
+          },
+          {
+            "id": "e0dcce0b9bf8d074",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "inbox/Bash - Set Permanent Env Variables.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Bash - Set Permanent Env Variables"
+            }
+          },
+          {
+            "id": "f1d36859b1ff0541",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "periodic/2025/2025-Q3/2025-07/2025-W30/2025-07-26.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2025-07-26"
+            }
+          },
+          {
+            "id": "61bc8a03fb33d747",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "Strange New Worlds",
+              "state": {},
+              "icon": "file-digit",
+              "title": "Strange New Worlds"
+            }
+          },
+          {
+            "id": "e04436ad40536aae",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "on-this-day-view",
+              "state": {},
+              "icon": "notebook-pen",
+              "title": "On this day"
+            }
+          },
+          {
+            "id": "efa74b5f449a6df3",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "Strange New Worlds",
+              "state": {},
+              "icon": "file-digit",
+              "title": "Strange New Worlds"
+            }
+          },
+          {
+            "id": "82d58a9c9476ffa8",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "reminder-list",
+              "state": {},
+              "icon": "clock",
+              "title": "Reminders"
+            }
+          }
+        ]
+      },
+      {
+        "id": "d72c567c17f3bed2",
+        "type": "tabs",
+        "dimension": 43.06930693069307,
+        "children": [
+          {
+            "id": "8606024b1e95b3a0",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "pinned": true,
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "d6c69f73d09ab015",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "timer-view",
+              "state": {},
+              "pinned": true,
+              "icon": "timer",
+              "title": "Timer"
+            }
+          },
+          {
+            "id": "74899c7a201923a1",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 279.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "random-note:Open random note": false,
+      "canvas:Create new canvas": false,
+      "markdown-importer:Open format converter": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "workspaces:Manage workspace layouts": true,
+      "templater-obsidian:Templater": false,
+      "on-this-day:Open panel": false,
+      "omnisearch:Omnisearch": false,
+      "history-today:On this day": false,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "bookshelf:Open Bookshelf library": false,
+      "bookshelf:Open Bookshelf statistics": false,
+      "task-board:Open task board": false,
+      "remotely-save:Remotely Save": false,
+      "callout-manager:Insert Callout": false,
+      "obsidian-git:Open Git source control": false,
+      "pomodoro-timer:Toggle timer panel": false,
+      "friend-tracker:Open friend tracker": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "02b429b0c797dc48",
+  "lastOpenFiles": [
+    "periodic/2025/2025-Q3/2025-08/2025-W34/2025-08-22.md",
+    "periodic/2025/2025-Q3/2025-08/2025-W34/2025-08-23.md",
+    "projects/gamedev/bug-buster/notes/index.md",
+    "periodic/2025/2025-Q3/2025-08/2025-W34/2025-08-21.md",
+    "wiki/command-library/cargo/index.md",
+    "wiki/command-library/index.md",
+    "wiki/casefiles/software/virtualbox/index.md",
+    "wiki/casefiles/software/index.md~",
+    "wiki/casefiles/software/index.md",
+    "wiki/casefiles/linux/index.md",
+    "wiki/casefiles/index.md",
+    "wiki/index.md~",
+    "runbook/index.md~",
+    "projects/index.md~",
+    "runbook/systems/windows/index.md~",
+    "runbook/systems/windows/index.md",
+    "runbook/systems/index.md",
+    "runbook/dev-tools/dotnet/index.md",
+    "runbook/dev-tools/index.md",
+    "runbook/art/production/tilemaps/examples/index.md",
+    "runbook/art/production/index.md",
+    "runbook/art/index.md",
+    "projects/gamedev/bug-buster/troops/index.md~",
+    "runbook/art/production/tilemaps/index.md",
+    "projects/gamedev/bug-buster/troops/gear/index.md~",
+    "projects/gamedev/bug-buster/troops/gear/index.md",
+    "projects/gamedev/bug-buster/troops/index.md",
+    "projects/gamedev/bug-buster/notes/index.md~",
+    "projects/gamedev/bug-buster/environments/index.md~",
+    "projects/gamedev/bug-buster/environments/index.md",
+    "projects/gamedev/bug-buster/bestiary/index.md~",
+    "projects/gamedev/bug-buster/bestiary/index.md",
+    "projects/gamedev/bug-buster/index.md",
+    "projects/gamedev/index.md",
+    "projects/design/index.md",
+    "projects/education/GED/practice-test-reviews/index.md",
+    "projects/Untitled Diagram.svg",
+    "runbook/art/production/tilemaps/examples/Tileset Arrangement.png",
+    "runbook/art/production/tilemaps/examples/Top-Down Tileset Arrangement.png",
+    "references/websites/Untitled.canvas",
+    "references/books/covers/The 4-hour Workweek - Timothy Ferriss.jpg",
+    "references/books/covers/Steal Like An Artist - Austin Kleon.jpg",
+    "references/books/covers/Show Your Work! - Austin Kleon.jpg",
+    "inbox/Notes/ArtBox/attachments/ArtBox-Mockup.png",
+    "projects/gamedev/glitchwing/attachments/Themes Brainstorming_scaled_6x_pngcrushed.png",
+    "references/books/covers/Game Design Workshop - Tracy Fullerton.jpg",
+    "references/books/covers/The Art of Game Design - Jesse Schell.jpg",
+    "Untitled.canvas"
+  ]
+}

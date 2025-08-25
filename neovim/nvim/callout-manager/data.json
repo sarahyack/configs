@@ -1,0 +1,29 @@
+{
+  "callouts": {
+    "custom": [
+      "overdue"
+    ],
+    "settings": {
+      "overdue": [
+        {
+          "changes": {
+            "icon": "lucide-bell-electric",
+            "color": "165, 51, 13"
+          }
+        }
+      ],
+      "tip": [
+        {
+          "changes": {
+            "color": "255, 80, 5"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}

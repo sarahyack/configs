@@ -1,0 +1,13 @@
+{
+  "contactsFolder": "contacts",
+  "defaultSortColumn": "name",
+  "defaultSortDirection": "asc",
+  "relationshipTypes": [
+    "family",
+    "friend",
+    "colleague",
+    "pet",
+    "acquaintance"
+  ],
+  "defaultActiveTab": "notes"
+}

@@ -1,0 +1,35 @@
+{
+  "showGettingStartedBanner": false,
+  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "format": "YYYY/YYYY-[Q]Q/YYYY-MM/gggg-[W]W/YYYY-MM-DD",
+    "template": "admin/templates/daily-template.md",
+    "folder": "periodic",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "YYYY/YYYY-[Q]Q/YYYY-MM/gggg-[W]W/gggg-[W]W",
+    "template": "admin/templates/weekly-template.md",
+    "folder": "periodic",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "YYYY/YYYY-[Q]Q/YYYY-MM/YYYY-MM",
+    "template": "admin/templates/monthly-template.md",
+    "folder": "periodic",
+    "enabled": true
+  },
+  "quarterly": {
+    "format": "YYYY/YYYY-[Q]Q/YYYY-[Q]Q",
+    "template": "",
+    "folder": "periodic",
+    "enabled": true
+  },
+  "yearly": {
+    "format": "YYYY/YYYY",
+    "template": "",
+    "folder": "periodic",
+    "enabled": true
+  }
+}

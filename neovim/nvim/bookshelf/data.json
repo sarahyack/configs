@@ -1,0 +1,46 @@
+{
+  "settingsVersion": 20250408,
+  "booksFolder": "references/books",
+  "bookProperties": {
+    "cover": "localCover",
+    "author": "authors",
+    "published": "published",
+    "pages": "pages",
+    "tags": "tags",
+    "rating": "rating",
+    "lists": "lists",
+    "comment": "comment",
+    "links": "links",
+    "series": "series",
+    "positionInSeries": "position-in-series",
+    "duration": "duration"
+  },
+  "bookNote": {
+    "enabled": true,
+    "heading": "Reading Journey",
+    "dateFormat": "yyyy-MM-dd",
+    "patterns": {
+      "started": "{date}: Started",
+      "finished": "{date}: Finished",
+      "abandoned": "{date}: Abandoned",
+      "absoluteProgress": "{date}: {start}-{end}",
+      "relativeProgress": "{date}: {end}"
+    }
+  },
+  "dailyNote": {
+    "enabled": true,
+    "heading": "Reading",
+    "patterns": {
+      "started": "Started {book}",
+      "finished": "Finished {book}",
+      "abandoned": "Abandoned {book}",
+      "absoluteProgress": "Read {book}: {start}-{end}",
+      "relativeProgress": "Read {book}: {end}"
+    }
+  },
+  "readingProgress": {
+    "newEntryLocation": "dailyNote"
+  },
+  "previousVersion": "0.17.0",
+  "showReleaseNotes": true
+}

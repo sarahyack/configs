@@ -1,0 +1,6 @@
+{
+  "deletion_trigger": "%%done_del%%",
+  "bottom_trigger": "%%done_end%%",
+  "archive_trigger": "%%done_log%%",
+  "archive_filepath": "archive/tasks/archive.md"
+}

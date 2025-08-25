@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=bes-theme-light-purple
+Type=X-GNOME-Metatheme
+Comment=bes-theme-light-purple Gtk Themes 
+Encoding=UTF-8
+GtkTheme=bes-theme-light-purple
+MetacityTheme=bes-theme-light-purple
+IconTheme=curved-colors-purple
+CursorTheme=Adwaita
+CursorSize=24

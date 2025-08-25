@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=bes-theme-light-pink
+Type=X-GNOME-Metatheme
+Comment=bes-theme-light-pink Gtk Themes 
+Encoding=UTF-8
+GtkTheme=bes-theme-light-pink
+MetacityTheme=bes-theme-light-pink
+IconTheme=curved-colors-pink
+CursorTheme=Adwaita
+CursorSize=24

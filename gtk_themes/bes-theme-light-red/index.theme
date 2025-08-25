@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=bes-theme-light-red
+Type=X-GNOME-Metatheme
+Comment=bes-theme-light-red Gtk Themes 
+Encoding=UTF-8
+GtkTheme=bes-theme-light-red
+MetacityTheme=bes-theme-light-red
+IconTheme=curved-colors-red
+CursorTheme=Adwaita
+CursorSize=24

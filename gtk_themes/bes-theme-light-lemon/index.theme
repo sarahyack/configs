@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=bes-theme-light-lemon
+Type=X-GNOME-Metatheme
+Comment=bes-theme-light-lemon Gtk Themes 
+Encoding=UTF-8
+GtkTheme=bes-theme-light-lemon
+MetacityTheme=bes-theme-light-lemon
+IconTheme=curved-colors-lemon
+CursorTheme=Adwaita
+CursorSize=24

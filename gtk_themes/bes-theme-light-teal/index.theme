@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=bes-theme-light-teal
+Type=X-GNOME-Metatheme
+Comment=bes-theme-light-teal Gtk Themes 
+Encoding=UTF-8
+GtkTheme=bes-theme-light-teal
+MetacityTheme=bes-theme-light-teal
+IconTheme=curved-colors-teal
+CursorTheme=Adwaita
+CursorSize=24

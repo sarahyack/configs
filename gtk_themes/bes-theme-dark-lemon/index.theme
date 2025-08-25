@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=bes-theme-dark-lemon
+Type=X-GNOME-Metatheme
+Comment=bes-theme-dark-lemon Gtk Themes 
+Encoding=UTF-8
+GtkTheme=bes-theme-dark-lemon
+MetacityTheme=bes-theme-dark-lemon
+IconTheme=curved-colors-lemon-dark
+CursorTheme=Adwaita
+CursorSize=24

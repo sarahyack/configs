@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=bes-theme-light-steel
+Type=X-GNOME-Metatheme
+Comment=bes-theme-light-steel Gtk Themes 
+Encoding=UTF-8
+GtkTheme=bes-theme-light-steel
+MetacityTheme=bes-theme-light-steel
+IconTheme=curved-colors-steel
+CursorTheme=Adwaita
+CursorSize=24

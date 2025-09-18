@@ -9,7 +9,9 @@
     "initialized": true,
     "version": "0.2.0",
     "exclude": [
-      "templates"
-    ]
+      "templates",
+      "admin/templates"
+    ],
+    "updatedPropertyEnabled": false
   }
 }

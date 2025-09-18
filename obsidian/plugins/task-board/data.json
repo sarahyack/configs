@@ -1,5 +1,5 @@
 {
-  "version": "1.5.3",
+  "version": "1.6.11",
   "data": {
     "boardConfigs": [
       {
@@ -10,7 +10,12 @@
             "collapsed": false,
             "name": "Undated Tasks",
             "index": 1,
-            "id": 511191
+            "id": 511191,
+            "datedBasedColumn": {
+              "dateType": "due",
+              "from": 0,
+              "to": 0
+            }
           },
           {
             "colType": "dated",
@@ -20,6 +25,7 @@
             "index": 2,
             "id": 668633,
             "datedBasedColumn": {
+              "dateType": "due",
               "from": -300,
               "to": -1
             }
@@ -32,6 +38,7 @@
             "index": 3,
             "id": 220480,
             "datedBasedColumn": {
+              "dateType": "due",
               "from": 0,
               "to": 0
             }
@@ -44,6 +51,7 @@
             "index": 4,
             "id": 71616,
             "datedBasedColumn": {
+              "dateType": "due",
               "from": 1,
               "to": 1
             }
@@ -56,6 +64,7 @@
             "index": 5,
             "id": 978427,
             "datedBasedColumn": {
+              "dateType": "due",
               "from": 2,
               "to": 300
             }
@@ -76,7 +85,8 @@
         "name": "Time Based Workflow",
         "index": 1,
         "showColumnTags": false,
-        "showFilteredTags": true
+        "showFilteredTags": true,
+        "hideEmptyColumns": false
       },
       {
         "columns": [
@@ -140,7 +150,8 @@
         "name": "Static Kanban",
         "index": 2,
         "showColumnTags": false,
-        "showFilteredTags": true
+        "showFilteredTags": true,
+        "hideEmptyColumns": false
       }
     ],
     "globalSettings": {
@@ -163,6 +174,10 @@
           "values": [
             "#task/schedule"
           ]
+        },
+        "frontMatter": {
+          "polarity": 3,
+          "values": []
         }
       },
       "firstDayOfWeek": "Mon",
@@ -443,7 +458,20 @@
       "preDefinedNote": "Task_board_note.md",
       "quickAddPluginDefaultChoice": "",
       "archivedTasksFilePath": "",
-      "showFileNameInCard": false
+      "showFileNameInCard": false,
+      "showFrontmatterTagsOnCards": false,
+      "tasksCacheFilePath": ".obsidian/plugins/task-board/tasks.json",
+      "notificationService": "none",
+      "frontmatterPropertyForReminder": "reminder",
+      "actions": [
+        {
+          "enabled": true,
+          "trigger": "Complete",
+          "type": "move",
+          "targetColumn": "Completed"
+        }
+      ],
+      "cardSectionsVisibility": "showSubTasksOnly"
     }
   }
 }

@@ -1157,144 +1157,97 @@
         ],
         "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md": [
             {
-                "id": 1078380884,
+                "id": 3850027719,
                 "status": " ",
-                "title": "Work on Resume ⏫ ➕ 2025-07-06 📅 2025-08-28",
+                "title": "Work on Resume ⏫ ➕ 2025-07-06 📅 2025-10-23",
                 "body": [],
                 "time": "",
                 "createdDate": "2025-07-06",
                 "startDate": "",
                 "scheduledDate": "",
-                "due": "2025-08-28",
+                "due": "2025-10-23",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 2,
                 "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md",
-                "lineNumber": 27,
+                "taskLocation": {
+                    "startLine": 27,
+                    "startCharIndex": 0,
+                    "endLine": 27,
+                    "endCharIndex": 49
+                },
                 "completion": "",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
             },
             {
-                "id": 3068466437,
+                "id": 2800846079,
                 "status": " ",
-                "title": "Do some research into the different Hobby ideas ➕ 2025-07-06 📅 2025-08-17",
+                "title": "Do some research into the different Hobby ideas ➕ 2025-07-06 📅 2025-09-13",
                 "body": [],
                 "time": "",
                 "createdDate": "2025-07-06",
                 "startDate": "",
                 "scheduledDate": "",
-                "due": "2025-08-17",
+                "due": "2025-09-13",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 0,
                 "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md",
-                "lineNumber": 30,
+                "taskLocation": {
+                    "startLine": 30,
+                    "startCharIndex": 0,
+                    "endLine": 30,
+                    "endCharIndex": 80
+                },
                 "completion": "",
-                "cancelledDate": ""
-            },
-            {
-                "id": 4022997766,
-                "status": " ",
-                "title": "Get Through Beehive inbox a little ⏫ ➕ 2025-07-06 📅 2025-08-16",
-                "body": [],
-                "time": "",
-                "createdDate": "2025-07-06",
-                "startDate": "",
-                "scheduledDate": "",
-                "due": "2025-08-16",
-                "tags": [],
-                "priority": 2,
-                "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md",
-                "lineNumber": 33,
-                "completion": "",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
             }
         ],
         "periodic/2025/2025-Q3/2025-07/2025-W30/2025-07-26.md": [
             {
-                "id": 3456487538,
+                "id": 2047558392,
                 "status": " ",
-                "title": "Install & Setup Hyprland 🔼 ➕ 2025-07-26 📅 2025-08-21",
+                "title": "Install & Setup Hyprland 🔼 ➕ 2025-07-26 📅 2025-08-25",
                 "body": [],
                 "time": "",
                 "createdDate": "2025-07-26",
                 "startDate": "",
                 "scheduledDate": "",
-                "due": "2025-08-21",
+                "due": "2025-08-25",
                 "tags": [],
                 "priority": 3,
                 "filePath": "periodic/2025/2025-Q3/2025-07/2025-W30/2025-07-26.md",
                 "lineNumber": 27,
-                "completion": "",
-                "cancelledDate": ""
-            },
-            {
-                "id": 2025715643,
-                "status": " ",
-                "title": "Create Dotfiles Backup ⏫ ➕ 2025-07-26 📅 2025-08-28",
-                "body": [],
-                "time": "",
-                "createdDate": "2025-07-26",
-                "startDate": "",
-                "scheduledDate": "",
-                "due": "2025-08-28",
-                "tags": [],
-                "priority": 2,
-                "filePath": "periodic/2025/2025-Q3/2025-07/2025-W30/2025-07-26.md",
-                "lineNumber": 28,
-                "completion": "",
-                "cancelledDate": ""
-            },
-            {
-                "id": 2758922344,
-                "status": " ",
-                "title": "Create System Install Script 🔼 ➕ 2025-07-26 📅 2025-08-18",
-                "body": [],
-                "time": "",
-                "createdDate": "2025-07-26",
-                "startDate": "",
-                "scheduledDate": "",
-                "due": "2025-08-18",
-                "tags": [],
-                "priority": 3,
-                "filePath": "periodic/2025/2025-Q3/2025-07/2025-W30/2025-07-26.md",
-                "lineNumber": 29,
                 "completion": "",
                 "cancelledDate": ""
             }
         ],
         "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-10.md": [
             {
-                "id": 508038148,
-                "status": "b",
-                "title": "Implement \"90 Days rebuilding my brain\" 🔼 ➕ 2025-07-10 🛫 2025-07-11 ⏳ 2025-07-31 📅 2025-08-01",
-                "body": [],
-                "time": "",
-                "createdDate": "2025-07-10",
-                "startDate": "2025-07-11",
-                "scheduledDate": "2025-07-31",
-                "due": "2025-08-01",
-                "tags": [],
-                "priority": 3,
-                "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-10.md",
-                "lineNumber": 27,
-                "completion": "",
-                "cancelledDate": ""
-            },
-            {
-                "id": 3094152515,
+                "id": 1718010622,
                 "status": "*",
-                "title": "Transfer Zotero References to Beehive 🔼 ➕ 2025-07-10 🛫 2025-08-02 📅 2025-08-16",
+                "title": "Transfer Zotero References to Beehive 🔼 ➕ 2025-07-10 🛫 2025-08-02 📅 2025-09-11",
                 "body": [],
                 "time": "",
                 "createdDate": "2025-07-10",
                 "startDate": "2025-08-02",
                 "scheduledDate": "",
-                "due": "2025-08-16",
+                "due": "2025-09-11",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 3,
                 "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-10.md",
-                "lineNumber": 28,
+                "taskLocation": {
+                    "startLine": 28,
+                    "startCharIndex": 0,
+                    "endLine": 28,
+                    "endCharIndex": 87
+                },
                 "completion": "",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
             }
         ],
         "periodic/2025/2025-Q3/2025-07/2025-W31/2025-07-27.md": [
@@ -1561,21 +1514,28 @@
         ],
         "periodic/2025/2025-Q2/2025-04/2025-W17/2025-W17.md": [
             {
-                "id": 79684588,
+                "id": 1211808705,
                 "status": " ",
-                "title": "Create Mom's Birthday GIF for her keyboard (see [[Mom's Birthday GIF]] for idea) ⏫ ➕ 2025-04-21 📅 2025-08-17",
+                "title": "Create Mom's Birthday GIF for her keyboard (see [[Mom's Birthday GIF]] for idea) ⏫ ➕ 2025-04-21 📅 2025-09-09",
                 "body": [],
                 "time": "",
                 "createdDate": "2025-04-21",
                 "startDate": "",
                 "scheduledDate": "",
-                "due": "2025-08-17",
+                "due": "2025-09-09",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 2,
                 "filePath": "periodic/2025/2025-Q2/2025-04/2025-W17/2025-W17.md",
-                "lineNumber": 50,
+                "taskLocation": {
+                    "startLine": 60,
+                    "startCharIndex": 0,
+                    "endLine": 60,
+                    "endCharIndex": 115
+                },
                 "completion": "",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
             }
         ],
         "periodic/2025/2025-Q3/2025-08/2025-W34/2025-08-19.md": [
@@ -1958,25 +1918,6 @@
                 "cancelledDate": ""
             }
         ],
-        "periodic/2025/2025-Q2/2025-04/2025-W18/2025-W18.md": [
-            {
-                "id": 2060448124,
-                "status": " ",
-                "title": "Create Recipe note for the Boule Bread 🔼 ➕ 2025-05-01 🛫 2025-05-02 ⏳ 2025-05-04 📅 2025-08-15",
-                "body": [],
-                "time": "",
-                "createdDate": "2025-05-01",
-                "startDate": "2025-05-02",
-                "scheduledDate": "2025-05-04",
-                "due": "2025-08-15",
-                "tags": [],
-                "priority": 3,
-                "filePath": "periodic/2025/2025-Q2/2025-04/2025-W18/2025-W18.md",
-                "lineNumber": 72,
-                "completion": "",
-                "cancelledDate": ""
-            }
-        ],
         "periodic/2025/2025-Q3/2025-08/2025-W34/2025-08-22.md": [
             {
                 "id": 3034829570,
@@ -1991,6 +1932,101 @@
                 "tags": [],
                 "priority": 0,
                 "filePath": "periodic/2025/2025-Q3/2025-08/2025-W34/2025-08-22.md",
+                "lineNumber": 27,
+                "completion": "",
+                "cancelledDate": ""
+            }
+        ],
+        "periodic/2025/2025-Q3/2025-08/2025-W35/2025-08-30.md": [
+            {
+                "id": 1676619498,
+                "status": " ",
+                "title": "",
+                "body": [],
+                "time": "",
+                "createdDate": "",
+                "startDate": "",
+                "scheduledDate": "",
+                "due": "",
+                "tags": [],
+                "priority": 0,
+                "filePath": "periodic/2025/2025-Q3/2025-08/2025-W35/2025-08-30.md",
+                "lineNumber": 27,
+                "completion": "",
+                "cancelledDate": ""
+            }
+        ],
+        "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-03.md": [
+            {
+                "id": 1008861815,
+                "status": " ",
+                "title": "",
+                "body": [],
+                "time": "",
+                "createdDate": "",
+                "startDate": "",
+                "scheduledDate": "",
+                "due": "",
+                "tags": [],
+                "priority": 0,
+                "filePath": "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-03.md",
+                "lineNumber": 27,
+                "completion": "",
+                "cancelledDate": ""
+            }
+        ],
+        "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-01.md": [
+            {
+                "id": 3467000546,
+                "status": " ",
+                "title": "",
+                "body": [],
+                "time": "",
+                "createdDate": "",
+                "startDate": "",
+                "scheduledDate": "",
+                "due": "",
+                "tags": [],
+                "priority": 0,
+                "filePath": "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-01.md",
+                "lineNumber": 27,
+                "completion": "",
+                "cancelledDate": ""
+            }
+        ],
+        "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-07.md": [
+            {
+                "id": 2074154019,
+                "status": " ",
+                "title": "",
+                "body": [],
+                "time": "",
+                "createdDate": "",
+                "startDate": "",
+                "scheduledDate": "",
+                "due": "",
+                "tags": [],
+                "priority": 0,
+                "filePath": "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-07.md",
+                "lineNumber": 27,
+                "completion": "",
+                "cancelledDate": ""
+            }
+        ],
+        "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-06.md": [
+            {
+                "id": 1564420888,
+                "status": " ",
+                "title": "",
+                "body": [],
+                "time": "",
+                "createdDate": "",
+                "startDate": "",
+                "scheduledDate": "",
+                "due": "",
+                "tags": [],
+                "priority": 0,
+                "filePath": "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-06.md",
                 "lineNumber": 27,
                 "completion": "",
                 "cancelledDate": ""
@@ -6529,9 +6565,9 @@
         ],
         "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md": [
             {
-                "id": 1148655826,
+                "id": 4163300102,
                 "status": "x",
-                "title": "Continue Catching up on Signal, Telegram & Newsletters ✅ 2025-07-06 ➕ 2025-07-06",
+                "title": "Continue Catching up on Signal, Telegram & Newsletters ✅ 2025-07-06 ➕ 2025-07-06 ",
                 "body": [],
                 "time": "",
                 "createdDate": "2025-07-06",
@@ -6539,14 +6575,21 @@
                 "scheduledDate": "",
                 "due": "",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 0,
                 "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md",
-                "lineNumber": 28,
+                "taskLocation": {
+                    "startLine": 28,
+                    "startCharIndex": 0,
+                    "endLine": 28,
+                    "endCharIndex": 87
+                },
                 "completion": "2025-07-06",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
             },
             {
-                "id": 3881518974,
+                "id": 4131943870,
                 "status": "x",
                 "title": "Do Some research into the different Work ideas ⏫ ➕ 2025-07-06 📅 2025-07-07 ✅ 2025-07-07",
                 "body": [],
@@ -6556,16 +6599,23 @@
                 "scheduledDate": "",
                 "due": "2025-07-07",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 2,
                 "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md",
-                "lineNumber": 29,
+                "taskLocation": {
+                    "startLine": 29,
+                    "startCharIndex": 0,
+                    "endLine": 29,
+                    "endCharIndex": 94
+                },
                 "completion": "2025-07-07",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
             },
             {
-                "id": 2877976955,
+                "id": 2467528425,
                 "status": "x",
-                "title": "Get the EndeavourOS vm up and running ✅ 2025-07-06 ➕ 2025-07-06",
+                "title": "Get the EndeavourOS vm up and running ✅ 2025-07-06 ➕ 2025-07-06 ",
                 "body": [],
                 "time": "",
                 "createdDate": "2025-07-06",
@@ -6573,16 +6623,23 @@
                 "scheduledDate": "",
                 "due": "",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 0,
                 "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md",
-                "lineNumber": 31,
+                "taskLocation": {
+                    "startLine": 31,
+                    "startCharIndex": 0,
+                    "endLine": 31,
+                    "endCharIndex": 70
+                },
                 "completion": "2025-07-06",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
             },
             {
-                "id": 3930400422,
+                "id": 1327369529,
                 "status": "x",
-                "title": "Sort through Downloads ✅ 2025-07-06 ➕ 2025-07-06",
+                "title": "Sort through Downloads ✅ 2025-07-06 ➕ 2025-07-06 ",
                 "body": [],
                 "time": "",
                 "createdDate": "2025-07-06",
@@ -6590,16 +6647,81 @@
                 "scheduledDate": "",
                 "due": "",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 0,
                 "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md",
-                "lineNumber": 32,
+                "taskLocation": {
+                    "startLine": 32,
+                    "startCharIndex": 0,
+                    "endLine": 32,
+                    "endCharIndex": 55
+                },
                 "completion": "2025-07-06",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
+            },
+            {
+                "id": 2430090913,
+                "status": "x",
+                "title": "Get Through Beehive inbox a little ⏫ ➕ 2025-07-06 📅 2025-08-16 ✅ 2025-08-21",
+                "body": [],
+                "time": "",
+                "createdDate": "2025-07-06",
+                "startDate": "",
+                "scheduledDate": "",
+                "due": "2025-08-16",
+                "tags": [],
+                "frontmatterTags": [],
+                "priority": 2,
+                "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md",
+                "taskLocation": {
+                    "startLine": 33,
+                    "startCharIndex": 0,
+                    "endLine": 33,
+                    "endCharIndex": 82
+                },
+                "completion": "2025-08-21",
+                "cancelledDate": "",
+                "reminder": ""
             }
         ],
         "periodic/2025/2025-Q3/2025-07/2025-W30/2025-07-26.md": [
             {
-                "id": 3977089439,
+                "id": 800732438,
+                "status": "x",
+                "title": "Create Dotfiles Backup ⏫ ➕ 2025-07-26 📅 2025-08-28 ✅ 2025-08-30",
+                "body": [],
+                "time": "",
+                "createdDate": "2025-07-26",
+                "startDate": "",
+                "scheduledDate": "",
+                "due": "2025-08-28",
+                "tags": [],
+                "priority": 2,
+                "filePath": "periodic/2025/2025-Q3/2025-07/2025-W30/2025-07-26.md",
+                "lineNumber": 28,
+                "completion": "2025-08-30",
+                "cancelledDate": ""
+            },
+            {
+                "id": 2789474051,
+                "status": "x",
+                "title": "Create System Install Script 🔼 ➕ 2025-07-26 📅 2025-08-18 ✅ 2025-08-30",
+                "body": [],
+                "time": "",
+                "createdDate": "2025-07-26",
+                "startDate": "",
+                "scheduledDate": "",
+                "due": "2025-08-18",
+                "tags": [],
+                "priority": 3,
+                "filePath": "periodic/2025/2025-Q3/2025-07/2025-W30/2025-07-26.md",
+                "lineNumber": 29,
+                "completion": "2025-08-30",
+                "cancelledDate": ""
+            },
+            {
+                "id": 3661897392,
                 "status": "x",
                 "title": "Catch Up on Newsletters 🔺 ➕ 2025-07-26 📅 2025-07-26 ✅ 2025-07-27",
                 "body": [],
@@ -6616,7 +6738,7 @@
                 "cancelledDate": ""
             },
             {
-                "id": 3341731889,
+                "id": 3807593614,
                 "status": "x",
                 "title": "Catch Up On Signal & Telegram 🔺 ➕ 2025-07-26 📅 2025-07-26 ✅ 2025-07-26",
                 "body": [],
@@ -6633,7 +6755,7 @@
                 "cancelledDate": ""
             },
             {
-                "id": 2432514990,
+                "id": 1996447211,
                 "status": "x",
                 "title": "Create Recurring Task for the above two tasks 🔺 ➕ 2025-07-26 📅 2025-07-26 ✅ 2025-07-26",
                 "body": [],
@@ -7055,7 +7177,7 @@
         ],
         "periodic/2025/2025-Q2/2025-04/2025-W17/2025-W17.md": [
             {
-                "id": 2531608951,
+                "id": 545994288,
                 "status": "x",
                 "title": "Add Productivity Score to every Day and Add a Section in the Weekly Template to show the most productive day  ⏰ 2025-04-21 15:52 🔼 ➕ 2025-04-20 📅 2025-04-21 ✅ 2025-04-21",
                 "body": [],
@@ -7065,14 +7187,21 @@
                 "scheduledDate": "",
                 "due": "2025-04-21",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 3,
                 "filePath": "periodic/2025/2025-Q2/2025-04/2025-W17/2025-W17.md",
-                "lineNumber": 48,
+                "taskLocation": {
+                    "startLine": 58,
+                    "startCharIndex": 0,
+                    "endLine": 58,
+                    "endCharIndex": 177
+                },
                 "completion": "2025-04-21",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
             },
             {
-                "id": 310618585,
+                "id": 2215842809,
                 "status": "x",
                 "title": "Take Social Studies GED Test 🔺 ➕ 2025-04-20 📅 2025-04-21 ✅ 2025-04-21",
                 "body": [],
@@ -7082,16 +7211,47 @@
                 "scheduledDate": "",
                 "due": "2025-04-21",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 1,
                 "filePath": "periodic/2025/2025-Q2/2025-04/2025-W17/2025-W17.md",
-                "lineNumber": 49,
+                "taskLocation": {
+                    "startLine": 59,
+                    "startCharIndex": 0,
+                    "endLine": 59,
+                    "endCharIndex": 77
+                },
                 "completion": "2025-04-21",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
             }
         ],
         "periodic/2025/2025-Q2/2025-04/2025-W18/2025-W18.md": [
             {
-                "id": 2203965078,
+                "id": 666003157,
+                "status": "x",
+                "title": "Create Recipe note for the Boule Bread 🔼 ➕ 2025-05-01 🛫 2025-05-02 ⏳ 2025-05-04 📅 2025-09-03 ✅ 2025-09-07",
+                "body": [],
+                "time": "",
+                "createdDate": "2025-05-01",
+                "startDate": "2025-05-02",
+                "scheduledDate": "2025-05-04",
+                "due": "2025-09-03",
+                "tags": [],
+                "frontmatterTags": [],
+                "priority": 3,
+                "filePath": "periodic/2025/2025-Q2/2025-04/2025-W18/2025-W18.md",
+                "taskLocation": {
+                    "startLine": 72,
+                    "startCharIndex": 0,
+                    "endLine": 72,
+                    "endCharIndex": 114
+                },
+                "completion": "2025-09-07",
+                "cancelledDate": "",
+                "reminder": ""
+            },
+            {
+                "id": 241681030,
                 "status": "x",
                 "title": "Add GED topic flags to the various Test notes & Test Reviews ⏫ ➕ 2025-05-01 📅 2025-05-02 ✅ 2025-05-13",
                 "body": [],
@@ -7101,11 +7261,18 @@
                 "scheduledDate": "",
                 "due": "2025-05-02",
                 "tags": [],
+                "frontmatterTags": [],
                 "priority": 2,
                 "filePath": "periodic/2025/2025-Q2/2025-04/2025-W18/2025-W18.md",
-                "lineNumber": 73,
+                "taskLocation": {
+                    "startLine": 73,
+                    "startCharIndex": 0,
+                    "endLine": 73,
+                    "endCharIndex": 108
+                },
                 "completion": "2025-05-13",
-                "cancelledDate": ""
+                "cancelledDate": "",
+                "reminder": ""
             }
         ],
         "periodic/2025/2025-Q1/2025-03/2025-W12/2025-03-19.md": [
@@ -7466,6 +7633,58 @@
                 "lineNumber": 27,
                 "completion": "",
                 "cancelledDate": "❌ 2025-07-26"
+            }
+        ],
+        "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-10.md": [
+            {
+                "id": 1313126860,
+                "status": "x",
+                "title": "Implement \"90 Days rebuilding my brain\" 🔼 ➕ 2025-07-10 🛫 2025-07-11 ⏳ 2025-07-31 📅 2025-09-09 ✅ 2025-09-09",
+                "body": [],
+                "time": "",
+                "createdDate": "2025-07-10",
+                "startDate": "2025-07-11",
+                "scheduledDate": "2025-07-31",
+                "due": "2025-09-09",
+                "tags": [],
+                "frontmatterTags": [],
+                "priority": 3,
+                "filePath": "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-10.md",
+                "taskLocation": {
+                    "startLine": 27,
+                    "startCharIndex": 0,
+                    "endLine": 27,
+                    "endCharIndex": 115
+                },
+                "completion": "2025-09-09",
+                "cancelledDate": "",
+                "reminder": ""
+            }
+        ],
+        "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-09.md": [
+            {
+                "id": 3896775818,
+                "status": "-",
+                "title": "Create melody for *It Was Inevitable* ⏫ ➕ 2025-09-09 📅 2025-09-09 ❌ 2025-09-12",
+                "body": [],
+                "time": "",
+                "createdDate": "2025-09-09",
+                "startDate": "",
+                "scheduledDate": "",
+                "due": "2025-09-09",
+                "tags": [],
+                "frontmatterTags": [],
+                "priority": 2,
+                "filePath": "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-09.md",
+                "taskLocation": {
+                    "startLine": 27,
+                    "startCharIndex": 0,
+                    "endLine": 27,
+                    "endCharIndex": 85
+                },
+                "completion": "",
+                "cancelledDate": "❌ 2025-09-12",
+                "reminder": ""
             }
         ]
     }

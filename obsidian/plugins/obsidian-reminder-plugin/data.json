@@ -1,13 +1,6 @@
 {
   "scanned": true,
   "reminders": {
-    "periodic/2025/2025-Q3/2025-08/2025-W33/2025-08-14.md": [
-      {
-        "title": "Install Hyprland ⏫ ➕ 2025-08-14",
-        "time": "2025-08-25",
-        "rowNumber": 31
-      }
-    ],
     "periodic/2025/2025-Q3/2025-07/2025-W27/2025-07-02.md": [
       {
         "title": "Finish Creating Resume Talking Points in **HoneyComb**. 🔺 ➕ 2025-07-02",
@@ -17,160 +10,143 @@
     ],
     "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-06.md": [
       {
-        "title": "Work on Resume ⏫ ➕ 2025-07-06",
-        "time": "2025-08-28",
-        "rowNumber": 26
+        "title": "Do some research into the different Hobby ideas ➕ 2025-07-06",
+        "time": "2025-09-13",
+        "rowNumber": 29
       },
       {
-        "title": "Do some research into the different Hobby ideas ➕ 2025-07-06",
-        "time": "2025-08-17",
-        "rowNumber": 29
+        "title": "Work on Resume ⏫ ➕ 2025-07-06",
+        "time": "2025-10-23",
+        "rowNumber": 26
       }
     ],
     "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-07.md": [
       {
         "title": "Flesh out Upwork Profile 🔺 ➕ 2025-07-07",
-        "time": "2025-08-28",
+        "time": "2025-09-19",
         "rowNumber": 27
       }
     ],
     "periodic/2025/2025-Q3/2025-07/2025-W28/2025-07-10.md": [
       {
-        "title": "Implement \"90 Days rebuilding my brain\" 🔼 ➕ 2025-07-10",
-        "time": "2025-08-01",
-        "rowNumber": 26
-      },
-      {
         "title": "Transfer Zotero References to Beehive 🔼 ➕ 2025-07-10",
-        "time": "2025-08-16",
-        "rowNumber": 27
-      }
-    ],
-    "periodic/2025/2025-Q3/2025-07/2025-W30/2025-07-26.md": [
-      {
-        "title": "Create System Install Script 🔼 ➕ 2025-07-26",
-        "time": "2025-08-18",
-        "rowNumber": 28
-      },
-      {
-        "title": "Install & Setup Hyprland 🔼 ➕ 2025-07-26",
-        "time": "2025-08-25",
-        "rowNumber": 26
-      },
-      {
-        "title": "Create Dotfiles Backup ⏫ ➕ 2025-07-26",
-        "time": "2025-08-28",
+        "time": "2025-09-11",
         "rowNumber": 27
       }
     ],
     "periodic/2025/2025-Q2/2025-04/2025-W17/2025-W17.md": [
       {
         "title": "Create Mom's Birthday GIF for her keyboard (see [[Mom's Birthday GIF]] for idea) ⏫ ➕ 2025-04-21",
-        "time": "2025-08-17",
+        "time": "2025-09-09",
         "rowNumber": 59
       }
     ],
     "admin/tasks/chores.md": [
       {
-        "title": "Do Lego Car Programming with Mom 🔼 ➕ 2025-03-29",
-        "time": "2025-08-19",
-        "rowNumber": 21
-      },
-      {
         "title": "Clean Chinchilla Cage 🔺",
-        "time": "2025-08-23",
-        "rowNumber": 25
-      },
-      {
-        "title": "Check Dad's Vitamins 🔺",
-        "time": "2025-08-25",
-        "rowNumber": 30
+        "time": "2025-09-18",
+        "rowNumber": 22
       },
       {
         "title": "Do my laundry ⏫",
-        "time": "2025-08-29",
-        "rowNumber": 17
+        "time": "2025-09-19",
+        "rowNumber": 14
       },
       {
         "title": "Check Dad's Vitamins 🔺",
-        "time": "2025-08-29",
-        "rowNumber": 35
-      },
-      {
-        "title": "Check My Vitamins 🔼",
-        "time": "2025-08-31",
-        "rowNumber": 37
-      },
-      {
-        "title": "Art w/Mom 🔺",
-        "time": "2025-08-31",
-        "rowNumber": 42
+        "time": "2025-09-19",
+        "rowNumber": 26
       },
       {
         "title": "Pay Petal Card 🔺",
-        "time": "2025-09-05",
-        "rowNumber": 40
+        "time": "2025-09-19",
+        "rowNumber": 28
+      },
+      {
+        "title": "Do Lego Car Programming with Mom 🔼 ➕ 2025-03-29",
+        "time": "2025-09-22",
+        "rowNumber": 18
+      },
+      {
+        "title": "Check Dad's Vitamins 🔺",
+        "time": "2025-09-22",
+        "rowNumber": 24
+      },
+      {
+        "title": "Art w/Mom 🔺",
+        "time": "2025-09-28",
+        "rowNumber": 29
+      },
+      {
+        "title": "Check My Vitamins 🔼",
+        "time": "2025-09-30",
+        "rowNumber": 27
       }
     ],
     "admin/tasks/Weekly Review.md": [
       {
         "title": "WEEKLY REVIEW %%done_end%% 🔺",
-        "time": "2025-08-24",
-        "rowNumber": 22
+        "time": "2025-09-21",
+        "rowNumber": 7
       },
       {
         "title": "Clear out Trashes, clean out Downloads, check files %%done_del%% ⏫",
-        "time": "2025-08-24",
-        "rowNumber": 28
+        "time": "2025-09-21",
+        "rowNumber": 10
       },
       {
         "title": "Clear out Inboxes (here) , organize tasks etc %%done_del%% 🔼",
-        "time": "2025-08-24",
-        "rowNumber": 33
+        "time": "2025-09-21",
+        "rowNumber": 12
       },
       {
         "title": "Archive/Pack tasks (see [[#List of Notes to Archive/Pack]]) %%done_del%% 🔼",
-        "time": "2025-08-24",
-        "rowNumber": 38
+        "time": "2025-09-21",
+        "rowNumber": 14
       },
       {
         "title": "Review past week's daily notes, create week note (or month note) %%done_log%% ⏫",
-        "time": "2025-08-24",
-        "rowNumber": 43
+        "time": "2025-09-21",
+        "rowNumber": 16
       },
       {
         "title": "Log Week status %%done_log%% ⏫",
-        "time": "2025-08-24",
-        "rowNumber": 48
+        "time": "2025-09-21",
+        "rowNumber": 18
       }
     ],
     "admin/tasks/recurring.md": [
       {
         "title": "Accomplish One section of the rustlings course %%done_log%%",
-        "time": "2025-08-20",
+        "time": "2025-09-10",
         "rowNumber": 10
       },
       {
-        "title": "Alarm App Dev %%done_log%%",
-        "time": "2025-08-21",
-        "rowNumber": 12
-      },
-      {
         "title": "Catch Up On Newsletters ⏫",
-        "time": "2025-08-23",
-        "rowNumber": 16
+        "time": "2025-09-17",
+        "rowNumber": 14
       },
       {
         "title": "Catch Up On Signal & Telegram ⏫",
-        "time": "2025-08-23",
-        "rowNumber": 20
+        "time": "2025-09-17",
+        "rowNumber": 17
       }
     ],
-    "periodic/2025/2025-Q2/2025-04/2025-W18/2025-W18.md": [
+    "admin/tasks/inbox.md": [
       {
-        "title": "Create Recipe note for the Boule Bread 🔼 ➕ 2025-05-01",
-        "time": "2025-08-15",
-        "rowNumber": 71
+        "title": "Make Mom's Fade Music Video 🔽 ➕ 2025-07-07",
+        "time": "2025-09-09",
+        "rowNumber": 10
+      },
+      {
+        "title": "Go Over EuroRack Tutorials 1 & 2 and index it 🔼 ➕ 2025-04-22",
+        "time": "2025-09-18",
+        "rowNumber": 8
+      },
+      {
+        "title": "Migrate ArtBox to Godot-Rust/Neovim workflow ⏬ ➕ 2025-04-22",
+        "time": "2025-09-28",
+        "rowNumber": 9
       }
     ]
   },

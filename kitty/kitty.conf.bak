@@ -1,7 +1,7 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_THEME
-# Neofusion
+# Dank Neon
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -1163,7 +1163,7 @@ bell_on_tab "🔔 "
 #: The second number is the margin between the tab bar and the
 #: contents of the current tab.
 
-tab_bar_style fade
+tab_bar_style hidden
 
 #: The tab bar style, can be one of:
 
@@ -1325,7 +1325,7 @@ tab_bar_min_tabs 1
 
 #: The foreground and background colors.
 
-# background_opacity 1.0
+background_opacity 0.8
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1394,7 +1394,7 @@ tab_bar_min_tabs 1
 #: decrease_background_opacity) or the remote control facility.
 #: Changing this option by reloading the config is not supported.
 
-# background_image none
+background_image /home/sarah/Pictures/Wallpapers/SciFi Landscapes/wall-09.png
 
 #: Path to a background image. Must be in PNG/JPEG/WEBP/TIFF/GIF/BMP
 #: format. Note that when using auto_color_scheme
@@ -1402,7 +1402,7 @@ tab_bar_min_tabs 1
 #: this option is overridden by the color scheme file and must be set
 #: inside it to take effect.
 
-# background_image_layout tiled
+background_image_layout cscaled
 
 #: Whether to tile, scale or clamp the background image. The value can
 #: be one of tiled, mirror-tiled, scaled, clamped, centered or
@@ -1421,7 +1421,7 @@ tab_bar_min_tabs 1
 #: this option is overridden by the color scheme file and must be set
 #: inside it to take effect.
 
-# background_tint 0.0
+background_tint 0.2
 
 #: How much to tint the background image by the background color. This
 #: option makes it easier to read the text. Tinting is done using the
@@ -1738,7 +1738,7 @@ tab_bar_min_tabs 1
 #: config is not supported. Note that if kitty is invoked with command
 #: line arguments specifying a command to run, this option is ignored.
 
-# clipboard_control write-clipboard write-primary read-clipboard-ask read-primary-ask
+clipboard_control write-clipboard write-primary read-clipboard read-primary
 
 #: Allow programs running in kitty to read and write from the
 #: clipboard. You can control exactly which actions are allowed. The
@@ -2079,6 +2079,11 @@ tab_bar_min_tabs 1
 #: available here <https://sw.kovidgoyal.net/kitty/actions/>.
 
 # kitty_mod ctrl+shift
+
+map super+alt+h send_key alt+shift+left
+map super+alt+j send_key alt+shift+down
+map super+alt+k send_key alt+shift+up
+map super+alt+l send_key alt+shift+right
 
 #: Special modifier key alias for default shortcuts. You can change
 #: the value of this option to alter all default shortcuts that use

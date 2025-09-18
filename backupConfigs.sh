@@ -38,12 +38,12 @@ run_cmd() {
 # ---- Paths (edit as needed) ----
 XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-"$HOME/.config"}"
 XDG_DATA_HOME="${XDG_DATA_HOME:-"$HOME/.local/share"}"
-WORKDRIVE="${WORKDRIVE:-"$HOME"}"                                  # fallback if not set
+WORKDRIVE="${WORKDRIVE:-"$HOME"}"
 CONFIG_FOLDER="$WORKDRIVE/Backups/configs"
 
 NEOVIM_CONFIG_SOURCE="$XDG_CONFIG_HOME/nvim"
 NEOVIM_AUTOLOAD_SOURCE="$XDG_CONFIG_HOME/nvim/autoload"
-NEOVIM_CONFIG_DEST="$CONFIG_FOLDER/nvim"
+NEOVIM_CONFIG_DEST="$CONFIG_FOLDER/neovim"
 
 OBSIDIAN_CONFIG_SOURCE="$WORKDRIVE/Documents/Vaults/Beehive/.obsidian"
 OBSIDIAN_CONFIG_DEST="$CONFIG_FOLDER/obsidian"

@@ -9,13 +9,13 @@ ZSH=/usr/share/oh-my-zsh/
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="random"
+ZSH_THEME="nanotech"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( "amuse" "aussiegeek" "avit" "bureau" "candy" "eastwood" "half-life" "jonathan" "jreese" "juanghurtado" "linuxonly" "mortalscumbag" "muse" "nanotech" "simonoff" "sorin" "strug" "wedisagree" "ys" )
+ZSH_THEME_RANDOM_CANDIDATES=( "amuse" "aussiegeek" "bureau" "candy" "eastwood" "half-life" "juanghurtado" "linuxonly" "mortalscumbag" "nanotech" "simonoff" "sorin" "strug" "ys" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -119,6 +119,45 @@ bannerize() {
   fi
 }
 
+lsdlol() {
+  # Find the real lsd binary (ignore aliases/functions)
+  local lsd_bin
+  lsd_bin="$(type -P lsd 2>/dev/null || whence -p lsd 2>/dev/null || command -v lsd)" \
+    || { printf 'lsd not found in PATH\n' >&2; return 127; }
+
+  if command -v unbuffer >/dev/null 2>&1; then
+    # PTY via unbuffer -> columns preserved
+    unbuffer "$lsd_bin" --color=always "$@" | lolcat
+  else
+    # Fallback PTY via script; safely quote args
+    local a q=""
+    for a in "$@"; do q="$q $(printf '%q' "$a")"; done
+    script -qfc "$lsd_bin --color=always$q" /dev/null | lolcat
+  fi
+}
+
+cowwide() {
+  # figure out columns (tmux pane → kitty window → fallback)
+  local cols
+  cols="${COLUMNS:-$(tmux display -p '#{pane_width}' 2>/dev/null || tput cols 2>/dev/null || echo 80)}"
+
+  # leave a little margin so the bubble doesn't kiss the edge
+  local margin="${COW_MARGIN:-8}"
+  local w=$((cols - margin))
+  [ "$w" -lt 20 ] && w=20   # don't go too tiny
+
+  # if you explicitly pass -W, don't override it
+  for a in "$@"; do
+    case "$a" in -W|-W*) cowsay "$@"; return ;; esac
+  done
+
+  cowsay -W "$w" "$@"
+}
+
+toiletfonts() {
+    for f in /usr/share/figlet/*.[tf]lf; do toilet {,-f}$f:r:t; done
+}
+
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
@@ -147,14 +186,15 @@ alias zconf="nvim $ZSHRC"
 alias rz="exec zsh"
 alias cl="clear"
 alias x="exit"
-alias lsd="lsd"
+alias ls="lsdlol"
+alias lsd="lsdlol"
 alias fetch="fastfetch | lolcat"
 alias parrot="curl parrot.live"
 alias tell="bannerize --lolcat"
-alias say="cl; fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n 1) | lolcat"
-alias turt="cl; fortune | cowsay -f turtle | lolcat"
-alias cup="cl; fortune | cowsay -f cupcake | lolcat"
-alias blow="cl; fortune | cowsay -f blowfish | lolcat"
+alias say="cl; fortune | cowwide -f $(ls /usr/share/cowsay/cows/ | shuf -n 1) | lolcat"
+alias turt="cl; fortune | cowwide -f turtle | lolcat"
+alias cup="cl; fortune | cowwide -f cupcake | lolcat"
+alias blow="cl; fortune | cowwide -f blowfish | lolcat"
 alias cdh="cd $HIVE"
 alias cdw="cd $WORK"
 alias cdv="cd $VAULTS"
@@ -200,4 +240,14 @@ elif [[ -r /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; th
   source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
-clear ; fortune | cowsay -f turtle | lolcat
+cl ; echo "Hello Sarah ..." | toilet -t | lolcat
+echo ""
+
+# pwd | toilet -f smbraille | lolcat
+
+# echo ""
+
+# lsdlol
+
+# echo "" | lolcat
+# echo "" | lolcat

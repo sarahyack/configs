@@ -53,7 +53,6 @@
   "obsidian-task-archiver",
   "dataview",
   "obsidian-tasks-plugin",
-  "calendar",
   "callout-manager",
   "drawio-obsidian",
   "obsidian-git",
@@ -61,10 +60,15 @@
   "obsidian-latex-suite",
   "nldates-obsidian",
   "periodic-notes",
-  "pomodoro-timer",
   "progress-clocks",
   "obsidian42-strange-new-worlds",
   "tag-wrangler",
   "background-image",
-  "obsidian-reminder-plugin"
+  "obsidian-reminder-plugin",
+  "emoji-shortcodes",
+  "extract-highlights-plugin",
+  "fast-text-color",
+  "link-exploder",
+  "querydash",
+  "calendar"
 ]

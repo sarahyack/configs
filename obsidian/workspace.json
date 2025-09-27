@@ -18,6 +18,12 @@
                   "eState": "{}"
                 },
                 {
+                  "title": "2025-09-16",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-16.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-09-16\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":18,\"ch\":0},\"to\":{\"line\":18,\"ch\":0}},\"scroll\":6.8316831683168315}"
+                },
+                {
                   "title": "2025-09-15",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-15.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-09-15\"}",
@@ -106,13 +112,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-16.md",
+                "file": "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-20.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-16"
+              "title": "2025-09-20"
             }
           },
           {
@@ -222,8 +228,135 @@
               "icon": "lucide-file",
               "title": "Git Pantheon"
             }
+          },
+          {
+            "id": "9bc23b9e9d49cca0",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Old People Sayings.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Old People Sayings"
+            }
+          },
+          {
+            "id": "ec54ba0948748d0d",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Notes from Maintenance Mode Video.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Notes from Maintenance Mode Video"
+            }
+          },
+          {
+            "id": "6e44bfd701400242",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/gamedev/bug-buster/bestiary/Master Bugs Document.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Master Bugs Document"
+            }
+          },
+          {
+            "id": "9aac4b7038c981d5",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/gamedev/bug-buster/troops/Master Trooper Document.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Master Trooper Document"
+            }
+          },
+          {
+            "id": "156ec25ef88881dd",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Weapons",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"projects/gamedev/bug-buster/troops/gear/Weapons.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Weapons\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}},\"scroll\":94.68179453836152}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/gamedev/bug-buster/troops/gear/Gear.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Gear"
+            }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -273,7 +406,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#event/period  ",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -369,7 +502,8 @@
               "title": "Longform"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -399,13 +533,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-16.md",
+                "file": "projects/gamedev/bug-buster/bestiary/Master Bugs Document.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-09-16"
+              "title": "Outline of Master Bugs Document"
             }
           },
           {
@@ -606,7 +740,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 279.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -634,10 +769,18 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e29cef1aa170200b",
+  "active": "4db6cf25bd474109",
   "lastOpenFiles": [
-    "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-15.md",
+    "projects/gamedev/bug-buster/troops/gear/Gear.md",
+    "projects/gamedev/bug-buster/troops/gear/Weapons.md",
+    "projects/gamedev/bug-buster/troops/Master Trooper Document.md",
+    "projects/gamedev/bug-buster/bestiary/Master Bugs Document.md",
+    "inbox/Notes from Maintenance Mode Video.md",
+    "inbox/Old People Sayings.md",
+    "admin/productivity/Productivity Guide.md",
+    "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-20.md",
     "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-16.md",
+    "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-15.md",
     "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-14.md",
     "periodic/2025/2025-Q3/2025-09/2025-W38",
     "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-12.md",
@@ -656,14 +799,6 @@
     "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-07.md",
     "periodic/2025/2025-Q3/2025-09/2025-W37",
     "inbox/Untitled.md",
-    "periodic/2025/2025-Q3/2025-09/2025-09.md",
-    "periodic/2025/2025-Q3/2025-08/2025-W35/2025-W35.md",
-    "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-03.md",
-    "periodic/2025/2025-Q2/2025-04/2025-W18/2025-W18.md",
-    "inbox/Boule Bread.md",
-    "inbox/Grams in a Cup.md",
-    "inbox/Cherry Tart Recipe.md",
-    "inbox/Lemon Tart Recipe.md",
     "periodic/2025/2025-Q3/2025-09/2025-W36",
     "periodic/2025/2025-Q3/2025-09",
     "periodic/2025/2025-Q3/2025-08/2025-W35",

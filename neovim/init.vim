@@ -104,7 +104,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'kevinhwang91/promise-async'
 Plug 'tjdevries/colorbuddy.nvim'
 Plug 'nvzone/volt'
-Plug 'epheien/outline-treesitter-provider.nvim'
+Plug '2kabhishek/pickme.nvim'
 
 " MISC
 Plug 'lowitea/aw-watcher.nvim'
@@ -452,7 +452,6 @@ telescope.load_extension('fzf')
 telescope.load_extension('frecency')
 telescope.load_extension('ui-select')
 telescope.load_extension('projects')
-telescope.load_extension('markit')
 telescope.load_extension('vimwiki')
 telescope.load_extension('tmux')
 

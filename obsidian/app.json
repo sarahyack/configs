@@ -6,7 +6,7 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "inbox",
   "propertiesInDocument": "visible",
-  "vimMode": true,
+  "vimMode": false,
   "showLineNumber": false,
   "readableLineLength": false,
   "defaultViewMode": "source"

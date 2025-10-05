@@ -45,74 +45,74 @@
       {
         "title": "Clean Chinchilla Cage 🔺",
         "time": "2025-09-18",
-        "rowNumber": 23
+        "rowNumber": 25
       },
       {
         "title": "Do Lego Car Programming with Mom 🔼 ➕ 2025-03-29",
         "time": "2025-09-22",
-        "rowNumber": 19
-      },
-      {
-        "title": "Check Dad's Vitamins 🔺",
-        "time": "2025-09-22",
-        "rowNumber": 25
-      },
-      {
-        "title": "Do my laundry ⏫",
-        "time": "2025-09-26",
-        "rowNumber": 15
-      },
-      {
-        "title": "Check Dad's Vitamins 🔺",
-        "time": "2025-09-26",
-        "rowNumber": 28
+        "rowNumber": 21
       },
       {
         "title": "Art w/Mom 🔺",
         "time": "2025-09-28",
-        "rowNumber": 32
+        "rowNumber": 40
       },
       {
-        "title": "Check My Vitamins 🔼",
-        "time": "2025-09-30",
+        "title": "Check Dad's Vitamins 🔺",
+        "time": "2025-10-06",
         "rowNumber": 29
       },
       {
+        "title": "Do my laundry ⏫",
+        "time": "2025-10-10",
+        "rowNumber": 17
+      },
+      {
+        "title": "Check Dad's Vitamins 🔺",
+        "time": "2025-10-10",
+        "rowNumber": 34
+      },
+      {
         "title": "Pay Petal Card 🔺",
-        "time": "2025-10-03",
-        "rowNumber": 31
+        "time": "2025-10-17",
+        "rowNumber": 39
+      },
+      {
+        "title": "Check My Vitamins 🔼",
+        "time": "2025-10-31",
+        "rowNumber": 36
       }
     ],
     "admin/tasks/Weekly Review.md": [
       {
         "title": "WEEKLY REVIEW %%done_end%% 🔺",
-        "time": "2025-09-21",
-        "rowNumber": 7
+        "time": "2025-10-05",
+        "rowNumber": 9
       },
       {
         "title": "Clear out Trashes, clean out Downloads, check files %%done_del%% ⏫",
-        "time": "2025-09-21",
-        "rowNumber": 10
-      },
-      {
-        "title": "Clear out Inboxes (here) , organize tasks etc %%done_del%% 🔼",
-        "time": "2025-09-21",
-        "rowNumber": 12
-      },
-      {
-        "title": "Archive/Pack tasks (see [[#List of Notes to Archive/Pack]]) %%done_del%% 🔼",
-        "time": "2025-09-21",
+        "time": "2025-10-05",
         "rowNumber": 14
       },
       {
+        "title": "Clear out Inboxes (here) , organize tasks etc %%done_del%% 🔼",
+        "time": "2025-10-05",
+        "rowNumber": 18
+      },
+      {
+        "title": "Archive/Pack tasks (see [[#List of Notes to Archive/Pack]]) %%done_del%% 🔼",
+        "time": "2025-10-05",
+        "rowNumber": 22
+      },
+      {
         "title": "Review past week's daily notes, create week note (or month note) %%done_log%% ⏫",
-        "time": "2025-09-21",
-        "rowNumber": 16
+        "time": "2025-10-05",
+        "rowNumber": 26
       },
       {
         "title": "Log Week status %%done_log%% ⏫",
-        "time": "2025-09-21",
-        "rowNumber": 18
+        "time": "2025-10-05",
+        "rowNumber": 30
       }
     ],
     "admin/tasks/recurring.md": [
@@ -123,13 +123,13 @@
       },
       {
         "title": "Catch Up On Newsletters ⏫",
-        "time": "2025-09-21",
-        "rowNumber": 15
+        "time": "2025-10-06",
+        "rowNumber": 16
       },
       {
         "title": "Catch Up On Signal & Telegram ⏫",
-        "time": "2025-09-21",
-        "rowNumber": 19
+        "time": "2025-10-06",
+        "rowNumber": 21
       }
     ],
     "admin/tasks/inbox.md": [

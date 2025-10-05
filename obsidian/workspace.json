@@ -18,6 +18,12 @@
                   "eState": "{}"
                 },
                 {
+                  "title": "2025-09-20",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-20.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-09-20\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":9,\"ch\":0},\"to\":{\"line\":9,\"ch\":0}}}"
+                },
+                {
                   "title": "2025-09-16",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-16.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-09-16\"}",
@@ -112,49 +118,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-20.md",
+                "file": "periodic/2025/2025-Q4/2025-10/2025-W40/2025-10-05.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-20"
-            }
-          },
-          {
-            "id": "1fa19bd88a476b9e",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                },
-                {
-                  "title": "2025-09",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-09/2025-09.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-09\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":0},\"to\":{\"line\":5,\"ch\":0}},\"scroll\":3.2059800664451825}"
-                },
-                {
-                  "title": "2025-08",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"periodic/2025/2025-Q3/2025-08/2025-08.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"2025-08\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":50,\"ch\":382},\"to\":{\"line\":50,\"ch\":382}},\"scroll\":2.183333333333333}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/2025/2025-Q3/2025-09/2025-W36/2025-W36.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-W36"
+              "title": "2025-10-05"
             }
           },
           {
@@ -354,9 +324,57 @@
               "icon": "lucide-file",
               "title": "Gear"
             }
+          },
+          {
+            "id": "30ab4e5cd8818ab4",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Nvim.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Nvim"
+            }
+          },
+          {
+            "id": "32b29d97e64a4c7f",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Nvim-surround commands.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Nvim-surround commands"
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -502,8 +520,7 @@
               "title": "Longform"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -684,8 +701,8 @@
             "state": {
               "type": "friend-tracker-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Friend tracker"
+              "icon": "lucide-ghost",
+              "title": "friend-tracker-view"
             }
           }
         ]
@@ -769,22 +786,30 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4db6cf25bd474109",
+  "active": "30ab4e5cd8818ab4",
   "lastOpenFiles": [
-    "projects/gamedev/bug-buster/troops/gear/Gear.md",
-    "projects/gamedev/bug-buster/troops/gear/Weapons.md",
-    "projects/gamedev/bug-buster/troops/Master Trooper Document.md",
-    "projects/gamedev/bug-buster/bestiary/Master Bugs Document.md",
-    "inbox/Notes from Maintenance Mode Video.md",
-    "inbox/Old People Sayings.md",
+    "inbox/Nvim-surround commands.md",
+    "inbox/Nvim.md",
+    "inbox/Git Pantheon.md",
+    "periodic/2025/2025-Q4/2025-10/2025-W40/2025-10-05.md",
     "admin/productivity/Productivity Guide.md",
+    "admin/productivity/Mood Based Productivity.md",
+    "inbox/Notes from Maintenance Mode Video.md",
+    "projects/gamedev/bug-buster/troops/Master Trooper Document.md",
+    "inbox/Old People Sayings.md",
     "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-20.md",
+    "periodic/2025/2025-Q4/2025-10/2025-W40",
+    "periodic/2025/2025-Q4/2025-10",
+    "periodic/2025/2025-Q4",
+    "projects/gamedev/bug-buster/troops/gear/Gear.md",
+    "inbox/Research.md",
+    "projects/gamedev/bug-buster/bestiary/Master Bugs Document.md",
+    "projects/gamedev/bug-buster/troops/gear/Weapons.md",
     "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-16.md",
     "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-15.md",
     "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-14.md",
     "periodic/2025/2025-Q3/2025-09/2025-W38",
     "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-12.md",
-    "inbox/Git Pantheon.md",
     "inbox/Package Uninstalls.md",
     "references/education/E4.1 - Process Instructions.md",
     "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-10.md",
@@ -793,20 +818,12 @@
     "inbox/It Was Inevitable Lyrics.md",
     "periodic/2025/2025-Q3/2025-09/2025-W36/2025-W36.md",
     "admin/tasks/Weekly Review.md",
-    "admin/tasks/chores.md",
-    "admin/tasks/recurring.md",
-    "admin/tasks/inbox.md",
-    "periodic/2025/2025-Q3/2025-09/2025-W36/2025-09-07.md",
     "periodic/2025/2025-Q3/2025-09/2025-W37",
-    "inbox/Untitled.md",
     "periodic/2025/2025-Q3/2025-09/2025-W36",
     "periodic/2025/2025-Q3/2025-09",
     "periodic/2025/2025-Q3/2025-08/2025-W35",
     "wiki/casefiles/software/index.md~",
     "wiki/index.md~",
-    "runbook/index.md~",
-    "projects/index.md~",
-    "runbook/systems/windows/index.md~",
     "projects/Untitled Diagram.svg",
     "runbook/art/production/tilemaps/examples/Tileset Arrangement.png",
     "runbook/art/production/tilemaps/examples/Top-Down Tileset Arrangement.png",

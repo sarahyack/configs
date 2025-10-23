@@ -87,14 +87,14 @@ if exists("g:neovide")
     set guifont=Terminess\ Nerd\ Font:h13
     let g:neovide_font_ligatures=1
     let g:neovide_hide_mouse_when_typing=v:true
-    let g:neovide_cursor_vfx_mode="railgun"
-    let g:neovide_cursor_trail_size=0.8
-    let g:neovide_cursor_vfx_opacity=300.0
-    let g:neovide_cursor_vfx_particle_lifetime=1.6
-    let g:neovide_cursor_vfx_particle_density=7.0
-    let g:neovide_padding_top=20
-    let g:neovide_padding_left=20
-    let g:neovide_padding_bottom=10
+    let g:neovide_cursor_vfx_mode=""
+    let g:neovide_cursor_trail_size=0.9
+    let g:neovide_cursor_vfx_opacity=100.0
+    let g:neovide_cursor_vfx_particle_lifetime=0.3
+    let g:neovide_cursor_vfx_particle_density=2.0
+    let g:neovide_padding_top=10
+    let g:neovide_padding_left=10
+    let g:neovide_padding_bottom=5
     let g:neovide_fullscreen=v:true
 endif
 
@@ -116,12 +116,15 @@ Plug 'nvzone/typr'
 Plug 'tpope/vim-scriptease'
 Plug 'Eandrju/cellular-automaton.nvim'
 Plug 'jim-fx/sudoku.nvim'
+Plug 'mikesmithgh/kitty-scrollback.nvim'
+Plug 'its-izhar/kitty-navigator.nvim', { 'do': 'cp ./kitty/*.py ~/.config/kitty/' }
 
 " Exercism
 Plug '2kabhishek/utils.nvim'
 Plug '2KAbhishek/exercism.nvim'
 
 " UI
+Plug 'karb94/neoscroll.nvim'
 Plug 'nvimdev/dashboard-nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-lua/popup.nvim'
@@ -137,6 +140,8 @@ Plug 'rktjmp/lush.nvim'
 Plug 'brianhuster/live-preview.nvim'
 Plug '2kabhishek/nerdy.nvim'
 Plug 'nacro90/numb.nvim'
+Plug 'SmiteshP/nvim-navic'
+Plug 'MunifTanjim/nui.nvim'
 
 " SWITCHERS
 Plug 'nvim-telescope/telescope.nvim'
@@ -150,7 +155,7 @@ Plug 'doctorfree/cheatsheet.nvim'
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'lewis6991/gitsigns.nvim'
-Plug 'hedyhli/outline.nvim'
+Plug 'hasansujon786/nvim-navbuddy'
 
 " FILES
 Plug 'vimwiki/vimwiki'
@@ -181,10 +186,41 @@ call plug#end()
 
 lua << EOF
 
+local kittyscroll = require('kitty-scrollback')
+kittyscroll.setup()
+
+local kittynav = require('kitty_navigator')
+kittynav.setup({
+    set_keymaps = false,
+    to_socket_str = "unix:/tmp/kitty",
+    keymaps = {
+        left = "<C-`>h",
+        down = "<C-`>j",
+        up = "<C-`>k",
+        right = "<C-`>l",
+    },
+})
+
 vim.o.statuscolumn = "%s %C | %{v:lnum} %{v:relnum} "
 
 local numb = require('numb')
 numb.setup()
+
+local neoscroll = require('neoscroll')
+neoscroll.setup({
+    easing = "sine",
+})
+
+local sckeys = {
+    ["HH"] = function() neoscroll.ctrl_u({duration = 250}) vim.api.nvim_feedkeys('zz', 'n', false) end;
+    ["HL"] = function() neoscroll.ctrl_b({duration = 250}) vim.api.nvim_feedkeys('zz', 'n', false) end;
+    ["LL"] = function() neoscroll.ctrl_d({duration = 250}) vim.api.nvim_feedkeys('zz', 'n', false) end;
+    ["LH"] = function() neoscroll.ctrl_f({duration = 250}) vim.api.nvim_feedkeys('zz', 'n', false) end;
+}
+local scmodes = { 'n', 'v', 'x' }
+for key, func in pairs(sckeys) do
+    vim.keymap.set(scmodes, key, func)
+end
 
 local home = vim.loop.os_homedir()
 local VAULT = home .. "/Documents/Vaults/Beehive/"
@@ -366,13 +402,6 @@ arena.setup()
 local todo = require('todo-comments')
 todo.setup()
 
-local outline = require('outline')
-outline.setup({
-    providers = {
-        priority = { 'lsp', 'coc', 'markdown', 'treesitter', 'norg', 'man' }
-        }
-})
-
 local markit = require('markit')
 markit.setup({
     default_mappings = true,
@@ -470,17 +499,14 @@ blankline.setup({
 local hsearch = require("hlsearch")
 hsearch.setup()
 
-local lspconfig = require('lspconfig')
-lspconfig.pyright.setup{}
-lspconfig.ts_ls.setup{}
-lspconfig.clangd.setup({
-    cmd = {"clangd"},
-    root_dir = lspconfig.util.root_pattern("compile_commands.json", ".git"),
-})
-lspconfig.vimls.setup{}
-lspconfig.gdscript.setup{}
-lspconfig.cmake.setup{}
-lspconfig.rust_analyzer.setup{}
+local lspconfig = vim.lsp
+lspconfig.enable('clangd')
+lspconfig.enable('cmake')
+lspconfig.enable('gdscript')
+lspconfig.enable('pyright')
+lspconfig.enable('rust_analyzer')
+lspconfig.enable('ts_ls')
+lspconfig.enable('vimls')
  
 local on_attach = function(client, bufnr)
 	-- Enable completion triggered by <c-x><c-o>
@@ -504,25 +530,35 @@ if vim.g.SYSTEM == "windows" then
     local bundle_path = vim.g.PWSHLSPATH
     
      lspconfig.powershell_es.setup {
-      on_attach = on_attach,
-      cmd = {
-        vim.g.PWSHPATH,
-        '-NoLogo',
-        '-NoProfile',
-        '-Command',
-        string.format(
-          '%s/Start-EditorServices.ps1 -BundledModulesPath %s/Modules -LogPath %s/logs/log.txt -SessionDetailsPath %s/session.json -HostName nvim -HostProfileId 0 -HostVersion 1.0.0 -Stdio',
-          bundle_path, bundle_path, bundle_path, bundle_path
-        )
-      },
-      root_dir = function(fname)
-        -- Use the directory of the file for single-file mode
-        return lspconfig.util.root_pattern('.git')(fname) or lspconfig.util.path.dirname(fname)
-      end,
-      filetypes = { 'ps1', 'psm1', 'psd1' }
+        on_attach = on_attach,
+        cmd = {
+          vim.g.PWSHPATH,
+          '-NoLogo',
+          '-NoProfile',
+          '-Command',
+          string.format(
+            '%s/Start-EditorServices.ps1 -BundledModulesPath %s/Modules -LogPath %s/logs/log.txt -SessionDetailsPath %s/session.json -HostName nvim -HostProfileId 0 -HostVersion 1.0.0 -Stdio',
+            bundle_path, bundle_path, bundle_path, bundle_path
+          )
+        },
+        root_dir = function(fname)
+          -- Use the directory of the file for single-file mode
+          return lspconfig.util.root_pattern('.git')(fname) or lspconfig.util.path.dirname(fname)
+        end,
+        filetypes = { 'ps1', 'psm1', 'psd1' }
     }
 end
- 
+
+local navbuddy = require('nvim-navbuddy')
+navbuddy.setup({
+    lsp = {
+        auto_attach = true,
+    },
+    source_buffer = {
+        follow_node = false,
+    },
+})
+
 local surround = require('nvim-surround')
 surround.setup{}
 
@@ -657,7 +693,7 @@ focus.setup({
     minheight=20,
 })
 
-local ignore_filetypes = { 'outline', 'Outline' }
+local ignore_filetypes = { 'navbuddy', 'Navbuddy' }
 local ignore_buftypes = { 'prompt', 'popup' }
 local augroup =
     vim.api.nvim_create_augroup('FocusDisable', { clear = true })
@@ -702,7 +738,7 @@ themify.setup({
         blacklist = {'tokyonight-day'},
         before = function(theme)
             require('tokuonight').setup({
-                -- transparent = true,
+                transparent = true,
             })
         end
     },
@@ -710,33 +746,33 @@ themify.setup({
         blacklist = {'dawnfox', 'dayfox'},
         before = function(theme)
             require('nightfox').setup({
-                -- options = { transparent = true }
+                options = { transparent = true }
             })
         end
     },
     {'oxfist/night-owl.nvim',
         before = function(theme)
             require('night-owl').setup({
-                -- transparent_background = true,
+                transparent_background = true,
             })
         end
     },
     'kyazdani42/blue-moon',
     {'niyabits/calvera-dark.nvim',
         before = function(theme)
-            -- vim.g.calvera_disable_background = true
+            vim.g.calvera_disable_background = true
         end
     },
     {'rafamadriz/neon',
         before = function(theme)
-            -- vim.g.neon_transparent = true
+            vim.g.neon_transparent = true
         end
     },
     {'yorik1984/newpaper.nvim',
         before = function(theme)
             require('newpaper').setup({
                 style = "dark",
-                -- disable_background = true,
+                disable_background = true,
             })
         end
     },
@@ -749,7 +785,7 @@ themify.setup({
     {'olivercederborg/poimandres.nvim',
         before = function(theme)
             require('poimandres').setup({
-                -- disable_background = true,
+                disable_background = true,
             })
         end
     },
@@ -765,7 +801,7 @@ themify.setup({
         blacklist = {'bamboo-light'},
         before = function(theme)
             require('bamboo').setup({
-                -- transparent = true,
+                transparent = true,
             })
         end
     },
@@ -774,13 +810,13 @@ themify.setup({
     {'ilof2/posterpole.nvim',
         before = function(theme)
             require('posterpole').setup({
-                -- transparent = true,
+                transparent = true,
             })
         end
     },
     {'mellow-theme/mellow.nvim',
         before = function(theme)
-            -- vim.g.mellow_transparent = true
+            vim.g.mellow_transparent = true
         end
     },
     -- Softer Themes: Rose-Based
@@ -790,7 +826,7 @@ themify.setup({
     {'lancewilhelm/horizon-extended.nvim',
         before = function(theme)
             require('horizon-extended').setup({
-                -- transparent = true,
+                transparent = true,
             })
         end
     },
@@ -800,21 +836,21 @@ themify.setup({
     {'DanielEliasib/sweet-fusion',
         before = function(theme)
             require('sweet-fusion').setup({
-                -- transparency = true,
+                transparency = true,
             })
         end
     },
     {'comfysage/cuddlefish.nvim',
         before = function(theme)
             require('cuddlefish').setup({
-                -- editor = { transparent_background = true },
+                editor = { transparent_background = true },
             })
         end
     },
     'egerhether/heatherfield.nvim',
     {'yazeed1s/oh-lucy.nvim',
         before = function(theme)
-            -- vim.g.oh_lucy_transparent_background = true
+            vim.g.oh_lucy_transparent_background = true
         end
     },
     -- Softer Themes: Green-Based
@@ -824,13 +860,13 @@ themify.setup({
                 lualine_bg_color = '#3E4044',
                 contrast = 'plus',
                 italic_comment = true,
-                -- transparent_bg = false,
+                transparent_bg = false,
             })
         end
     },
     {'sainnhe/everforest',
         before = function(theme)
-            -- vim.g.everforest_transparent_background = 1
+            vim.g.everforest_transparent_background = 1
             vim.g.everforest_ui_contrast = 'high'
         end
     },
@@ -840,7 +876,7 @@ themify.setup({
         before = function(theme)
             require('evergarden').setup({
                 editor = {
-                    -- transparent_background = true,
+                    transparent_background = true,
                     float = {
                         invert_border = true,
                     },
@@ -853,7 +889,7 @@ themify.setup({
     'b0o/lavi.nvim',
     {'ray-x/aurora',
         before = function(theme)
-            -- vim.g.aurora_transparent = 1
+            vim.g.aurora_transparent = 1
         end
     },
     {'barrientosvctor/abyss.nvim',
@@ -861,7 +897,7 @@ themify.setup({
             require('abyss').setup({
                 italic = true,
                 bold = true,
-                -- transparent_background = true,
+                transparent_background = true,
             })
         end
     },
@@ -869,7 +905,7 @@ themify.setup({
         before = function(theme)
             require('fluoromachine').setup({
                 theme = 'delta', -- "retrowave", "fluoromachine", "delta"
-                -- transparent = true,
+                transparent = true,
             })
         end
     },
@@ -877,7 +913,7 @@ themify.setup({
     {'zootedb0t/citruszest.nvim',
         before = function(theme)
             require('citruszest').setup({
-                -- option = { transparent = true, }
+                option = { transparent = true, }
             })
         end
     },
@@ -886,7 +922,7 @@ themify.setup({
     {'diegoulloao/neofusion.nvim',
         before = function(theme)
             require('neofusion').setup({
-                -- transparent_mode = true,
+                transparent_mode = true,
             })
         end
     },
@@ -898,7 +934,7 @@ themify.setup({
         before = function(theme)
             require('lighthaus').setup({
                 bg_dark = true,
-                -- transparent = true,
+                transparent = true,
                 italic_comments = true,
                 italic_keywords = true,
             })
@@ -908,14 +944,14 @@ themify.setup({
     {'2nthony/vitesse.nvim',
         before = function(theme)
             require('vitesse').setup({
-                -- transparent_background = true,
+                transparent_background = true,
             })
         end
     },
     {'fynnfluegge/monet.nvim',
         before = function(theme)
             require('monet').setup({
-                -- transparent_background = true,
+                transparent_background = true,
                 italic_comments = true,
                 borderless_pickers = true
             })
@@ -923,13 +959,13 @@ themify.setup({
     },
     {'luisiacc/the-matrix.nvim',
         before = function(theme)
-            -- vim.g.thematrix_transparent_mode = 1
+            vim.g.thematrix_transparent_mode = 1
         end
     },
     {'forest-nvim/sequoia.nvim',
         before = function(theme)
             require('sequoia').setup({
-                -- styles = { transparency = true }
+                styles = { transparency = true }
             })
         end
     },
@@ -938,7 +974,7 @@ themify.setup({
         blacklist = {'cyberdream-light'},
         before = function(theme)
             require('cyberdream').setup({
-                -- transparent = true,
+                transparent = true,
                 italic_comments = true,
                 borderless_pickers = true
             })
@@ -949,14 +985,14 @@ themify.setup({
     {'datsfilipe/vesper.nvim',
         before = function(theme)
             require('vesper').setup({
-                -- transparent = true,
+                transparent = true,
             })
         end
     },
     {'killitar/obscure.nvim',
         before = function(theme)
             require('obscure').setup({
-                -- transparent = true,
+                transparent = true,
             })
         end
     },
@@ -965,55 +1001,55 @@ themify.setup({
         before = function(theme)
             require('darkvoid').setup({
                 glow = true,
-                -- transparent = true,
+                transparent = true,
             })
         end    
     },
     {'wnkz/monoglow.nvim',
         before = function(theme)
             require('monoglow').setup({
-                -- transparent = true,
+                transparent = true,
             })
         end
     },
     {'slugbyte/lackluster.nvim',
         before = function(theme)
             require('lackluster').setup({
-                -- tweak_background = {
-                    -- normal = 'none',
-                -- },
+                tweak_background = {
+                    normal = 'none',
+                },
             })
         end
     },
     {'zenbones-theme/zenbones.nvim',
         blacklist = {'vimbones', 'randombones'},
         before = function(theme)
-            -- vim.g.zenbones_transparent_background = true
-            -- vim.g.duckbones_transparent_background = true
-            -- vim.g.zenwritten_transparent_background = true
-            -- vim.g.neobones_transparent_background = true
-            -- vim.g.rosebones_transparent_background = true
-            -- vim.g.forestbones_transparent_background = true
-            -- vim.g.nordbones_transparent_background = true
-            -- vim.g.tokyobones_transparent_background = true
-            -- vim.g.seoulbones_transparent_background = true
-            -- vim.g.zenburned_transparent_background = true
-            -- vim.g.kanagawabones_transparent_background = true
+            vim.g.zenbones_transparent_background = true
+            vim.g.duckbones_transparent_background = true
+            vim.g.zenwritten_transparent_background = true
+            vim.g.neobones_transparent_background = true
+            vim.g.rosebones_transparent_background = true
+            vim.g.forestbones_transparent_background = true
+            vim.g.nordbones_transparent_background = true
+            vim.g.tokyobones_transparent_background = true
+            vim.g.seoulbones_transparent_background = true
+            vim.g.zenburned_transparent_background = true
+            vim.g.kanagawabones_transparent_background = true
         end
     },
     'ntk148v/komau.vim',
     {'drewxs/ash.nvim',
         before = function(theme)
             require('ash').setup({
-                -- transparent = true,
+                transparent = true,
             })
         end
     },
     {'bettervim/yugen.nvim',
         before = function(theme)
             require('yugen').setup({
-                -- transparent = true,
-                -- transparent_statusline = true,
+                transparent = true,
+                transparent_statusline = true,
             })
         end
     },
@@ -1023,7 +1059,7 @@ themify.setup({
 
 
 function ToggleTransparency(value)
-    vim.g.neovide_transparency = value
+    vim.g.neovide_opacity = value
 end
 
 vim.cmd([[ command! -nargs=1 SetTransparency lua ToggleTransparency(<args>) ]])
@@ -1242,7 +1278,7 @@ function ShowShortcuts()
     "--------------------",
     "-                 - Toggle Mini-Files",
     "=                 - Toggle Oil",
-    "<Leader>-         - Toggle Telescope Outline",
+    "<Leader>-         - Toggle Navbuddy",
     "<Leader>=         - Toggle Time Machine",
     "<Space>p          - Print CWD",
     "<Space>c          - Set CWD",
@@ -1251,6 +1287,7 @@ function ShowShortcuts()
     "<Space>h          - CD to Home",
     "",
     "-- Wiki",
+    "--------------------",
     "<M-@>mr         - Generate Root Wiki Index",
     "<M-@>mw         - Generate Wiki Indexes",
     "<M-@>mi         - Generate Wiki Index for Current Folder",
@@ -1275,6 +1312,7 @@ function ShowShortcuts()
     "gpl         - Vimwiki Go To Prev Link in Page",
     "",
     "-- Exercism",
+    "--------------------",
     "\"e          - List Languages",
     "\"a          - List Exercises for Language",
     "\"l          - List Exercises for Default Language",
@@ -1521,10 +1559,10 @@ noremap <CR> <CR>
 noremap <C-m> M
 noremap <A-b> b
 noremap <A-B> B
-noremap HH Hzz
-noremap HL Hzb
-noremap LL Lzz
-noremap LH Lzt
+" noremap HH <C-u>
+" noremap HL <C-b>
+" noremap LL <C-d>
+" noremap LH <C-f>
 nnoremap Zz :vsplit<CR>
 nnoremap Zx :split<CR>
 nnoremap <A-H> <C-W>H
@@ -1556,6 +1594,12 @@ nnoremap ^ @
 nnoremap Y y$
 nnoremap yc vy
 nnoremap <C-a> ggVGy<C-o>
+" ----- Paste from Clipboard ----- 
+inoremap <M-v> <C-r>+
+cnoremap <M-v> <C-r>+
+nnoremap <M-v> "+p
+xnoremap <M-v> "+p
+" -------- End -----------
 nnoremap <leader>ae o<ESC>k
 nnoremap <leader>aE O<ESC>j
 nnoremap <leader>aw o<ESC>kO<ESC>j
@@ -1674,7 +1718,7 @@ nnoremap - :lua MiniFiles.open()<CR>
 nnoremap = :Oil --float<CR>
 nnoremap <leader>= :TimeMachineToggle<CR>
 " nnoremap <leader>- :Telescope lsp_document_symbols<CR>
-nnoremap <leader>- :Outline<CR>
+nnoremap <leader>- :Navbuddy<CR>
 nnoremap <Space>p :pwd<CR>
 nnoremap <Space>c :cd<Space>
 nnoremap <Space>t :lcd<Space>

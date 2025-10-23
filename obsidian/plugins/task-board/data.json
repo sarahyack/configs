@@ -1,5 +1,5 @@
 {
-  "version": "1.6.11",
+  "version": "1.7.0",
   "data": {
     "boardConfigs": [
       {
@@ -471,7 +471,20 @@
           "targetColumn": "Completed"
         }
       ],
-      "cardSectionsVisibility": "showSubTasksOnly"
+      "cardSectionsVisibility": "showSubTasksOnly",
+      "taskPropertyFormat": "1",
+      "doubleClickCardToEdit": "none",
+      "taskNoteIdentifierTag": "taskNote",
+      "taskNoteDefaultLocation": "TaskNotes",
+      "hiddenTaskProperties": [],
+      "autoAddUniqueID": false,
+      "uniqueIdCounter": 0,
+      "experimentalFeatures": false,
+      "lastViewHistory": {
+        "viewedType": "kanban",
+        "boardIndex": 0
+      },
+      "boundTaskCompletionToChildTasks": false
     }
   }
 }

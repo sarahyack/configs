@@ -9,7 +9,7 @@ ZSH=/usr/share/oh-my-zsh/
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="nanotech"
+ZSH_THEME="candy"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -242,6 +242,9 @@ fi
 
 cl ; echo "Hello Sarah ..." | toilet -t | lolcat
 echo ""
+
+# cl ; echo "Hello Sarah ..." | toilet -t 
+# echo ""
 
 # pwd | toilet -f smbraille | lolcat
 

@@ -372,9 +372,57 @@
               "icon": "lucide-file",
               "title": "Nvim-surround commands"
             }
+          },
+          {
+            "id": "ccd95f029443cd5d",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Cleaning Schedule.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Cleaning Schedule"
+            }
+          },
+          {
+            "id": "26757e4346390b4d",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Git - Add Remote Branch.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Git - Add Remote Branch"
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -520,7 +568,8 @@
               "title": "Longform"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -625,7 +674,7 @@
             "state": {
               "type": "Strange New Worlds",
               "state": {},
-              "icon": "file-digit",
+              "icon": "lucide-ghost",
               "title": "Strange New Worlds"
             }
           },
@@ -705,7 +754,8 @@
               "title": "friend-tracker-view"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "d72c567c17f3bed2",
@@ -786,11 +836,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "30ab4e5cd8818ab4",
+  "active": "ccd95f029443cd5d",
   "lastOpenFiles": [
-    "inbox/Nvim-surround commands.md",
+    "inbox/Git - Add Remote Branch.md",
     "inbox/Nvim.md",
+    "projects/gamedev/bug-buster/bestiary/Master Bugs Document.md",
     "inbox/Git Pantheon.md",
+    "inbox/Cleaning Schedule.md",
+    "inbox/Nvim-surround commands.md",
     "periodic/2025/2025-Q4/2025-10/2025-W40/2025-10-05.md",
     "admin/productivity/Productivity Guide.md",
     "admin/productivity/Mood Based Productivity.md",
@@ -803,7 +856,6 @@
     "periodic/2025/2025-Q4",
     "projects/gamedev/bug-buster/troops/gear/Gear.md",
     "inbox/Research.md",
-    "projects/gamedev/bug-buster/bestiary/Master Bugs Document.md",
     "projects/gamedev/bug-buster/troops/gear/Weapons.md",
     "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-16.md",
     "periodic/2025/2025-Q3/2025-09/2025-W38/2025-09-15.md",
@@ -816,8 +868,6 @@
     "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-08.md",
     "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-09.md",
     "inbox/It Was Inevitable Lyrics.md",
-    "periodic/2025/2025-Q3/2025-09/2025-W36/2025-W36.md",
-    "admin/tasks/Weekly Review.md",
     "periodic/2025/2025-Q3/2025-09/2025-W37",
     "periodic/2025/2025-Q3/2025-09/2025-W36",
     "periodic/2025/2025-Q3/2025-09",

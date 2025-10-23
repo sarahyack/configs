@@ -22969,9 +22969,21 @@ function extractRelevantSections(file, context, resolvedTags, resolvedLinks) {
       (tag) => targetTags.has(tag.tag) && tag.position.start.line >= startLine && tag.position.start.line < endLine
     );
     const targetLinkBasenames = getBasenamesWithRegex(targetLinkPaths);
-    const containsTargetLink = allLinksInFile.some(
-      (link) => targetLinkBasenames.has(link.link) && link.position.start.line >= startLine && link.position.start.line < endLine
-    );
+    const containsTargetLink = allLinksInFile.some((link) => {
+      var _a2;
+      if (link.position.start.line < startLine || link.position.start.line >= endLine) {
+        return false;
+      }
+      const resolvedFile = context.app.metadataCache.getFirstLinkpathDest(link.link, file.path);
+      if (resolvedFile && targetLinkPaths.has(resolvedFile.path)) {
+        return true;
+      }
+      const linkBasename = (_a2 = link.link.match(/([^/]+?)(?:\.md)?$/)) == null ? void 0 : _a2[1];
+      if (linkBasename && targetLinkBasenames.has(linkBasename)) {
+        return true;
+      }
+      return false;
+    });
     if (containsTargetTag || containsTargetLink) {
       validSections.push({ file, heading });
     }

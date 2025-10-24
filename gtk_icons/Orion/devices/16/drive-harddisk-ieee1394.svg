@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   version="1.1"
+   viewBox="0 0 16.933 16.933"
+   id="svg7"
+   sodipodi:docname="drive-harddisk-ieee1394.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#9c4444"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.3531261"
+     inkscape:cx="36.755195"
+     inkscape:cy="25.958357"
+     inkscape:window-width="1280"
+     inkscape:window-height="669"
+     inkscape:window-x="180"
+     inkscape:window-y="166"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg7"
+     showgrid="false" />
+  <defs
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter3"
+       x="-0.10843471"
+       y="-0.10870992"
+       width="1.2168694"
+       height="1.2174198">
+      <feGaussianBlur
+         stdDeviation="0.5 0.5"
+         result="blur"
+         id="feGaussianBlur3" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path53"
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.480565;stroke-dasharray:none;stroke-dashoffset:2.2;stroke-opacity:0.3"
+     d="m 12.874205,1.0518828 -1.310281,1.3112201 -1.311221,1.3102805 1.2962,1.2971422 c 0.713019,0.7135035 1.30964,1.297141 1.325302,1.297141 0.0158,0 0.611339,-0.5836375 1.324363,-1.297141 L 15.495706,3.6733834 14.184481,2.3631029 Z M 4.20814,1.0528128 2.8978581,2.362156 1.587577,3.6724368 2.0549993,4.1426744 c 0.2569992,0.2583421 0.480428,0.4692982 0.4965175,0.4692982 0.016073,0 0.6123476,-0.5837054 1.3252973,-1.2971408 L 5.1730171,2.0176901 4.6905792,1.5352518 Z M 5.8929207,2.7347786 4.5817018,4.0450603 3.2704813,5.3553407 3.7247634,5.8114998 c 0.2495864,0.2508931 0.4663432,0.4561586 0.4824369,0.4561586 0.016073,0 0.6125753,-0.5829939 1.3252999,-1.2962034 L 6.8287026,3.6743136 6.3612808,3.2050154 Z m 2.6477811,2.0480187 c -0.2486661,0 -0.4967052,0.035094 -0.7668331,0.1041854 C 7.1658516,5.0424872 6.7262436,5.2930896 6.2739916,5.7420437 5.8286959,6.1840924 5.6357042,6.4855001 5.4367628,7.0551405 5.2580912,7.5667384 5.2371119,8.3818627 5.3888944,8.8900973 5.7882625,10.227369 6.8748019,11.149832 8.2103147,11.285397 9.8895201,11.455855 11.394773,10.330737 11.748824,8.6413693 12.09213,7.0033017 10.996901,5.3188082 9.3084746,4.8869819 9.0383464,4.8178943 8.7893662,4.7827973 8.5407018,4.7827973 Z m 0,1.403202 c 0.4636735,5.211e-4 0.5931694,0.021234 0.808133,0.1276523 0.3918745,0.1939944 0.6712802,0.4636164 0.8785262,0.8475528 0.176506,0.3269849 0.188828,0.3818486 0.189596,0.8728941 7.44e-4,0.4632822 -0.01674,0.5616224 -0.152993,0.8391064 C 10.041326,9.3265833 9.5982533,9.7132885 9.1395281,9.8549762 8.6924628,9.9930571 8.3661863,9.9922818 7.9240449,9.8521481 7.4857109,9.7132353 7.0352517,9.3148237 6.8183783,8.8731919 6.6842225,8.6000008 6.6644486,8.4943522 6.6644486,8.062244 c 0,-0.4197875 0.022283,-0.5447743 0.1436033,-0.8034382 C 7.0058247,6.8371498 7.2349721,6.5946691 7.642466,6.3737075 7.9717491,6.1951563 8.0168007,6.185364 8.5407017,6.1859878 Z M 6.6916673,12.339453 v 0.662651 0.662646 H 8.5407018 10.390677 V 13.002088 12.339436 H 8.5407018 Z m 0,2.318336 v 0.689864 0.689869 h 1.8490345 1.8499752 v -0.689884 -0.68987 H 8.5407018 Z" />
+</svg>

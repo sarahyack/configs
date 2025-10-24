@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   version="1.1"
+   viewBox="0 0 16.933 16.933"
+   id="svg7"
+   sodipodi:docname="camera-photo.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#9c4444"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.3531261"
+     inkscape:cx="57.889433"
+     inkscape:cy="33.768836"
+     inkscape:window-width="1280"
+     inkscape:window-height="669"
+     inkscape:window-x="180"
+     inkscape:window-y="166"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg7"
+     showgrid="false" />
+  <defs
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter3"
+       x="-0.10843471"
+       y="-0.10870992"
+       width="1.2168694"
+       height="1.2174198">
+      <feGaussianBlur
+         stdDeviation="0.5 0.5"
+         result="blur"
+         id="feGaussianBlur3" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="color:#444444;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.475759;stroke-dasharray:none;stroke-opacity:0.3"
+     class="ColorScheme-Text"
+     d="m 6.5369817,1.7131056 c -0.383562,0 -0.3830299,5.725e-4 -0.7472717,0.3876815 L 4.7502722,3.630915 H 2.3174263 c -0.8438384,0 -1.53387554,0.6291997 -1.53387554,1.449594 v 8.566465 c 0,0.8204 0.69003714,1.490802 1.53387554,1.490802 H 14.592156 c 0.843839,0 1.533874,-0.670402 1.533874,-1.490802 V 5.080509 c 0,-0.8203943 -0.690035,-1.449594 -1.533874,-1.449594 H 12.159309 L 11.106762,2.0858047 C 10.756591,1.7137512 10.756164,1.7131056 10.372601,1.7131056 Z M 14.676436,4.58982 a 0.47945241,0.47945244 0 0 1 0.01113,0 0.47945241,0.47945244 0 0 1 0.479471,0.4794528 A 0.47945241,0.47945244 0 0 1 14.68761,5.5487246 0.47945241,0.47945244 0 0 1 14.208152,5.0692728 0.47945241,0.47945244 0 0 1 14.676369,4.58982 Z M 8.3967317,5.5487246 a 3.8356195,3.8356195 0 0 1 0.05806,0 A 3.8356195,3.8356195 0 0 1 12.290413,9.3843455 3.8356195,3.8356195 0 0 1 8.4547913,13.219965 3.8356195,3.8356195 0 0 1 4.619173,9.3843455 3.8356195,3.8356195 0 0 1 8.3967317,5.5487246 Z m 0.011192,1.9178103 A 1.9178098,1.9178098 0 0 0 6.5369503,9.3843455 1.9178098,1.9178098 0 0 0 8.4547612,11.302153 1.9178098,1.9178098 0 0 0 10.372571,9.3843455 1.9178098,1.9178098 0 0 0 8.4547612,7.4665349 a 1.9178098,1.9178098 0 0 0 -0.046825,0 z"
+     id="path5-3" />
+</svg>

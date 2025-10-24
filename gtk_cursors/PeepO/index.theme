@@ -1,0 +1,5 @@
+[Icon Theme]
+Name = PeepO
+Comment = X11 mouse theme by MarkoF v0.10
+Example=default
+Inherits=core

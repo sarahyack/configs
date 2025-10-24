@@ -63,6 +63,15 @@ TMUX_CONFIG_DEST="$CONFIG_FOLDER/tmux"
 GTK_THEMES_CONFIG_SOURCE="$HOME/.themes"
 GTK_THEMES_CONFIG_DEST="$CONFIG_FOLDER/gtk_themes"
 
+GTK_ICONS_CONFIG_SOURCE="$XDG_DATA_HOME/icons"
+GTK_ICONS_CONFIG_DEST="$CONFIG_FOLDER/gtk_icons"
+
+GTK_CURSORS_CONFIG_SOURCE="$HOME/.icons"
+GTK_CURSORS_CONFIG_DEST="$CONFIG_FOLDER/gtk_cursors"
+
+FOOYIN_DATA_SOURCE="$XDG_DATA_HOME/fooyin"
+FOOYIN_DATA_DEST="$CONFIG_FOLDER/fooyin"
+
 # Source path for this script (preferred fixed path, with self fallback)
 BACKUP_SCRIPT_SOURCE="$HOME/Documents/sh-scripts/backupConfigs.sh"
 if [ ! -f "$BACKUP_SCRIPT_SOURCE" ]; then
@@ -96,7 +105,9 @@ run_cmd mkdir -p \
     "$CONFIG_FOLDER" \
     "$NEOVIM_CONFIG_DEST" "$OBSIDIAN_CONFIG_DEST" \
     "$FASTFETCH_CONFIG_DEST" "$KITTY_CONFIG_DEST" \
-    "$ZSH_CONFIG_DEST" "$TMUX_CONFIG_DEST" "$GTK_THEMES_CONFIG_DEST"
+    "$ZSH_CONFIG_DEST" "$TMUX_CONFIG_DEST" \
+    "$GTK_THEMES_CONFIG_DEST" "$GTK_ICONS_CONFIG_DEST" \
+    "$GTK_CURSORS_CONFIG_DEST" "$FOOYIN_DATA_DEST"
 
 # ---- Enter configs folder ----
 say "Switching to $CONFIG_FOLDER..."
@@ -175,15 +186,18 @@ backup_file_to_path() {
 }
 
 # ---- Backups ----
-backup_dir  "$NEOVIM_CONFIG_SOURCE"      "$NEOVIM_CONFIG_DEST"     "Neovim config"
+backup_dir  "$NEOVIM_CONFIG_SOURCE"      "$NEOVIM_CONFIG_DEST"          "Neovim config"
 backup_dir  "$OBSIDIAN_CONFIG_SOURCE"    "$OBSIDIAN_CONFIG_DEST"        "Obsidian config"
 backup_dir  "$FASTFETCH_CONFIG_SOURCE"   "$FASTFETCH_CONFIG_DEST"       "Fastfetch config"
 backup_dir  "$KITTY_CONFIG_SOURCE"       "$KITTY_CONFIG_DEST"           "Kitty config"
 backup_file "$ZSH_CONFIG_SOURCE"         "$ZSH_CONFIG_DEST"             "Zsh config"
 backup_file "$TMUX_CONFIG_SOURCE"        "$TMUX_CONFIG_DEST"            "Tmux config"
 backup_dir  "$GTK_THEMES_CONFIG_SOURCE"  "$GTK_THEMES_CONFIG_DEST"      "GTK themes"
+backup_dir  "$GTK_ICONS_CONFIG_SOURCE"   "$GTK_ICONS_CONFIG_DEST"       "GTK icons"
+backup_dir  "$GTK_CURSORS_CONFIG_SOURCE" "$GTK_CURSORS_CONFIG_DEST"     "GTK cursors"
+backup_dir  "$FOOYIN_DATA_SOURCE"        "$FOOYIN_DATA_DEST"            "Fooyin database"
 
-backup_file_to_path "$BACKUP_SCRIPT_SOURCE" "$BACKUP_SCRIPT_DEST_FILE"   "Backup script"
+backup_file_to_path "$BACKUP_SCRIPT_SOURCE" "$BACKUP_SCRIPT_DEST_FILE"  "Backup script"
 
 # ---- Git add/commit/push ----
 if [ "$DRY_RUN" -eq 1 ]; then

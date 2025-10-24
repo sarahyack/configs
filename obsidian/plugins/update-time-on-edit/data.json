@@ -446,7 +446,7 @@
     "references/references.md": "6f8ca3d42026e1d15adf22446a997b234febdd4ddb9528e2679584a3b0661a70",
     "contacts/contacts.md": "fb063ef3b0fd03607a46acd3b988c69be7b0e9cc194af08b5a745bd06a6379ff",
     "references/books/covers/covers.md": "9fb5ba8a4761611795f6ad9263fa137726e74cfc40ab8a116aa44f084b474e3d",
-    "inbox/inbox.md": "dbdbecc678f33f2b59341a3b444070eba6b2dc4f472f2b7fadac4a19e77dedab",
+    "inbox/inbox.md": "0c70fc39b1cbf54d5856ff89e03421bec7113cd573b422757b7b418f6fe973ba",
     "introduction/introduction.md": "41a2b0556933da0b2e5a7ba434677883aa9983333afdf3fbe0311c2d2688f3f0",
     "journal/journal.md": "07154e9480453b3fb40beb20235be90aaf65e675d48b264dc9ff50cb4d48936a",
     "admin/maintenance/maintenance.md": "7d3e332f2ec44709d2b75f8d3e8e44ac16349a5685d0f460124b5feb40df885b",
@@ -523,6 +523,7 @@
     "inbox/Research.md": "3f25c03a2e00740ea1b6fe4ab5592f7ef364f968c5b179e34469aedfdee8c32b",
     "periodic/2025/2025-Q4/2025-10/2025-W40/2025-10-05.md": "07890ea8971c960ffeb2beec405f050817991d5cf17b41e7624ec93da0edea44",
     "inbox/Nvim.md": "5813bdfc44979690d43ca7bf017de006524d057ea0e7d5eaf4c9624b41ef3a75",
-    "inbox/Cleaning Schedule.md": "b52b0c9c1088e533359fd5f32d5c531ed21aea7d45e302d1c80a3557479e4674"
+    "inbox/Cleaning Schedule.md": "b52b0c9c1088e533359fd5f32d5c531ed21aea7d45e302d1c80a3557479e4674",
+    "inbox/Arch Linux - Sys Upgrade Refused Due to Existing Npm Files.md": "14de1a44cd984ed7acc0c74c3192756d72737f0844435311c655e9bb53f3a29b"
   }
 }

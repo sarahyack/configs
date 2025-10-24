@@ -420,9 +420,33 @@
               "icon": "lucide-file",
               "title": "Git - Add Remote Branch"
             }
+          },
+          {
+            "id": "5c151f52b208fc42",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Arch Linux - Sys Upgrade Refused Due to Existing Npm Files.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Arch Linux - Sys Upgrade Refused Due to Existing Npm Files"
+            }
           }
         ],
-        "currentTab": 11
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -472,7 +496,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#event/period  ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -568,8 +592,7 @@
               "title": "Longform"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -836,13 +859,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ccd95f029443cd5d",
+  "active": "7a16ecb8c9bb2e7b",
   "lastOpenFiles": [
+    "inbox/Arch Linux - Sys Upgrade Refused Due to Existing Npm Files.md",
+    "inbox/Cleaning Schedule.md",
     "inbox/Git - Add Remote Branch.md",
     "inbox/Nvim.md",
     "projects/gamedev/bug-buster/bestiary/Master Bugs Document.md",
     "inbox/Git Pantheon.md",
-    "inbox/Cleaning Schedule.md",
     "inbox/Nvim-surround commands.md",
     "periodic/2025/2025-Q4/2025-10/2025-W40/2025-10-05.md",
     "admin/productivity/Productivity Guide.md",
@@ -867,7 +891,6 @@
     "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-10.md",
     "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-08.md",
     "periodic/2025/2025-Q3/2025-09/2025-W37/2025-09-09.md",
-    "inbox/It Was Inevitable Lyrics.md",
     "periodic/2025/2025-Q3/2025-09/2025-W37",
     "periodic/2025/2025-Q3/2025-09/2025-W36",
     "periodic/2025/2025-Q3/2025-09",

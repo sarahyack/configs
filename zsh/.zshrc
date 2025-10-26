@@ -158,6 +158,15 @@ toiletfonts() {
     for f in /usr/share/figlet/*.[tf]lf; do toilet {,-f}$f:r:t; done
 }
 
+clsd() {
+  clear
+  print -Pn "$PROMPT"
+  printf 'lsd'
+  for a in "$@"; do printf ' %q' "$a"; done
+  printf '\n'
+  command lsd "$@"
+}
+
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
@@ -202,6 +211,8 @@ alias cdp="cd $PROJECTS"
 alias kconf="nvim $KITTY_CONFIG"
 alias fconf="nvim $FETCH_CONFIG"
 alias check="sudo timeshift --check"
+alias cls="clsd"
+alias clsa="clsd -a"
 # alias tconf="nvim $TMUX_CONFIG"
 # alias t="tmux"
 # alias tls="tmux list-sessions"

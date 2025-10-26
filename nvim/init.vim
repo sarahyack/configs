@@ -44,6 +44,7 @@ let g:loaded_ruby_provider = 0
 " Set Settings
 syntax on
 set number
+set relativenumber
 set cursorline
 set nowrap
 set expandtab
@@ -86,14 +87,14 @@ if exists("g:neovide")
     set guifont=Terminess\ Nerd\ Font:h13
     let g:neovide_font_ligatures=1
     let g:neovide_hide_mouse_when_typing=v:true
-    let g:neovide_cursor_vfx_mode="railgun"
-    let g:neovide_cursor_trail_size=0.8
-    let g:neovide_cursor_vfx_opacity=300.0
-    let g:neovide_cursor_vfx_particle_lifetime=1.6
-    let g:neovide_cursor_vfx_particle_density=7.0
-    let g:neovide_padding_top=20
-    let g:neovide_padding_left=20
-    let g:neovide_padding_bottom=10
+    let g:neovide_cursor_vfx_mode=""
+    let g:neovide_cursor_trail_size=0.9
+    let g:neovide_cursor_vfx_opacity=100.0
+    let g:neovide_cursor_vfx_particle_lifetime=0.3
+    let g:neovide_cursor_vfx_particle_density=2.0
+    let g:neovide_padding_top=10
+    let g:neovide_padding_left=10
+    let g:neovide_padding_bottom=5
     let g:neovide_fullscreen=v:true
 endif
 
@@ -104,7 +105,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'kevinhwang91/promise-async'
 Plug 'tjdevries/colorbuddy.nvim'
 Plug 'nvzone/volt'
-Plug 'epheien/outline-treesitter-provider.nvim'
+Plug '2kabhishek/pickme.nvim'
 
 " MISC
 Plug 'lowitea/aw-watcher.nvim'
@@ -112,20 +113,20 @@ Plug 'ptdewey/pendulum-nvim'
 Plug 'y3owk1n/time-machine.nvim'
 Plug 'QuentinGruber/pomodoro.nvim'
 Plug 'nvzone/typr'
-Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-scriptease'
 Plug 'Eandrju/cellular-automaton.nvim'
 Plug 'jim-fx/sudoku.nvim'
+Plug 'mikesmithgh/kitty-scrollback.nvim'
+Plug 'its-izhar/kitty-navigator.nvim', { 'do': 'cp ./kitty/*.py ~/.config/kitty/' }
 
 " Exercism
 Plug '2kabhishek/utils.nvim'
 Plug '2KAbhishek/exercism.nvim'
 
 " UI
-Plug 'psliwka/vim-smoothie'
+Plug 'karb94/neoscroll.nvim'
 Plug 'nvimdev/dashboard-nvim'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'christopher-francisco/tmux-status.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'OXY2DEV/markview.nvim'
 Plug 'nanozuki/tabby.nvim'
@@ -138,14 +139,15 @@ Plug 'echasnovski/mini.icons', {'branch': 'stable'}
 Plug 'rktjmp/lush.nvim'
 Plug 'brianhuster/live-preview.nvim'
 Plug '2kabhishek/nerdy.nvim'
-Plug 'aserowy/tmux.nvim'
+Plug 'nacro90/numb.nvim'
+Plug 'SmiteshP/nvim-navic'
+Plug 'MunifTanjim/nui.nvim'
 
 " SWITCHERS
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-ui-select.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-frecency.nvim'
-Plug 'camgraff/telescope-tmux.nvim'
 Plug 'ElPiloto/telescope-vimwiki.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'doctorfree/cheatsheet.nvim'
@@ -153,7 +155,7 @@ Plug 'doctorfree/cheatsheet.nvim'
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'lewis6991/gitsigns.nvim'
-Plug 'hedyhli/outline.nvim'
+Plug 'hasansujon786/nvim-navbuddy'
 
 " FILES
 Plug 'vimwiki/vimwiki'
@@ -183,19 +185,42 @@ call plug#end()
 " Plugin Setup
 
 lua << EOF
-local tmux = require('tmux')
-tmux.setup({
-    copy_sync = {
-        redirect_to_clipboard = true,
+
+local kittyscroll = require('kitty-scrollback')
+kittyscroll.setup()
+
+local kittynav = require('kitty_navigator')
+kittynav.setup({
+    set_keymaps = false,
+    to_socket_str = "unix:/tmp/kitty",
+    keymaps = {
+        left = "<C-`>h",
+        down = "<C-`>j",
+        up = "<C-`>k",
+        right = "<C-`>l",
     },
-    resize = {
-        enable_default_keybindings = false,
-    },
-    swap = {
-        cycle_navigation = true,
-        enable_default_keybindings = false,
-    }
 })
+
+vim.o.statuscolumn = "%s %C | %{v:lnum} %{v:relnum} "
+
+local numb = require('numb')
+numb.setup()
+
+local neoscroll = require('neoscroll')
+neoscroll.setup({
+    easing = "sine",
+})
+
+local sckeys = {
+    ["HH"] = function() neoscroll.ctrl_u({duration = 250}) vim.api.nvim_feedkeys('zz', 'n', false) end;
+    ["HL"] = function() neoscroll.ctrl_b({duration = 250}) vim.api.nvim_feedkeys('zz', 'n', false) end;
+    ["LL"] = function() neoscroll.ctrl_d({duration = 250}) vim.api.nvim_feedkeys('zz', 'n', false) end;
+    ["LH"] = function() neoscroll.ctrl_f({duration = 250}) vim.api.nvim_feedkeys('zz', 'n', false) end;
+}
+local scmodes = { 'n', 'v', 'x' }
+for key, func in pairs(sckeys) do
+    vim.keymap.set(scmodes, key, func)
+end
 
 local home = vim.loop.os_homedir()
 local VAULT = home .. "/Documents/Vaults/Beehive/"
@@ -349,13 +374,23 @@ minic.setup()
 
 local oil = require('oil')
 oil.setup({
-  win_options = {
-      signcolumn = "yes:2",
-  },
-  keymaps = {
-    ['H'] = 'actions.parent',
-    ['L'] = 'actions.select',
-  },
+    columns = {
+        "icon",
+    },
+    win_options = {
+        signcolumn = "yes:2",
+    },
+    keymaps = {
+        ['K'] = 'actions.parent',
+        ['<A-r>'] = 'actions.refresh',
+        ['<A-u>'] = 'actions.preview_scroll_up',
+        ['<A-d>'] = 'actions.preview_scroll_down',
+        ['q'] = 'actions.close',
+    },
+    float = {
+        max_width = math.floor(vim.o.columns * 0.6),
+        max_height = 40,
+    },
 })
 
 local oil_git = require('oil-git-status')
@@ -366,13 +401,6 @@ arena.setup()
 
 local todo = require('todo-comments')
 todo.setup()
-
-local outline = require('outline')
-outline.setup({
-    providers = {
-        priority = { 'lsp', 'coc', 'markdown', 'treesitter', 'norg', 'man' }
-        }
-})
 
 local markit = require('markit')
 markit.setup({
@@ -442,9 +470,7 @@ telescope.load_extension('fzf')
 telescope.load_extension('frecency')
 telescope.load_extension('ui-select')
 telescope.load_extension('projects')
-telescope.load_extension('markit')
 telescope.load_extension('vimwiki')
-telescope.load_extension('tmux')
 
 local exercism = require('exercism')
 exercism.setup({
@@ -473,17 +499,14 @@ blankline.setup({
 local hsearch = require("hlsearch")
 hsearch.setup()
 
-local lspconfig = require('lspconfig')
-lspconfig.pyright.setup{}
-lspconfig.ts_ls.setup{}
-lspconfig.clangd.setup({
-    cmd = {"clangd"},
-    root_dir = lspconfig.util.root_pattern("compile_commands.json", ".git"),
-})
-lspconfig.vimls.setup{}
-lspconfig.gdscript.setup{}
-lspconfig.cmake.setup{}
-lspconfig.rust_analyzer.setup{}
+local lspconfig = vim.lsp
+lspconfig.enable('clangd')
+lspconfig.enable('cmake')
+lspconfig.enable('gdscript')
+lspconfig.enable('pyright')
+lspconfig.enable('rust_analyzer')
+lspconfig.enable('ts_ls')
+lspconfig.enable('vimls')
  
 local on_attach = function(client, bufnr)
 	-- Enable completion triggered by <c-x><c-o>
@@ -507,25 +530,35 @@ if vim.g.SYSTEM == "windows" then
     local bundle_path = vim.g.PWSHLSPATH
     
      lspconfig.powershell_es.setup {
-      on_attach = on_attach,
-      cmd = {
-        vim.g.PWSHPATH,
-        '-NoLogo',
-        '-NoProfile',
-        '-Command',
-        string.format(
-          '%s/Start-EditorServices.ps1 -BundledModulesPath %s/Modules -LogPath %s/logs/log.txt -SessionDetailsPath %s/session.json -HostName nvim -HostProfileId 0 -HostVersion 1.0.0 -Stdio',
-          bundle_path, bundle_path, bundle_path, bundle_path
-        )
-      },
-      root_dir = function(fname)
-        -- Use the directory of the file for single-file mode
-        return lspconfig.util.root_pattern('.git')(fname) or lspconfig.util.path.dirname(fname)
-      end,
-      filetypes = { 'ps1', 'psm1', 'psd1' }
+        on_attach = on_attach,
+        cmd = {
+          vim.g.PWSHPATH,
+          '-NoLogo',
+          '-NoProfile',
+          '-Command',
+          string.format(
+            '%s/Start-EditorServices.ps1 -BundledModulesPath %s/Modules -LogPath %s/logs/log.txt -SessionDetailsPath %s/session.json -HostName nvim -HostProfileId 0 -HostVersion 1.0.0 -Stdio',
+            bundle_path, bundle_path, bundle_path, bundle_path
+          )
+        },
+        root_dir = function(fname)
+          -- Use the directory of the file for single-file mode
+          return lspconfig.util.root_pattern('.git')(fname) or lspconfig.util.path.dirname(fname)
+        end,
+        filetypes = { 'ps1', 'psm1', 'psd1' }
     }
 end
- 
+
+local navbuddy = require('nvim-navbuddy')
+navbuddy.setup({
+    lsp = {
+        auto_attach = true,
+    },
+    source_buffer = {
+        follow_node = false,
+    },
+})
+
 local surround = require('nvim-surround')
 surround.setup{}
 
@@ -632,13 +665,7 @@ lualine.setup({
   sections = {
     lualine_a = {{'mode', separator = {left = ' ⏽', right = '󰿟'}}},
     lualine_b = {'branch'},
-    lualine_c = {
-        {
-            require('tmux-status').tmux_windows,
-            cond = require('tmux-status').show,
-            padding = { left = 3 },
-        },
-    },
+    lualine_c = {},
     lualine_x = {
         function ()
             return pomodoro.get_pomodoro_status(" ", " ", " ")
@@ -666,7 +693,7 @@ focus.setup({
     minheight=20,
 })
 
-local ignore_filetypes = { 'outline', 'Outline' }
+local ignore_filetypes = { 'navbuddy', 'Navbuddy' }
 local ignore_buftypes = { 'prompt', 'popup' }
 local augroup =
     vim.api.nvim_create_augroup('FocusDisable', { clear = true })
@@ -707,25 +734,61 @@ themify.setup({
     -- For When Nothing Works
     'default',
     -- Night-Based Themes, Mostly Blue & Lower Saturation
-    {'folke/tokyonight.nvim', blacklist = {'tokyonight-day'}},
-    {'EdenEast/nightfox.nvim', blacklist = {'dawnfox', 'dayfox'}},
-    'oxfist/night-owl.nvim',
+    {'folke/tokyonight.nvim', 
+        blacklist = {'tokyonight-day'},
+        before = function(theme)
+            require('tokuonight').setup({
+                transparent = true,
+            })
+        end
+    },
+    {'EdenEast/nightfox.nvim', 
+        blacklist = {'dawnfox', 'dayfox'},
+        before = function(theme)
+            require('nightfox').setup({
+                options = { transparent = true }
+            })
+        end
+    },
+    {'oxfist/night-owl.nvim',
+        before = function(theme)
+            require('night-owl').setup({
+                transparent_background = true,
+            })
+        end
+    },
     'kyazdani42/blue-moon',
-    'niyabits/calvera-dark.nvim',
-    'rafamadriz/neon',
+    {'niyabits/calvera-dark.nvim',
+        before = function(theme)
+            vim.g.calvera_disable_background = true
+        end
+    },
+    {'rafamadriz/neon',
+        before = function(theme)
+            vim.g.neon_transparent = true
+        end
+    },
     {'yorik1984/newpaper.nvim',
         before = function(theme)
             require('newpaper').setup({
-                style = 'dark',
-                -- transparent = true,
+                style = "dark",
+                disable_background = true,
             })
         end
     },
     'shaunsingh/nord.nvim',
     'AlexvZyl/nordic.nvim',
     'challenger-deep-theme/vim',
-    {'sho-87/kanagawa-paper.nvim', blacklist = {'kanagawa-paper-canvas'}},
-    'olivercederborg/poimandres.nvim',
+    {'thesimonho/kanagawa-paper.nvim', 
+        blacklist = {'kanagawa-paper-canvas'},
+    },
+    {'olivercederborg/poimandres.nvim',
+        before = function(theme)
+            require('poimandres').setup({
+                disable_background = true,
+            })
+        end
+    },
     -- Brown Themes
     'morhetz/gruvbox',
     'sainnhe/gruvbox-material',
@@ -734,23 +797,62 @@ themify.setup({
     'savq/melange-nvim',
     'xero/miasma.nvim',
     'bakageddy/alduin.nvim',
-    {'ribru17/bamboo.nvim', blacklist = {'bamboo-light'}},
+    {'ribru17/bamboo.nvim', 
+        blacklist = {'bamboo-light'},
+        before = function(theme)
+            require('bamboo').setup({
+                transparent = true,
+            })
+        end
+    },
     -- Softer Themes: Pastel-Based
     'Biscuit-Theme/nvim',
-    'ilof2/posterpole.nvim',
-    'mellow-theme/mellow.nvim',
+    {'ilof2/posterpole.nvim',
+        before = function(theme)
+            require('posterpole').setup({
+                transparent = true,
+            })
+        end
+    },
+    {'mellow-theme/mellow.nvim',
+        before = function(theme)
+            vim.g.mellow_transparent = true
+        end
+    },
     -- Softer Themes: Rose-Based
     'FrenzyExists/aquarium-vim',
     'maxmx03/dracula.nvim',
     'LunarVim/horizon.nvim',
-    'lancewilhelm/horizon-extended.nvim',
+    {'lancewilhelm/horizon-extended.nvim',
+        before = function(theme)
+            require('horizon-extended').setup({
+                transparent = true,
+            })
+        end
+    },
     'samharju/serene.nvim',
     'water-sucks/darkrose.nvim',
     'anAcc22/sakura.nvim',
-    'DanielEliasib/sweet-fusion',
-    'comfysage/cuddlefish.nvim',
+    {'DanielEliasib/sweet-fusion',
+        before = function(theme)
+            require('sweet-fusion').setup({
+                transparency = true,
+            })
+        end
+    },
+    {'comfysage/cuddlefish.nvim',
+        before = function(theme)
+            require('cuddlefish').setup({
+                editor = { transparent_background = true },
+            })
+        end
+    },
     'egerhether/heatherfield.nvim',
-    'yazeed1s/oh-lucy.nvim',
+    {'yazeed1s/oh-lucy.nvim',
+        before = function(theme)
+            vim.g.oh_lucy_transparent_background = true
+        end
+    },
     -- Softer Themes: Green-Based
     {'Allianaab2m/penumbra.nvim',
         before = function(theme)
@@ -758,10 +860,16 @@ themify.setup({
                 lualine_bg_color = '#3E4044',
                 contrast = 'plus',
                 italic_comment = true,
+                transparent_bg = false,
             })
         end
     },
-    'sainnhe/everforest',
+    {'sainnhe/everforest',
+        before = function(theme)
+            vim.g.everforest_transparent_background = 1
+            vim.g.everforest_ui_contrast = 'high'
+        end
+    },
     'RomanAverin/charleston.nvim',
     {'everviolet/nvim', 
         blacklist = {'evergarden-summer'},
@@ -779,22 +887,45 @@ themify.setup({
     -- Synthwave Themes: Higher Saturation
     'https://codeberg.org/jthvai/lavender.nvim',
     'b0o/lavi.nvim',
-    'ray-x/aurora',
+    {'ray-x/aurora',
+        before = function(theme)
+            vim.g.aurora_transparent = 1
+        end
+    },
     {'barrientosvctor/abyss.nvim',
         before = function(theme)
             require('abyss').setup({
                 italic = true,
                 bold = true,
-                -- transparent = true,
+                transparent_background = true,
             })
         end
     },
-    'maxmx03/fluoromachine.nvim',
+    {'maxmx03/fluoromachine.nvim',
+        before = function(theme)
+            require('fluoromachine').setup({
+                theme = 'delta', -- "retrowave", "fluoromachine", "delta"
+                transparent = true,
+            })
+        end
+    },
     'samharju/synthweave.nvim',
-    'zootedb0t/citruszest.nvim',
+    {'zootedb0t/citruszest.nvim',
+        before = function(theme)
+            require('citruszest').setup({
+                option = { transparent = true, }
+            })
+        end
+    },
     -- Solarized Themes
     'svrana/neosolarized.nvim',
-    'diegoulloao/neofusion.nvim',
+    {'diegoulloao/neofusion.nvim',
+        before = function(theme)
+            require('neofusion').setup({
+                transparent_mode = true,
+            })
+        end
+    },
     'Badacadabra/vim-archery',
     -- Transparent-First Themes
     'paulo-granthon/hyper.nvim',
@@ -802,13 +933,21 @@ themify.setup({
     {'mrjones2014/lighthaus.nvim',
         before = function(theme)
             require('lighthaus').setup({
+                bg_dark = true,
+                transparent = true,
                 italic_comments = true,
                 italic_keywords = true,
             })
         end
     },
     'dasupradyumna/midnight.nvim',
-    '2nthony/vitesse.nvim',
+    {'2nthony/vitesse.nvim',
+        before = function(theme)
+            require('vitesse').setup({
+                transparent_background = true,
+            })
+        end
+    },
     {'fynnfluegge/monet.nvim',
         before = function(theme)
             require('monet').setup({
@@ -818,8 +957,18 @@ themify.setup({
             })
         end
     },
-    'luisiacc/the-matrix.nvim',
-    'forest-nvim/sequoia.nvim',
+    {'luisiacc/the-matrix.nvim',
+        before = function(theme)
+            vim.g.thematrix_transparent_mode = 1
+        end
+    },
+    {'forest-nvim/sequoia.nvim',
+        before = function(theme)
+            require('sequoia').setup({
+                styles = { transparency = true }
+            })
+        end
+    },
     '2giosangmitom/nightfall.nvim',
     {'scottmckendry/cyberdream.nvim',
         blacklist = {'cyberdream-light'},
@@ -833,29 +982,84 @@ themify.setup({
     },
     -- Paper-Like Glowy Themes: Super Low Saturation
     'ramojus/mellifluous.nvim',
-    'datsfilipe/vesper.nvim',
-    'killitar/obscure.nvim',
+    {'datsfilipe/vesper.nvim',
+        before = function(theme)
+            require('vesper').setup({
+                transparent = true,
+            })
+        end
+    },
+    {'killitar/obscure.nvim',
+        before = function(theme)
+            require('obscure').setup({
+                transparent = true,
+            })
+        end
+    },
     'DeviusVim/deviuspro.nvim',
     {'darkvoid-theme/darkvoid.nvim',
         before = function(theme)
             require('darkvoid').setup({
                 glow = true,
+                transparent = true,
             })
         end    
     },
-    'wnkz/monoglow.nvim',
-    'slugbyte/lackluster.nvim',
-    {'zenbones-theme/zenbones.nvim', blacklist = {'vimbones', 'randombones'}},
+    {'wnkz/monoglow.nvim',
+        before = function(theme)
+            require('monoglow').setup({
+                transparent = true,
+            })
+        end
+    },
+    {'slugbyte/lackluster.nvim',
+        before = function(theme)
+            require('lackluster').setup({
+                tweak_background = {
+                    normal = 'none',
+                },
+            })
+        end
+    },
+    {'zenbones-theme/zenbones.nvim',
+        blacklist = {'vimbones', 'randombones'},
+        before = function(theme)
+            vim.g.zenbones_transparent_background = true
+            vim.g.duckbones_transparent_background = true
+            vim.g.zenwritten_transparent_background = true
+            vim.g.neobones_transparent_background = true
+            vim.g.rosebones_transparent_background = true
+            vim.g.forestbones_transparent_background = true
+            vim.g.nordbones_transparent_background = true
+            vim.g.tokyobones_transparent_background = true
+            vim.g.seoulbones_transparent_background = true
+            vim.g.zenburned_transparent_background = true
+            vim.g.kanagawabones_transparent_background = true
+        end
+    },
     'ntk148v/komau.vim',
-    'drewxs/ash.nvim',
-    'bettervim/yugen.nvim',
+    {'drewxs/ash.nvim',
+        before = function(theme)
+            require('ash').setup({
+                transparent = true,
+            })
+        end
+    },
+    {'bettervim/yugen.nvim',
+        before = function(theme)
+            require('yugen').setup({
+                transparent = true,
+                transparent_statusline = true,
+            })
+        end
+    },
     async = true,
     activity = true,
 })
 
 
 function ToggleTransparency(value)
-    vim.g.neovide_transparency = value
+    vim.g.neovide_opacity = value
 end
 
 vim.cmd([[ command! -nargs=1 SetTransparency lua ToggleTransparency(<args>) ]])
@@ -922,12 +1126,6 @@ function ShowShortcuts()
     "<C-j>       - Move to Lower Split",
     "<C-k>       - Move to Upper Split",
     "<C-l>       - Move to Right Split",
-    "============= * =============",
-    "<Super-A-h>     - Move to Left Tmux Pane",
-    "<Super-A-j>     - Move to Lower Tmux Pane",
-    "<Super-A-k>     - Move to Upper Tmux Pane",
-    "<Super-A-l>     - Move to Right Tmux Pane",
-    "============= * =============",
     "<A-C-h>     - Decrease Current Split Width",
     "<A-C-l>     - Increase Current Split Width",
     "<A-C-j>     - Decrease Current Split Height",
@@ -935,7 +1133,6 @@ function ShowShortcuts()
     "<C-=>       - Equalize All Splits Size",
     "<C-_>       - Mazimize Current Split Height, Minimize Others",
     "<C-|>       - Maximize Current Split Width, Minimize Others",
-    " (*) (Keymap is actually declared as M-S-*, but kitty sends <A-S-Arrow> to nvim and to tmux)",
     "",
     "-- Editing",
     "--------------------",
@@ -1071,7 +1268,6 @@ function ShowShortcuts()
     "<Leader>w   - Save",
     "<Leader>W   - Save All Buffers",
     "<Leader>e   - Open File",
-    "<Leader>s   - Save Session (Obsession)",
     "fq          - Open TODO Location List",
     "ff          - Open TODO Location List",
     "ft          - Open TODO Telescope",
@@ -1080,34 +1276,35 @@ function ShowShortcuts()
     "",
     "-- File Explorer",
     "--------------------",
-    "-           - Toggle Mini-Files",
-    "=           - Toggle Oil",
-    "<Leader>-   - Toggle Telescope Outline",
-    "<Leader>=   - Toggle Time Machine",
-    "@p          - Print CWD",
-    "@c          - Set CWD",
-    "@t          - Set LWD",
-    "@o          - CD to Work Dir",
-    "@h          - CD to Home",
+    "-                 - Toggle Mini-Files",
+    "=                 - Toggle Oil",
+    "<Leader>-         - Toggle Navbuddy",
+    "<Leader>=         - Toggle Time Machine",
+    "<Space>p          - Print CWD",
+    "<Space>c          - Set CWD",
+    "<Space>t          - Set LWD",
+    "<Space>o          - CD to Work Dir",
+    "<Space>h          - CD to Home",
     "",
     "-- Wiki",
-    "@mr         - Generate Root Wiki Index",
-    "@mw         - Generate Wiki Indexes",
-    "@mi         - Generate Wiki Index for Current Folder",
-    "@fp         - Find Files in Projects",
-    "@gp         - Search Files in Projects",
-    "@fr         - Find Files in Runbook",
-    "@gr         - Search Files in Runbook",
-    "@fw         - Find Files in Wiki",
-    "@gw         - Search Files in Wiki",
-    "@b          - Open Beehive (Root) Wiki",
-    "@s          - Open Projects Wiki",
-    "@r          - Open Runbook Wiki",
-    "@w          - Open Wiki Vimwiki",
-    "@k          - Help for Vimwiki Default Mappings",
-    "@ml         - Make Wiki Link",
-    "@mr         - Make Relative Wiki Link",
-    "@mm         - Make Markdown Wiki LInk",
+    "--------------------",
+    "<M-@>mr         - Generate Root Wiki Index",
+    "<M-@>mw         - Generate Wiki Indexes",
+    "<M-@>mi         - Generate Wiki Index for Current Folder",
+    "<M-@>fp         - Find Files in Projects",
+    "<M-@>gp         - Search Files in Projects",
+    "<M-@>fr         - Find Files in Runbook",
+    "<M-@>gr         - Search Files in Runbook",
+    "<M-@>fw         - Find Files in Wiki",
+    "<M-@>gw         - Search Files in Wiki",
+    "<M-@>b          - Open Beehive (Root) Wiki",
+    "<M-@>s          - Open Projects Wiki",
+    "<M-@>r          - Open Runbook Wiki",
+    "<M-@>w          - Open Wiki Vimwiki",
+    "<M-@>k          - Help for Vimwiki Default Mappings",
+    "<M-@>ml         - Make Wiki Link",
+    "<M-@>mr         - Make Relative Wiki Link",
+    "<M-@>mm         - Make Markdown Wiki LInk",
     "<A-=>       - Vimwiki Add Header Level",
     "<A-->       - Vimwiki Remove Header Level",
     "<A-Space>   - Vimwiki Toggle List Checkbox On/Off",
@@ -1115,6 +1312,7 @@ function ShowShortcuts()
     "gpl         - Vimwiki Go To Prev Link in Page",
     "",
     "-- Exercism",
+    "--------------------",
     "\"e          - List Languages",
     "\"a          - List Exercises for Language",
     "\"l          - List Exercises for Default Language",
@@ -1355,52 +1553,30 @@ command! FSudoku call FSudoku()
 
 
 " Key Remappings
+noremap <CR> <CR>
 
 " Window/Split Management
 noremap <C-m> M
 noremap <A-b> b
 noremap <A-B> B
-" noremap HH Hzz
-" noremap HL Hzb
-" noremap LL Lzz
-" noremap LH Lzt
-noremap HH H:call smoothie#do("zz")<CR>
-noremap HL H:call smoothie#do("zb")<CR>
-noremap LL L:call smoothie#do("zz")<CR>
-noremap LH L:call smoothie#do("zt")<CR>
+" noremap HH <C-u>
+" noremap HL <C-b>
+" noremap LL <C-d>
+" noremap LH <C-f>
 nnoremap Zz :vsplit<CR>
 nnoremap Zx :split<CR>
-" nnoremap <A-H> <C-W>H
-" nnoremap <A-J> <C-W>J
-" nnoremap <A-K> <C-W>K
-" nnoremap <A-L> <C-W>L
-" nnoremap <C-h> <C-w>h
-" nnoremap <C-j> <C-w>j
-" nnoremap <C-k> <C-w>k
-" nnoremap <C-l> <C-w>l
-" nnoremap <M-C-H> <C-w><lt>
-" nnoremap <M-C-L> <C-w>>
-" nnoremap <M-NL> <C-w>-
-" nnoremap <M-C-K> <C-w>+
-" nnoremap <C-=> <C-w>=
-" nnoremap <C-_> <C-w>_
-" nnoremap <C-Bar> <C-w><bar>
 nnoremap <A-H> <C-W>H
 nnoremap <A-J> <C-W>J
 nnoremap <A-K> <C-W>K
 nnoremap <A-L> <C-W>L
-nnoremap <C-h>       :lua require('tmux').move_left()<CR>
-nnoremap <C-j>       :lua require('tmux').move_bottom()<CR>
-nnoremap <C-k>       :lua require('tmux').move_top()<CR>
-nnoremap <C-l>       :lua require('tmux').move_right()<CR>
-nnoremap <M-S-Left>  :lua require('tmux').swap_left()<CR>
-nnoremap <M-S-Down>  :lua require('tmux').swap_down()<CR>
-nnoremap <M-S-Up>    :lua require('tmux').swap_up()<CR>
-nnoremap <M-S-Right> :lua require('tmux').swap_right()<CR>
-nnoremap <M-C-h>     :lua require('tmux').resize_left()<CR>
-nnoremap <M-C-l>     :lua require('tmux').resize_right()<CR>
-nnoremap <M-NL>      :lua require('tmux').resize_bottom()<CR>
-nnoremap <M-C-k>     :lua require('tmux').resize_top()<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <M-C-H> <C-w><lt>
+nnoremap <M-C-L> <C-w>>
+nnoremap <M-NL> <C-w>-
+nnoremap <M-C-K> <C-w>+
 nnoremap <C-=> <C-w>=
 nnoremap <C-_> <C-w>_
 nnoremap <C-Bar> <C-w><bar>
@@ -1418,6 +1594,12 @@ nnoremap ^ @
 nnoremap Y y$
 nnoremap yc vy
 nnoremap <C-a> ggVGy<C-o>
+" ----- Paste from Clipboard ----- 
+inoremap <M-v> <C-r>+
+cnoremap <M-v> <C-r>+
+nnoremap <M-v> "+p
+xnoremap <M-v> "+p
+" -------- End -----------
 nnoremap <leader>ae o<ESC>k
 nnoremap <leader>aE O<ESC>j
 nnoremap <leader>aw o<ESC>kO<ESC>j
@@ -1506,8 +1688,6 @@ nnoremap FR :Telescope registers<CR>
 nnoremap Fg :Telescope live_grep<CR>
 nnoremap FG :Telescope grep_string<CR>
 nnoremap Fb :Telescope buffers<CR>
-nnoremap Fs :Telescope tmux sessions<CR>
-nnoremap Fw :Telescope tmux windows<CR>
 nnoremap Ft :Telescope help_tags<CR>
 nnoremap FT :Telescope tags<CR>
 nnoremap Fc :Telescope commands<CR>
@@ -1527,9 +1707,7 @@ nnoremap FP :Telescope pickers<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>W :wa<CR>
 nnoremap <leader>e :e<Space>
-nnoremap <leader>s :Obsession<CR>
-nnoremap <leader>q :Obsession!<CR>
-nnoremap fq :TodoQfList<CR>
+nnoremap fq :TodoQuickFix<CR>
 nnoremap ff :TodoLocList<CR>
 nnoremap ft :TodoTelescope<CR>
 nnoremap <leader>r :CellularAutomaton make_it_rain<CR>
@@ -1540,35 +1718,35 @@ nnoremap - :lua MiniFiles.open()<CR>
 nnoremap = :Oil --float<CR>
 nnoremap <leader>= :TimeMachineToggle<CR>
 " nnoremap <leader>- :Telescope lsp_document_symbols<CR>
-nnoremap <leader>- :Outline<CR>
-nnoremap @p :pwd<CR>
-nnoremap @c :cd<Space>
-nnoremap @t :lcd<Space>
-nnoremap @o :CDWork<CR>
-nnoremap @h :CDHome<CR>
+nnoremap <leader>- :Navbuddy<CR>
+nnoremap <Space>p :pwd<CR>
+nnoremap <Space>c :cd<Space>
+nnoremap <Space>t :lcd<Space>
+nnoremap <Space>o :CDWork<CR>
+nnoremap <Space>h :CDHome<CR>
 
 " Wiki
-nnoremap @mr :BeehiveRootIndex<CR>
-nnoremap @mw :GenerateVimwikiIndexes<CR>
-nnoremap @mi :VimwikiMakeIndexHere<CR>
-nnoremap @fp :call <SID>FindFilesCwd('~/Documents/Vaults/Beehive/projects')<CR>
-nnoremap @gp :call <SID>GrepCwd('~/Documents/Vaults/Beehive/projects')<CR>
-nnoremap @fr :call <SID>FindFilesCwd('~/Documents/Vaults/Beehive/runbook')<CR>
-nnoremap @gr :call <SID>GrepCwd('~/Documents/Vaults/Beehive/runbook')<CR>
-nnoremap @fw :call <SID>FindFilesCwd('~/Documents/Vaults/Beehive/wiki')<CR>
-nnoremap @gw :call <SID>GrepCwd('~/Documents/Vaults/Beehive/wiki')<CR>
-nnoremap @b :W root<CR>
-nnoremap @s :W projects<CR>
-nnoremap @r :W runbook<CR>
-nnoremap @w :W wiki<CR>
-nnoremap @l :VimwikiUISelect<CR>
-nnoremap @k :h vimwiki-local-mappings<CR>
-nnoremap @ml :WikilinkNew<CR>
-nnoremap @mr :WikilinkRel<CR>
-nnoremap @mm :MarkdownLinkNew<CR>
-inoremap @ml <ESC>:WikilinkNew<CR>
-inoremap @mr <ESC>:WikilinkRel<CR>
-inoremap @mm <ESC>:MarkdownLinkNew<CR>
+nnoremap <M-@>mr :BeehiveRootIndex<CR><M-@>
+nnoremap <M-@>mw :GenerateVimwikiIndexes<CR>
+nnoremap <M-@>mi :VimwikiMakeIndexHere<CR>
+nnoremap <M-@>fp :call <SID>FindFilesCwd('~/Documents/Vaults/Beehive/projects')<CR>
+nnoremap <M-@>gp :call <SID>GrepCwd('~/Documents/Vaults/Beehive/projects')<CR>
+nnoremap <M-@>fr :call <SID>FindFilesCwd('~/Documents/Vaults/Beehive/runbook')<CR>
+nnoremap <M-@>gr :call <SID>GrepCwd('~/Documents/Vaults/Beehive/runbook')<CR>
+nnoremap <M-@>fw :call <SID>FindFilesCwd('~/Documents/Vaults/Beehive/wiki')<CR>
+nnoremap <M-@>gw :call <SID>GrepCwd('~/Documents/Vaults/Beehive/wiki')<CR>
+nnoremap <M-@>b :W root<CR>
+nnoremap <M-@>s :W projects<CR>
+nnoremap <M-@>r :W runbook<CR>
+nnoremap <M-@>w :W wiki<CR>
+nnoremap <M-@>l :VimwikiUISelect<CR>
+nnoremap <M-@>k :h vimwiki-local-mappings<CR>
+nnoremap <M-@>ml :WikilinkNew<CR>
+nnoremap <M-@>mr :WikilinkRel<CR>
+nnoremap <M-@>mm :MarkdownLinkNew<CR>
+inoremap <M-@>ml <ESC>:WikilinkNew<CR>
+inoremap <M-@>mr <ESC>:WikilinkRel<CR>
+inoremap <M-@>mm <ESC>:MarkdownLinkNew<CR>
 nmap <A-=> <Plug>VimwikiAddHeaderLevel<CR>
 nmap <A--> <Plug>VimwikiRemoveHeaderLevel<CR>
 nmap <A-Space> <Plug>VimwikiToggleListItem<CR>
@@ -1645,3 +1823,5 @@ highlight Keyword cterm=italic gui=italic
 highlight Function cterm=italic gui=italic
 highlight Type cterm=italic gui=italic
 
+hi Normal     ctermbg=NONE guibg=NONE
+hi NormalNC   ctermbg=NONE guibg=NONE

@@ -1,0 +1,8 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1"><defs><linearGradient id="linear0" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" style="stop-color:#ff0000; stop-opacity:1"/><stop offset="50%" style="stop-color:#ffd000; stop-opacity:1"/><stop offset="100%" style="stop-color:#ff00bb; stop-opacity:1"/></linearGradient></defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);fill-opacity:1;" d="M 8.222656 14.40625 L 0 10.5 L 7.777344 6.40625 L 16 10.3125 Z M 8.222656 14.40625 "/>
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+<use xlink:href="#surface24" mask="url(#mask1)"/>
+</g>
+</svg>

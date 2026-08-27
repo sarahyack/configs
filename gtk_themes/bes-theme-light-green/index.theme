@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=bes-theme-light-green
+Type=X-GNOME-Metatheme
+Comment=bes-theme-light-green Gtk Themes 
+Encoding=UTF-8
+GtkTheme=bes-theme-light-green
+MetacityTheme=bes-theme-light-green
+IconTheme=curved-colors-green
+CursorTheme=Adwaita
+CursorSize=24

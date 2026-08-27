@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=bes-theme-light-brown
+Type=X-GNOME-Metatheme
+Comment=bes-theme-light-brown Gtk Themes 
+Encoding=UTF-8
+GtkTheme=bes-theme-light-brown
+MetacityTheme=bes-theme-light-brown
+IconTheme=curved-colors-brown
+CursorTheme=Adwaita
+CursorSize=24

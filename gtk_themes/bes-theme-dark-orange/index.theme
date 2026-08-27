@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=bes-theme-dark-orange
+Type=X-GNOME-Metatheme
+Comment=bes-theme-dark-orange Gtk Themes 
+Encoding=UTF-8
+GtkTheme=bes-theme-dark-orange
+MetacityTheme=bes-theme-dark-orange
+IconTheme=curved-colors-orange-dark
+CursorTheme=Adwaita
+CursorSize=24

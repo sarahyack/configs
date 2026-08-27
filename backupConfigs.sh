@@ -100,10 +100,9 @@ fi
 say "Ensuring destination directories exist..."
 run_cmd mkdir -p \
     "$CONFIG_FOLDER" \
-    "$NEOVIM_CONFIG_DEST" "$OBSIDIAN_CONFIG_DEST" \
+    "$NEOVIM_CONFIG_DEST" "$YAZI_CONFIG_DEST" \
     "$FASTFETCH_CONFIG_DEST" "$KITTY_CONFIG_DEST" \
-    "$ZSH_CONFIG_DEST" "$TMUX_CONFIG_DEST" \
-    "$GTK_THEMES_CONFIG_DEST" "$GTK_ICONS_CONFIG_DEST" \
+    "$ZSH_CONFIG_DEST" "$GTK_THEMES_CONFIG_DEST" "$GTK_ICONS_CONFIG_DEST" \
     "$GTK_CURSORS_CONFIG_DEST" "$FOOYIN_DATA_DEST"
 
 # ---- Enter configs folder ----

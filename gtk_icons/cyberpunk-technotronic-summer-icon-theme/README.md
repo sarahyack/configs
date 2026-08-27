@@ -1,4 +1,6 @@
-# cyberpunk-technotronic-icon-theme
+# cyberpunk-technotronic-summer-icon-theme
+
+The summer edition of the cyberpunk technotronic icon theme.
 
 ${{\color{greenyellow}\Huge{\textsf{NOTICE:}}}}\$ <code>I will continue to develop the theme but I won't do it on github, just locally on my machine. You will find weekly or semi-weekly updates on pling and your DE app store.</code>
 

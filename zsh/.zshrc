@@ -1,6 +1,6 @@
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 ZSH=/usr/share/oh-my-zsh/
@@ -9,7 +9,7 @@ ZSH=/usr/share/oh-my-zsh/
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="candy"
+ZSH_THEME="sorin"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,7 +71,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo aliases web-search copypath copyfile copybuffer dirhistory history jsontools command-not-found)
+plugins=(git sudo aliases colored-man-pages copypath copyfile dircycle history)
 
 # User configuration
 
@@ -170,7 +170,7 @@ clsd() {
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
-export PATH="$HOME/bin:$PATH"
+export ZSH="$HOME/.oh-my-zsh"
 export WORKDRIVE="/mnt/hive"
 export HIVE="/mnt/hive"
 export PROJECTS="/mnt/hive/Projects"
@@ -195,47 +195,53 @@ export TMUX_CONFIG="/home/sarah/.tmux.conf"
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 
-alias zconf="nvim $ZSHRC"
-alias rz="exec zsh"
-alias cl="clear"
-alias x="exit"
+# Recreation
 alias ls="lsdlol"
 alias lsd="lsdlol"
-alias fetch="fastfetch | lolcat"
 alias parrot="curl parrot.live"
 alias tell="bannerize --lolcat"
 alias say="cl; fortune | cowwide -f $(ls /usr/share/cowsay/cows/ | shuf -n 1) | lolcat"
 alias turt="cl; fortune | cowwide -f turtle | lolcat"
 alias cup="cl; fortune | cowwide -f cupcake | lolcat"
 alias blow="cl; fortune | cowwide -f blowfish | lolcat"
+
+# Configs
+alias kconf="nvim $KITTY_CONFIG"
+alias fconf="nvim $FETCH_CONFIG"
+alias zconf="nvim $ZSHRC"
+alias backupConfigs="backupConfigs.sh"
+
+# Navigation
 alias cdh="cd $HIVE"
 alias cdw="cd $WORK"
 alias cdv="cd $VAULTS"
 alias cdp="cd $PROJECTS"
-alias kconf="nvim $KITTY_CONFIG"
-alias fconf="nvim $FETCH_CONFIG"
-alias check="sudo timeshift --check"
+
+# Commands
+alias rz="exec zsh"
+alias cl="clear"
 alias cls="clsd"
 alias clsa="clsd -a"
-# alias tconf="nvim $TMUX_CONFIG"
-# alias t="tmux"
-# alias tls="tmux list-sessions"
-# alias tlw="tmux list-windows"
-# alias tlp="tmux list-panes"
-# alias tlb="tmux list-buffers"
-# alias tlc="tmux list-clients"
-# alias tlk="tmux list-keys"
-# alias ta="tmux attach"
-# alias tat="tmux attach -t"
-# alias tks="tmux kill-server"
-alias backupConfigs="backupConfigs.sh"
+alias x="exit"
+alias fetch="fastfetch | lolcat"
+alias check="sudo timeshift --check"
+alias y="yazi"
+alias query="yay -Qs"
+alias search="yay -Ss"
+alias install="yay -S"
+alias install-local="yay -U"
+alias uninstall="yay -R"
+alias uninstall-full="yay -Rns"
+
+# Git
+alias gmm="gm --no-ff"
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
-source $ZSH/oh-my-zsh.sh
+. "/home/sarah/.deno/env"
 
 # --- fish-style inline suggestions (history) ---
 # Load zsh-autosuggestions (try common package paths)
@@ -259,15 +265,8 @@ fi
 cl ; echo "Hello Sarah ..." | toilet -t | lolcat
 echo ""
 
-# cl ; echo "Hello Sarah ..." | toilet -t 
-# echo ""
+source $ZSH/oh-my-zsh.sh
 
-# pwd | toilet -f smbraille | lolcat
-
-# echo ""
-
-# lsdlol
-
-# echo "" | lolcat
-# echo "" | lolcat
-. "/home/sarah/.deno/env"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

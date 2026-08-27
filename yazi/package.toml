@@ -1,0 +1,104 @@
+[[plugin.deps]]
+use = "stelcodes/bunny"
+rev = "71b14a3"
+hash = "18a2829738214fe9bca99a2fef19113d"
+
+[[plugin.deps]]
+use = "dedukun/bookmarks"
+rev = "9ef1254"
+hash = "92fbb5483657fa7976cdf4e0104e18e0"
+
+[[plugin.deps]]
+use = "PHONE1X/lsblk-mount"
+rev = "73e863f"
+hash = "69e36cdc69855863e0c1b176e19838cd"
+
+[[plugin.deps]]
+use = "prettycation/trashbox"
+rev = "5b2a3ae"
+hash = "ed1fa39d096a04170804e9dbeb239203"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:zoom"
+rev = "c591a36"
+hash = "e8e279463ee99c940e6945a14cf4aa9e"
+
+[[plugin.deps]]
+use = "jessefarinacci/cycle-linemode"
+rev = "c764d15"
+hash = "f7c3c6183e8f1ed1724e03d98493ea90"
+
+[[plugin.deps]]
+use = "walldmtd/krita-preview"
+rev = "2a1e66e"
+hash = "b2ae411155320dfc312e0be472978144"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "c591a36"
+hash = "5bb0bfab901d3601c370eafdd66edd31"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "c591a36"
+hash = "87472b05a8c420100f6a2b9cde1e7746"
+
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "80e5268"
+hash = "868db729374b97871bc30b96d0e9061f"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "c591a36"
+hash = "5b2fbef7d1513ce38ff72623a071a5e"
+
+[[flavor.deps]]
+use = "6ruby1/eldritch"
+rev = "7b5bf34"
+hash = "d73a2192b13f0267461d5424a7f10cd1"
+
+[[flavor.deps]]
+use = "malick-tammal/monokai"
+rev = "57be034"
+hash = "9fbb5104646853a933446746b88118a6"
+
+[[flavor.deps]]
+use = "cisco336/sequoia"
+rev = "26d04e8"
+hash = "2d7b07787544c076406bc66b51a12d7b"
+
+[[flavor.deps]]
+use = "CFY98/synthwave84"
+rev = "b7bb92e"
+hash = "71390657660b3639d1a3caec3f734511"
+
+[[flavor.deps]]
+use = "AdithyanA2005/nord"
+rev = "34970be"
+hash = "6e1d257f00b540acbeb194082ce073c2"
+
+[[flavor.deps]]
+use = "tomer-ben-david/neon"
+rev = "50f2e60"
+hash = "d23c566ce5c46db6dd854bf75df426e6"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine"
+rev = "d91f8f2"
+hash = "87da3630653b6d272e43658418599188"
+
+[[flavor.deps]]
+use = "gosxrgxx/flexoki-light"
+rev = "1b1e677"
+hash = "a80630a255909a511aba8a98d115bc15"
+
+[[flavor.deps]]
+use = "gosxrgxx/flexoki-dark"
+rev = "25d28ce"
+hash = "8e6dd7e42a127173e4535993d3e0e393"
+
+[[flavor.deps]]
+use = "kmlupreti/ayu-dark"
+rev = "00804da"
+hash = "d2ce8358c59ea6e8552091075b3a191c"

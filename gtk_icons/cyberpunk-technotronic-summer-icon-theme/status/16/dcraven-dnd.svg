@@ -33,7 +33,7 @@
       <stop offset="0%" style="stop-color:#0abdc6; stop-opacity:1"/>
       <stop offset="100%" style="stop-color:#b800ff; stop-opacity:1"/>
     </linearGradient>
-    <linearGradient id="oomox-highlight" x1="0%" x2="0%" y1="0%" y2="100%">
+    <linearGradient id="oomox_highlight" x1="0%" x2="0%" y1="0%" y2="100%">
       <stop style="stop-color:#41ff00;stop-opacity:1;" offset="0" id="stop9" />
       <stop style="stop-color:#e7ff00;stop-opacity:1;" offset="1" id="stop10" />
     </linearGradient>
@@ -60,6 +60,11 @@
       <stop offset="20%" style="stop-color: #94ffab; stop-opacity:1"/>
       <stop offset="50%" style="stop-color: #fbfd54; stop-opacity:1"/>
       <stop offset="100%" style="stop-color: #0f83ae; stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="90ssummer_highlight" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="1e-07" stop-color="#FF57DB"/>
+      <stop offset="0.5" stop-color="#FF51FF"/>
+      <stop offset="1" stop-color="#F50FF5"/>
     </linearGradient>
   </defs>
   <path
@@ -103,7 +108,7 @@
      d="M 16,12.7 A 3.3,3.3 0 0 1 12.7,16 3.3,3.3 0 0 1 9.4,12.7 3.3,3.3 0 0 1 12.7,9.4 3.3,3.3 0 0 1 16,12.7 Z" />
   <path
      d="m 15.793955,11.816012 v 1.767976 H 9.6060445 v -1.767975 z"
-     style="fill:url(#oomox-highlight);stroke-width:0.441994"
+     style="fill:url(#90ssummer_highlight);stroke-width:0.441994"
      id="path_minus"
      class="ColorScheme-Text" />
 </svg>

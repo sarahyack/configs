@@ -1,0 +1,19 @@
+[plugin]
+prepend_preloaders = [
+    { url = "*.kra", run = "krita-preview" },
+    { url = "*.kra~", run = "krita-preview" },
+]
+prepend_previewers = [
+    { url = "*.kra", run = "krita-preview" },
+    { url = "*.kra~", run = "krita-preview" },
+]
+
+[[plugin.prepend_fetchers]]
+url   = "*"
+run   = "git"
+group = "git"
+
+[[plugin.prepend_fetchers]]
+url   = "*/"
+run   = "git"
+group = "git"

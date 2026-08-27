@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   version="1.1"
+   viewBox="0 0 16.933 16.933"
+   id="svg7"
+   sodipodi:docname="preferences-security.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#9c4444"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.15625"
+     inkscape:cx="15.756345"
+     inkscape:cy="29.563452"
+     inkscape:window-width="1226"
+     inkscape:window-height="669"
+     inkscape:window-x="124"
+     inkscape:window-y="132"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg7"
+     showgrid="false" />
+  <defs
+     id="defs2">
+    <rect
+       x="67.489848"
+       y="35.60533"
+       width="15.337563"
+       height="22.51269"
+       id="rect3808" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter1283"
+       x="-0.082344266"
+       y="-0.082344266"
+       width="1.1646885"
+       height="1.1646885">
+      <feGaussianBlur
+         stdDeviation="0.5 0.5"
+         result="blur"
+         id="feGaussianBlur1281" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path2-2"
+     style="fill:#f9f9f9;stroke-width:0.0780039"
+     d="m 8.5505759,0.45189687 c -0.139773,0 -1.5843417,0.4423968 -3.2104631,0.98292853 C 2.7960447,2.280487 2.3643431,2.4453757 2.249702,2.6203422 2.133596,2.7975258 2.117261,3.0545845 2.119331,4.620901 c 0.0014,1.0352247 0.045413,2.1121428 0.104109,2.5389194 0.6479685,4.7109096 2.5283638,7.8115576 5.6265178,9.2768556 0.2788623,0.131895 0.5692605,0.239133 0.6452822,0.239167 0.408985,1.83e-4 1.93827,-0.889561 2.755579,-1.603824 1.751867,-1.531003 3.006051,-4.180824 3.504966,-7.4047903 0.166944,-1.0787976 0.250404,-4.5471812 0.11724,-4.8686844 C 14.802533,2.6283717 14.65485,2.5040293 14.351546,2.3605411 13.697423,2.0510934 8.8368743,0.45189687 8.5505759,0.45189687 Z M 8.3967545,4.6593552 c 0.8320089,-0.020322 1.6965125,0.3032139 2.0634005,0.8966412 0.22035,0.3564066 0.238342,0.4425517 0.264491,1.266177 l 0.02813,0.88351 h 0.256052 c 0.140775,0 0.338596,0.067083 0.439879,0.149127 0.183477,0.1486125 0.184767,0.1555769 0.184767,1.8692526 0,1.546943 -0.01455,1.734656 -0.139755,1.859873 -0.127605,0.12765 -0.364017,0.140025 -2.8465571,0.154753 -1.4893554,0.0088 -2.7847179,-0.01485 -2.8784424,-0.05346 -0.3047445,-0.12546 -0.3367106,-0.313641 -0.3367106,-1.9883653 0,-1.6029827 4.365e-4,-1.6089509 0.1913342,-1.7998472 C 5.7387059,7.7816485 5.9051628,7.7056837 6.041651,7.7056837 H 6.2676885 L 6.3080174,6.8550018 C 6.3551547,5.8604775 6.5082957,5.4942036 7.0489664,5.0823547 7.4105456,4.8069271 7.8975354,4.6715509 8.3967426,4.6593576 Z m 0.144438,0.9576051 C 8.27789,5.615083 8.0081264,5.6731125 7.7721062,5.7951621 7.4163003,5.9791569 7.3040894,6.2769154 7.3040894,7.0388298 V 7.705683 H 8.5599506 9.8148732 L 9.7876803,6.9694249 C 9.7622772,6.2776807 9.7471244,6.2197765 9.5306922,5.9939997 9.2970186,5.7502371 8.9260229,5.6196882 8.5411997,5.6169603 Z" />
+  <text
+     xml:space="preserve"
+     transform="scale(0.26457812)"
+     id="text3806"
+     style="font-size:6.66667px;white-space:pre;shape-inside:url(#rect3808);display:inline;fill:#999999;stroke-width:2" />
+</svg>

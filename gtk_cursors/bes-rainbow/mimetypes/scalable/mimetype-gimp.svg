@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1"><defs><linearGradient id="linear0" x1="0%" x2="0%" y1="0%" y2="100%"><stop offset="0%" style="stop-color:#00b54e; stop-opacity:1"/><stop offset="50%" style="stop-color:#ffd000; stop-opacity:1"/><stop offset="100%" style="stop-color:#ff00bb; stop-opacity:1"/></linearGradient></defs>
+<g id="surface1">
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 44.675781 55.339844 C 44.675781 60.050781 38.945312 63.871094 31.875 63.871094 C 24.808594 63.871094 19.074219 60.050781 19.074219 55.339844 C 19.074219 50.628906 24.808594 46.808594 31.875 46.808594 C 38.945312 46.808594 44.675781 50.628906 44.675781 55.339844 Z M 44.675781 55.339844 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 25.476562 31.875 C 25.476562 35.410156 22.609375 38.277344 19.074219 38.277344 C 15.542969 38.277344 12.675781 35.410156 12.675781 31.875 C 12.675781 28.339844 15.542969 25.476562 19.074219 25.476562 C 22.609375 25.476562 25.476562 28.339844 25.476562 31.875 Z M 25.476562 31.875 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 51.074219 31.875 C 51.074219 35.410156 48.210938 38.277344 44.675781 38.277344 C 41.140625 38.277344 38.277344 35.410156 38.277344 31.875 C 38.277344 28.339844 41.140625 25.476562 44.675781 25.476562 C 48.210938 25.476562 51.074219 28.339844 51.074219 31.875 Z M 51.074219 31.875 "/>
+<use xlink:href="#surface8" mask="url(#mask1)"/>
+</g>
+</svg>

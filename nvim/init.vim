@@ -113,6 +113,7 @@ Plug 'Eandrju/cellular-automaton.nvim'
 Plug 'jim-fx/sudoku.nvim'
 Plug 'mikesmithgh/kitty-scrollback.nvim'
 Plug 'its-izhar/kitty-navigator.nvim', { 'do': 'cp ./kitty/*.py ~/.config/kitty/' }
+Plug 'gnsfujiwara/suda.nvim'
 
 " Exercism
 Plug '2kabhishek/utils.nvim'
@@ -138,6 +139,7 @@ Plug 'nacro90/numb.nvim'
 Plug 'SmiteshP/nvim-navic'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'HakonHarnes/img-clip.nvim'
+Plug 'nvim-telekasten/calendar-vim'
 
 " SWITCHERS
 Plug 'nvim-telescope/telescope.nvim'
@@ -145,6 +147,7 @@ Plug 'nvim-telescope/telescope-ui-select.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-frecency.nvim'
 Plug 'nvim-telescope/telescope-symbols.nvim'
+Plug 'nvim-telescope/telescope-media-files.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'doctorfree/cheatsheet.nvim'
 
@@ -154,7 +157,9 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'hasansujon786/nvim-navbuddy'
 
 " FILES
-Plug 'sarahyack/telekasten.nvim', {'branch': 'periodic-refact'}
+" Plug 'sarahyack/telekasten.nvim', {'branch': 'refact'}
+" Plug 'file:///mnt/hive/Work/dev/telekasten.nvim', { 'branch': 'main'}
+Plug '/mnt/hive/Work/dev/telekasten.nvim'
 Plug 'echasnovski/mini.files', {'branch': 'stable'}
 Plug 'stevearc/oil.nvim'
 Plug 'refractalize/oil-git-status.nvim'
@@ -187,6 +192,11 @@ call plug#end()
 " Plugin Setup
 
 lua << EOF
+
+local suda = require('suda')
+suda.setup({
+    smart_edit = true,
+})
 
 local kittyscroll = require('kitty-scrollback')
 kittyscroll.setup()
@@ -235,49 +245,126 @@ for key, func in pairs(sckeys) do
     vim.keymap.set(scmodes, key, func)
 end
 
+-- local tkasten = require('telekasten')
+-- tkasten.setup({
+--     home = vim.fs.joinpath(vim.env.VAULTS, "/Beehive"),
+--     templates = "admin/templates",
+--     template_new_note = "inbox-todos-template.md",
+--     periodic = {
+--         root = "periodic",
+--         kinds = {
+--             yearly = {
+--                 enabled = true,
+--                 folder_path = "{year}",
+--                 filename = "{year}",
+--                 create_if_missing = true,
+--             },
+--             quarterly = {
+--                 enabled = true,
+--                 folder_path = "{year}/{quarter_yq}",
+--                 filename = "{quarter_yq}",
+--                 create_if_missing = true,
+--             },
+--             monthly = {
+--                 enabled = true,
+--                 folder_path = "{year}/{quarter_yq}/{month_ym}",
+--                 filename = "{month_ym}",
+--                 template_file = "monthly-template.md",
+--                 create_if_missing = true,
+--             },
+--             weekly = {
+--                 enabled = true,
+--                 folder_path = "{year}/{quarter_yq}/{month_ym}/{isoweek}",
+--                 filename = "{isoweek}",
+--                 template_file = "weekly-template.md",
+--                 create_if_missing = true,
+--             },
+--             daily = {
+--                 enabled = true,
+--                 folder_path = "{year}/{quarter_yq}/{month_ym}/{isoweek}",
+--                 filename = "{date}",
+--                 template_file = "daily-template.md",
+--                 create_if_missing = true,
+--             },
+--         },
+--     },
+--     vaults = {
+--         personal = {
+--             home = vim.fs.joinpath(vim.env.VAULTS, "/Beehive"),
+--             templates = "admin/templates",
+--             template_new_note = "inbox-todos-template.md",
+--             periodic = {
+--                 root = "periodic",
+--                 kinds = {
+--                     yearly = {
+--                         enabled = true,
+--                         folder_path = "{year}",
+--                         filename = "{year}",
+--                         create_if_missing = true,
+--                     },
+--                     quarterly = {
+--                         enabled = true,
+--                         folder_path = "{year}/{quarter_yq}",
+--                         filename = "{quarter_yq}",
+--                         create_if_missing = true,
+--                     },
+--                     monthly = {
+--                         enabled = true,
+--                         folder_path = "{year}/{quarter_yq}/{month_ym}",
+--                         filename = "{month_ym}",
+--                         template_file = "monthly-template.md",
+--                         create_if_missing = true,
+--                     },
+--                     weekly = {
+--                         enabled = true,
+--                         folder_path = "{year}/{quarter_yq}/{month_ym}/{isoweek}",
+--                         filename = "{isoweek}",
+--                         template_file = "weekly-template.md",
+--                         create_if_missing = true,
+--                     },
+--                     daily = {
+--                         enabled = true,
+--                         folder_path = "{year}/{quarter_yq}/{month_ym}/{isoweek}",
+--                         filename = "{date}",
+--                         template_file = "daily-template.md",
+--                         create_if_missing = true,
+--                     },
+--                 },
+--             },
+--         },
+--         work = {
+--             home = vim.fs.joinpath(vim.env.VAULTS, "/HoneyComb"),
+--             templates = "admin/templates",
+--             periodic = {},
+--         },
+--     },
+-- })
+
 local tkasten = require('telekasten')
 tkasten.setup({
-    home = "$VAULTS/Beehive",
-    periodic = {
-        root = "periodic",
-        kinds = {
-            yearly = {
-                enabled = true,
-                folderpath = "{year}",
-                filename = "{year}",
-                create_if_missing = true,
-            },
-            quarterly = {
-                enabled = true,
-                folderpath = "{year}/{quarter_yq}",
-                filename = "{quarter_yq}",
-                create_if_missing = true,
-            },
-            monthly = {
-                enabled = true,
-                folderpath = "{year}/{quarter_yq}/{month_ym}",
-                filename = "{month_ym}",
-                create_if_missing = true,
-            },
-            weekly = {
-                enabled = true,
-                folderpath = "{year}/{quarter_yq}/{month_ym}/{isoweek}",
-                filename = "{isoweek}",
-                create_if_missing = true,
-            },
-            daily = {
-                enabled = true,
-                folderpath = "{year}/{quarter_yq}/{month_ym}/{isoweek}",
-                filename = "{date}",
-                create_if_missing = true,
-            },
-        }
-    },
+    default_vault = "testing",
+    vaults = {
+        personal = {
+            home = vim.fs.joinpath(vim.env.VAULTS, "/Beehive")
+        },
+        work = {
+            home = vim.fs.joinpath(vim.env.VAULTS, "/HoneyComb"),
+            periodic = { enabled = false }
+        },
+        testing = {
+            home = vim.fs.joinpath(vim.env.VAULTS, "/Telekasten"),
+        },
+    }
 })
+
+vim.keymap.set("n", "<M-2>", function()
+    tkasten.goto_periodic(nil, "next_year")
+end, { desc = "Telekasten: goto next year" })
 
 local quicknote = require('quicknote')
 quicknote.setup({
-    sign = "󰠮"
+    mode = "resident",
+    sign = "󰠮",
 })
 
 vim.api.nvim_create_user_command("NewQuickNote", function() quicknote.NewNoteAtCurrentLine() end, { desc = "Insert new Quicknote at Current Line" })
@@ -412,6 +499,7 @@ telescope.load_extension('frecency')
 telescope.load_extension('ui-select')
 telescope.load_extension('projects')
 telescope.load_extension('bibtex')
+telescope.load_extension('media_files')
 
 local exercism = require('exercism')
 exercism.setup({
@@ -442,7 +530,9 @@ lspconfig.enable('rust_analyzer')
 lspconfig.enable('ts_ls')
 lspconfig.enable('vimls')
 lspconfig.enable('lua_ls')
+lspconfig.enable('stylua')
 lspconfig.enable('marksman')
+lspconfig.enable('bashls')
  
 local on_attach = function(client, bufnr)
 	-- Enable completion triggered by <c-x><c-o>
@@ -553,7 +643,7 @@ db.setup({
       { icon = '  ', desc = 'Recent files        ', action = 'Telescope oldfiles', key = 'h' },
       { icon = '  ', desc = 'Projects            ', action = 'Telescope projects', key = 'a' },
       { icon = '  ', desc = 'New file            ', action = 'enew', key = 'n' },
-      { icon = '  ', desc = 'Open Wiki List      ', action = 'VimwikiUISelect', key = 'v' },
+      { icon = '  ', desc = 'Open Wiki List      ', action = 'Telekasten switch_vault', key = 'v' },
       { icon = '  ', desc = 'Open Exercism List  ', action = 'Exercism languages', key = 'e' },
       { icon = '  ', desc = 'Open Rust Exercises ', action = 'Exercism list', key = 'R' },
       { icon = '  ', desc = 'Custom Shortcuts    ', action = 'ShowShortcuts', key = 's' },
@@ -1242,6 +1332,7 @@ function ShowShortcuts()
     "--------------------",
     "<M-@>mp         - Open Peek Markdown Preview",
     "<M-@>mc         - Close Peek Markdown Preview",
+    "<M-S-1>         - CD To Beehive",
     "<M-1>           - Open Telekasten Panel",
     "<M-1>v          - Switch Vault",
     "<M-1>f          - Find Note by Title",
@@ -1397,6 +1488,17 @@ end
 vim.keymap.set('n', 'g?', ShowShortcuts, { noremap = true, silent = true, desc = "Show Shortcut Help" })
 vim.api.nvim_create_user_command('ShowShortcuts', ShowShortcuts, {})
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown" },
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.linebreak = true
+    vim.opt_local.breakindent = true
+    vim.opt_local.showbreak = "↪ "
+    vim.opt_local.conceallevel = 2
+  end,
+})
+
 EOF
 
 command! -bang -nargs=* Rg
@@ -1468,9 +1570,9 @@ endfunction
 
 command! FSudoku call FSudoku()
 
+let beehive = expand('$VAULTS') . '/Beehive'
 
 " Key Remappings
-noremap <CR> <CR>
 
 " Window/Split Management
 noremap <C-m> M
@@ -1654,6 +1756,7 @@ nnoremap <Space>h :CDHome<CR>
 " Wiki
 nnoremap <M-@>p     :PeekOpen<CR>
 nnoremap <M-@>c     :PeekClose<CR>
+nnoremap <M-S-1>    :exec 'lcd ' . fnameescape(beehive)<CR>
 nnoremap <M-1>      :Telekasten panel<CR>
 nnoremap <M-1>v     :Telekasten switch_vault<CR>
 nnoremap <M-1>f     :Telekasten find_notes<CR>

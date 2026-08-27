@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="22"
+   height="22"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="application-x-python-bytecode.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="29.727273"
+     inkscape:cx="10.98318"
+     inkscape:cy="11"
+     inkscape:window-width="1600"
+     inkscape:window-height="836"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <g
+     fill="#d08770"
+     id="g6">
+    <path
+       id="path4"
+       d="m 16,11 -2,2 0.707,0.707 L 16,12.414 V 18 h -2 v 1 h 5 v -1 h -2 v -7 z m -5.5,0 C 9.797,11 9.105,11.359 8.666,12.041 8.227,12.723 8,13.691 8,15 8,16.31 8.227,17.277 8.666,17.959 9.105,18.641 9.796,19 10.5,19 11.204,19 11.895,18.641 12.334,17.959 12.773,17.277 13,16.309 13,15 13,13.69 12.773,12.723 12.334,12.041 11.895,11.359 11.204,11 10.5,11 Z m 0,1 c 0.401,0 0.71,0.141 0.994,0.584 0.084,0.13 0.158,0.298 0.227,0.488 L 9.037,15.756 A 8.013,8.013 0 0 1 9,15 C 9,13.81 9.22,13.027 9.506,12.584 9.791,12.141 10.099,12 10.5,12 Z m 1.463,2.244 C 11.985,14.477 12,14.724 12,15 12,16.19 11.78,16.973 11.494,17.416 11.209,17.859 10.901,18 10.5,18 10.099,18 9.79,17.859 9.506,17.416 A 2.48,2.48 0 0 1 9.279,16.928 Z M 9.666,3 A 2.66,2.66 0 0 0 7,5.666 h 4 V 7 H 5.666 A 2.66,2.66 0 0 0 3,9.666 v 2.668 A 2.66,2.66 0 0 0 5.666,15 V 13.666 A 3.97,3.97 0 0 1 7,10.701 l 0.002,-0.004 c 0.176,-0.158 0.367,-0.3 0.568,-0.426 0.002,0 0.004,-0.003 0.006,-0.004 C 7.775,10.144 7.984,10.039 8.203,9.951 8.243,9.935 8.286,9.926 8.326,9.911 A 3.88,3.88 0 0 1 8.901,9.742 C 9.149,9.694 9.404,9.666 9.666,9.666 H 15 v -4 A 2.66,2.66 0 0 0 12.334,3 Z m 0,0.666 A 0.66750019,0.66750019 0 1 1 9.667,5.001 0.66750019,0.66750019 0 0 1 9.666,3.666 Z"
+       style="fill:#ff6f41;fill-opacity:1" />
+  </g>
+</svg>

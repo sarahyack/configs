@@ -45,6 +45,9 @@ NEOVIM_CONFIG_SOURCE="$XDG_CONFIG_HOME/nvim"
 NEOVIM_AUTOLOAD_SOURCE="$XDG_CONFIG_HOME/nvim/autoload"
 NEOVIM_CONFIG_DEST="$CONFIG_FOLDER/nvim"
 
+OBSIDIAN_CONFIG_SOURCE="$WORKDRIVE/Documents/Vaults/Beehive/.obsidian"
+OBSIDIAN_CONFIG_DEST="$CONFIG_FOLDER/obsidian"
+
 FASTFETCH_CONFIG_SOURCE="$XDG_CONFIG_HOME/fastfetch"
 FASTFETCH_CONFIG_DEST="$CONFIG_FOLDER/fastfetch"
 
@@ -54,8 +57,8 @@ KITTY_CONFIG_DEST="$CONFIG_FOLDER/kitty"
 ZSH_CONFIG_SOURCE="$HOME/.zshrc"
 ZSH_CONFIG_DEST="$CONFIG_FOLDER/zsh"
 
-YAZI_CONFIG_SOURCE="$XDG_CONFIG_HOME/yazi"
-YAZI_CONFIG_DEST="$CONFIG_FOLDER/yazi"
+TMUX_CONFIG_SOURCE="$HOME/.tmux.conf"
+TMUX_CONFIG_DEST="$CONFIG_FOLDER/tmux"
 
 GTK_THEMES_CONFIG_SOURCE="$HOME/.themes"
 GTK_THEMES_CONFIG_DEST="$CONFIG_FOLDER/gtk_themes"
@@ -100,9 +103,10 @@ fi
 say "Ensuring destination directories exist..."
 run_cmd mkdir -p \
     "$CONFIG_FOLDER" \
-    "$NEOVIM_CONFIG_DEST" "$YAZI_CONFIG_DEST" \
+    "$NEOVIM_CONFIG_DEST" "$OBSIDIAN_CONFIG_DEST" \
     "$FASTFETCH_CONFIG_DEST" "$KITTY_CONFIG_DEST" \
-    "$ZSH_CONFIG_DEST" "$GTK_THEMES_CONFIG_DEST" "$GTK_ICONS_CONFIG_DEST" \
+    "$ZSH_CONFIG_DEST" "$TMUX_CONFIG_DEST" \
+    "$GTK_THEMES_CONFIG_DEST" "$GTK_ICONS_CONFIG_DEST" \
     "$GTK_CURSORS_CONFIG_DEST" "$FOOYIN_DATA_DEST"
 
 # ---- Enter configs folder ----
@@ -183,10 +187,11 @@ backup_file_to_path() {
 
 # ---- Backups ----
 backup_dir  "$NEOVIM_CONFIG_SOURCE"      "$NEOVIM_CONFIG_DEST"          "Neovim config"
+backup_dir  "$OBSIDIAN_CONFIG_SOURCE"    "$OBSIDIAN_CONFIG_DEST"        "Obsidian config"
 backup_dir  "$FASTFETCH_CONFIG_SOURCE"   "$FASTFETCH_CONFIG_DEST"       "Fastfetch config"
 backup_dir  "$KITTY_CONFIG_SOURCE"       "$KITTY_CONFIG_DEST"           "Kitty config"
 backup_file "$ZSH_CONFIG_SOURCE"         "$ZSH_CONFIG_DEST"             "Zsh config"
-backup_dir  "$YAZI_CONFIG_SOURCE"        "$YAZI_CONFIG_DEST"            "Yazi config"
+backup_file "$TMUX_CONFIG_SOURCE"        "$TMUX_CONFIG_DEST"            "Tmux config"
 backup_dir  "$GTK_THEMES_CONFIG_SOURCE"  "$GTK_THEMES_CONFIG_DEST"      "GTK themes"
 backup_dir  "$GTK_ICONS_CONFIG_SOURCE"   "$GTK_ICONS_CONFIG_DEST"       "GTK icons"
 backup_dir  "$GTK_CURSORS_CONFIG_SOURCE" "$GTK_CURSORS_CONFIG_DEST"     "GTK cursors"

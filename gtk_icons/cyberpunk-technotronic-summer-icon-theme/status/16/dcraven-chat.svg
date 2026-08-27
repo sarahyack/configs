@@ -33,7 +33,7 @@
       <stop offset="0%" style="stop-color:#0abdc6; stop-opacity:1"/>
       <stop offset="100%" style="stop-color:#b800ff; stop-opacity:1"/>
     </linearGradient>
-    <linearGradient id="oomox-highlight" x1="0%" x2="0%" y1="0%" y2="100%">
+    <linearGradient id="oomox_highlight" x1="0%" x2="0%" y1="0%" y2="100%">
       <stop style="stop-color:#41ff00;stop-opacity:1;" offset="0" id="stop9" />
       <stop style="stop-color:#e7ff00;stop-opacity:1;" offset="1" id="stop10" />
     </linearGradient>
@@ -60,6 +60,11 @@
       <stop offset="20%" style="stop-color: #94ffab; stop-opacity:1"/>
       <stop offset="50%" style="stop-color: #fbfd54; stop-opacity:1"/>
       <stop offset="100%" style="stop-color: #0f83ae; stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="90ssummer_highlight" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="1e-07" stop-color="#FF57DB"/>
+      <stop offset="0.5" stop-color="#FF51FF"/>
+      <stop offset="1" stop-color="#F50FF5"/>
     </linearGradient>
   </defs>
   <path
@@ -103,7 +108,7 @@
      id="path_bubble-shadown"
      class="ColorScheme-Text" />
   <path
-     style="display:inline;overflow:visible;visibility:visible;fill:url(#oomox-highlight);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.646751;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;enable-background:accumulate"
+     style="display:inline;overflow:visible;visibility:visible;fill:url(#90ssummer_highlight);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.646751;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;enable-background:accumulate"
      d="M 12.700015,0 C 14.521605,0 16,0.96713407 16,2.1587804 c 0,1.1849832 -1.690841,2.1608977 -3.34702,2.0766243 -0.211778,0.3309015 -0.864477,1.1233959 -1.381662,1.4674538 0,-10e-8 0.735339,-1.0092063 0.619041,-1.4792069 C 10.565291,4.0283833 9.3999996,3.1292755 9.3999996,2.1587804 9.3999996,0.96713387 10.878392,0 12.699986,0 Z"
      id="path_bubble"
      class="ColorScheme-Text" />

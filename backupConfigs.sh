@@ -14,6 +14,7 @@ for arg in "$@"; do
     --no-git-sync) NO_GIT_SYNC=1 ;;
     -h|--help)
         echo "Usage: $0 [-n|--dry-run] [--no-git-sync]"
+        echo "Weekly automation: run setupBackupTimer.sh to opt in (see BACKUP_AUTOMATION.md)."
         exit 0
         ;;
     *)

@@ -1,0 +1,5 @@
+#!/bin/sh
+printf '%s\n' "$*" >> "$SYSTEMCTL_TEST_LOG"
+if [ "$*" = '--user show-environment' ] && [ "${SYSTEMCTL_TEST_UNAVAILABLE:-0}" = 1 ]; then
+    exit 1
+fi

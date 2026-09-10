@@ -106,14 +106,12 @@ Plug 'nvzone/volt'
 Plug '2kabhishek/pickme.nvim'
 
 " MISC
-Plug 'lowitea/aw-watcher.nvim'
 Plug 'y3owk1n/time-machine.nvim'
 Plug 'tpope/vim-scriptease'
 Plug 'Eandrju/cellular-automaton.nvim'
 Plug 'jim-fx/sudoku.nvim'
 Plug 'mikesmithgh/kitty-scrollback.nvim'
 Plug 'its-izhar/kitty-navigator.nvim', { 'do': 'cp ./kitty/*.py ~/.config/kitty/' }
-Plug 'gnsfujiwara/suda.nvim'
 
 " Exercism
 Plug '2kabhishek/utils.nvim'
@@ -132,7 +130,7 @@ Plug 'beauwilliams/focus.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvimdev/hlsearch.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'echasnovski/mini.icons', {'branch': 'stable'}
+Plug 'nvim-mini/mini.icons', {'branch': 'stable'}
 Plug 'rktjmp/lush.nvim'
 Plug '2kabhishek/nerdy.nvim'
 Plug 'nacro90/numb.nvim'
@@ -149,24 +147,22 @@ Plug 'nvim-telescope/telescope-frecency.nvim'
 Plug 'nvim-telescope/telescope-symbols.nvim'
 Plug 'nvim-telescope/telescope-media-files.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'doctorfree/cheatsheet.nvim'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
-Plug 'lewis6991/gitsigns.nvim'
+Plug 'nvim-mini/mini.diff'
 Plug 'hasansujon786/nvim-navbuddy'
 
 " FILES
 " Plug 'sarahyack/telekasten.nvim', {'branch': 'refact'}
 " Plug 'file:///mnt/hive/Work/dev/telekasten.nvim', { 'branch': 'main'}
 Plug '/mnt/hive/Work/dev/telekasten.nvim'
-Plug 'echasnovski/mini.files', {'branch': 'stable'}
-Plug 'stevearc/oil.nvim'
-Plug 'refractalize/oil-git-status.nvim'
+Plug 'mikavilpas/yazi.nvim'
 Plug 'ahmedkhalf/project.nvim'
 Plug 'dzfrias/arena.nvim'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'nvim-telescope/telescope-bibtex.nvim'
+Plug 'kdheepak/lazygit.nvim'
 
 " EDITING
 Plug 'chentoast/marks.nvim'
@@ -192,11 +188,6 @@ call plug#end()
 " Plugin Setup
 
 lua << EOF
-
-local suda = require('suda')
-suda.setup({
-    smart_edit = true,
-})
 
 local kittyscroll = require('kitty-scrollback')
 kittyscroll.setup()
@@ -244,6 +235,8 @@ local scmodes = { 'n', 'v', 'x' }
 for key, func in pairs(sckeys) do
     vim.keymap.set(scmodes, key, func)
 end
+
+require("vim.treesitter.language").register("markdown", "telekasten")
 
 -- local tkasten = require('telekasten')
 -- tkasten.setup({
@@ -396,35 +389,11 @@ fusen.setup({
     },
 })
 
-local minif = require('mini.files')
-minif.setup()
+local minid = require('mini.diff')
+minid.setup()
 
 local minic = require('mini.icons')
 minic.setup()
-
-local oil = require('oil')
-oil.setup({
-    columns = {
-        "icon",
-    },
-    win_options = {
-        signcolumn = "yes:2",
-    },
-    keymaps = {
-        ['K'] = 'actions.parent',
-        ['<A-r>'] = 'actions.refresh',
-        ['<A-u>'] = 'actions.preview_scroll_up',
-        ['<A-d>'] = 'actions.preview_scroll_down',
-        ['q'] = 'actions.close',
-    },
-    float = {
-        max_width = math.floor(vim.o.columns * 0.6),
-        max_height = 40,
-    },
-})
-
-local oil_git = require('oil-git-status')
-oil_git.setup()
 
 local macrobank = require('macrobank')
 macrobank.setup({
@@ -1140,7 +1109,7 @@ function ShowShortcuts()
     "HH          - Move to top line, and center",
     "HL          - Move to top line, and put that at bottom",
     "LL          - Move to bottom line, and center",
-    "LH          - Move to bottom line, and put that at bottom",
+    "LH          - Move to bottom line, and put that at top",
     "Zz          - Vertical Split",
     "Zx          - Horizontal Split",
     "<A-H>       - Move Split Left",
@@ -1156,12 +1125,20 @@ function ShowShortcuts()
     "<A-C-j>     - Decrease Current Split Height",
     "<A-C-k>     - Increase Current Split Height",
     "<C-=>       - Equalize All Splits Size",
-    "<C-_>       - Mazimize Current Split Height, Minimize Others",
+    "<C-_>       - Maximize Current Split Height, Minimize Others",
     "<C-|>       - Maximize Current Split Width, Minimize Others",
     "",
     "-- Editing",
     "--------------------",
+    "j / k             - Move Down / Up by Display Line",
+    "gj / gk           - Move Down / Up by Physical Line",
+    "$ / ^             - End / Start of Display Line",
+    "g$ / g^           - End / Start of Physical Line",
+    "Y                 - Yank to End of Line",
+    "yc                - Yank Character", 
     "<C-a>             - Copy All",
+    "<M-v>             - Paste from System Clipboard",
+    "<Leader>p         - Paste Image from Clipboard", 
     "<Leader>ae        - Add Empty Line Below",
     "<Leader>aE        - Add Empty Line Above",
     "<Leader>aw        - Add Empty Line Above and Below",
@@ -1183,7 +1160,7 @@ function ShowShortcuts()
     "<A-j|k>           - Move Block Up or Down (Visual Mode)",
     "<Leader>rle       - Replace Line Endings - LF",
     "ys{motion}{char}  - Add Surrounding",
-    "ds{motion}{char}  - Delete Surrounding",
+    "ds{char}          - Delete Surrounding",
     "cs{motion}{char}  - Change Surrounding", 
     "<C-CR>            - Jump Out of the Immediate Surrounding (Insert)",
     "<M-q>             - Open Macro Bank Live",
@@ -1198,7 +1175,6 @@ function ShowShortcuts()
     "m:          - Preview mark (specify or <CR> for next)",
     "m[          - Move to previous mark",
     "m]          - Move to next mark",
-    "M*          - Toggle mark *",
     "m[0-9]      - Add bookmark from group [0-9]",
     "m{          - Move to previous bookmark of the same type (Works Across Buffers)",
     "m}          - Move to next bookmark of the same type (Works Across Buffers)",
@@ -1209,17 +1185,19 @@ function ShowShortcuts()
     "dm=         - Delete bookmark under cursor",
     "+-          - Toggle Signs Globally",
     "+_          - Toggle Signs for Buffer #",
+    "++          - List Marks in Current Buffer",
+    "+a          - Annotate Bookmark",
     "+g          - List Global Marks in Open Buffers",
     "+G          - List All Marks in Open Buffers",
-    "+b          - List All Marks Bookmarks of Group #",
-    "+B          - List All Marks Bookmarks",
+    "+b          - List Bookmarks of Group #",
+    "+B          - List All Bookmarks",
     "",
     "-- Quit/Save",
     "--------------------",
     "Qw          - Save and Quit",
     "QW          - Save and Quit All",
-    "Qq          - Save and Quit Without Saving",
-    "QQ          - Save and Quit All Without Saving",
+    "Qq          - Quit",
+    "QQ          - Quit All",
     "Qf          - Force Quit",
     "QF          - Force Quit All",
     "Qh          - Close Left Split",
@@ -1229,6 +1207,7 @@ function ShowShortcuts()
     "",
     "-- Tabs",
     "--------------------",
+    "<Space>tt   - Return to Last Used Tab",
     "<Space>tl   - Tabby Picker",
     "<Space>tn   - Next Tab",
     "<Space>tp   - Previous Tab",
@@ -1242,7 +1221,8 @@ function ShowShortcuts()
     "<Tab>m  - Toggle Arena",
     "<Tab>a  - Open Alternate (Last) Buffer",
     "<Tab>b  - List Buffers", 
-    "<Tab>o  - Open New Buffer",
+    "<Tab>e  - Open Empty Buffer",
+    "<Tab>o  - Edit/Open File in Buffer",
     "<Tab>n  - Next Buffer",
     "<Tab>p  - Previous Buffer",
     "<Tab>s  - Switch to Specific Buffer",
@@ -1272,7 +1252,7 @@ function ShowShortcuts()
     "<Space>Fr          - Recent Files",
     "<Space>FR          - Registers",
     "<Space>Fg          - Live Grep",
-    "<Space>FG          - Word Search (Selection|Cursor)",
+    "<Space>FG          - Search Word Under Cursor",
     "<Space>Fb          - Buffers",
     "<Space>Fs          - Tmux Sessions",
     "<Space>Fw          - Tmux Windows",
@@ -1296,7 +1276,7 @@ function ShowShortcuts()
     "<Leader>w   - Save",
     "<Leader>W   - Save All Buffers",
     "<Leader>e   - Open File",
-    "<Space>fq   - Open TODO Location List",
+    "<Space>fq   - Open TODO Quickfix List",
     "<Space>ff   - Open TODO Location List",
     "<Space>ft   - Open TODO Telescope",
     "<Space>nn   - New Quicknote at Current Line",
@@ -1307,7 +1287,7 @@ function ShowShortcuts()
     "<Space>nl   - Jump to the Next Quicknote Location",
     "<Space>nh   - Jump to the Previous Quicknote Location",
     "<Space>af   - Add Fusen Annotation",
-    "<Space>df   - Clear Fusen Annotation At Current Location",
+    "<Space>cf   - Clear Fusen Annotation At Current Location",
     "<Space>Cf   - Clear All Fusen Annotations in Current Buffer",
     "<Space>Df   - Delete All Fusen Annotations Globally",
     "<Space>nf   - Jump to Next Fusen",
@@ -1318,8 +1298,8 @@ function ShowShortcuts()
     "",
     "-- File Explorer",
     "--------------------",
-    "-                 - Toggle Mini-Files",
-    "=                 - Toggle Oil",
+    "-                 - Toggle Yazi",
+    "=                 - Toggle LazyGit",
     "<Leader>-         - Toggle Navbuddy",
     "<Leader>=         - Toggle Time Machine",
     "<Space>ip         - Print CWD",
@@ -1330,9 +1310,9 @@ function ShowShortcuts()
     "",
     "-- Wiki",
     "--------------------",
-    "<M-@>mp         - Open Peek Markdown Preview",
-    "<M-@>mc         - Close Peek Markdown Preview",
-    "<M-S-1>         - CD To Beehive",
+    "<M-@>p          - Open Peek Markdown Preview",
+    "<M-@>c          - Close Peek Markdown Preview",
+    "<M-S-1>         - Set LWD To Beehive",
     "<M-1>           - Open Telekasten Panel",
     "<M-1>v          - Switch Vault",
     "<M-1>f          - Find Note by Title",
@@ -1366,8 +1346,8 @@ function ShowShortcuts()
     "-- Exercism",
     "--------------------",
     "\"e          - List Languages",
-    "\"a          - List Exercises for Language",
-    "\"l          - List Exercises for Default Language",
+    "\"a          - List Exercises for Default Language",
+    "\"l          - List Exercises for Specified Language",
     "\"t          - Run Tests for Exercise",
     "\"s          - Submit Exercise",
     "\"r          - Recent Exercises",
@@ -1423,20 +1403,15 @@ function ShowShortcuts()
     "",
     "-- Git",
     "--------------------",
+    "=           - Toggle LazyGit",
     "<Leader>gl  - Search Git Files",
-    "<Leader>gc  - Search Git Commits",
-    "<Leader>gbc - Search Git Buffer Commits",
-    "<Leader>gbr - Search Git Buffer Commits Range",
-    "<Leader>gb  - Search Git Branches",
-    "<Leader>gs  - Show Git Status",
-    "<Leader>gst - Show Git Stash",
-    "<Leader>gh  - GitSigns Stage Hunk",
-    "<Leader>gu  - GitSigns Undo Stage Hunk",
-    "<Leader>gp  - GitSigns Preview Hunk",
     "",
     "-- Shortcut Help (This Window)",
     "--------------------",
     "g?          - Show Shortcut Help (this window)",
+    "q / <ESC>   - Close Shortcut Help (this window)",
+    "0           - Return to Table of Contents",
+    "1-#         - Jump to Category",
     "<C-d>       - Scroll Down 5 (this window)",
     "<C-u>       - Scroll Up 5 (this window)"
   }
@@ -1742,10 +1717,9 @@ nnoremap <leader>r :CellularAutomaton make_it_rain<CR>
 nnoremap <leader>l :CellularAutomaton game_of_life<CR>
 
 " File Explorer
-nnoremap - :lua MiniFiles.open()<CR>
-nnoremap = :Oil --float<CR>
+nnoremap - :Yazi<CR>
+nnoremap = :LazyGit<CR>
 nnoremap <leader>= :TimeMachineToggle<CR>
-" nnoremap <leader>- :Telescope lsp_document_symbols<CR>
 nnoremap <leader>- :Navbuddy<CR>
 nnoremap <Space>ip :pwd<CR>
 nnoremap <Space>ic :cd<Space>
@@ -1835,15 +1809,6 @@ nnoremap ,s :PlugStatus<CR>
 
 " Git
 nnoremap <leader>gl :Telescope git_files<CR>
-nnoremap <leader>gc :Telescope git_commits<CR>
-nnoremap <leader>gbc :Telescope git_bcommits<CR>
-nnoremap <leader>gbr :Telescope git_bcommits_range<CR>
-nnoremap <leader>gb :Telescope git_branches<CR>
-nnoremap <leader>gs :Telescope git_status<CR>
-nnoremap <leader>gst :Telescope git_stash<CR>
-nnoremap <leader>gh :GitSigns stage_hunk<CR>
-nnoremap <leader>gu :GitSigns undo_stage_hunk<CR>
-nnoremap <leader>gp :GitSigns preview_hunk<CR>
 
 " Theme Settings
 highlight Comment cterm=italic gui=italic

@@ -1,53 +1,27 @@
 # GTK cursor packs
-# Source: existing repository inventory from gtk_cursors/
+# Source: /home/sarah/.icons
+# Generated: 2026-09-10 17:01:30
 # Install these independently on a new system; restoreConfigs.sh does not copy pack assets.
 
-Afterglow-cursors
-ArcAurora-cursors
-ArcDusk-cursors
-ArcMidnight-cursors
-ArcStarry-cursors
-ArchCursorTheme
 Aretha-Dark-Icons
 Ars-Dark-Icons
 Ars-Light-Icons
 Azure-Glassy-Dark-Icons
-Bibata-Modern-DarkRed
-Bibata-Modern-DodgerBlue
-Bibata-Modern-Pink
-Bibata-Modern-Turquoise
-Bibata-Original-DarkRed
-Bibata-Original-DodgerBlue
-Bibata-Original-Pink
-Bibata-Original-Turquoise
+bes-rainbow
+bes-right-square
+bes-right-square-dark
 Breeze-Cheerful-Phantasy-Dark
-Catppuccin-C
+candy-icons
 ColorFlow
 ColorFlow.Agresive.Color
 Colorful-Dark-Icons
-Cosmic-C
-CosmicG-C
-DJ-FOX-C
-Dark-Matter-C
-Dracula-C
-DraculaP-C
-DraculaPP-C
-Duskfox-C
-Everforest-C
+cyberpunk-technotronic-icon-theme
+cyberpunk-technotronic-summer-icon-theme
 Flight-Dark-Icons
-Future-dark-cursors
-Graphite-dark-nord-cursors
-Graphite-light-nord-cursors
-Gruvbox-C
-Hacker-C
-HaloAero
+hicolor
 Infinity
-Kanagawa-C
 Layan-border-cursors
-LyraB-cursors
-LyraQ-cursors
 Magna-Glassy-Dark-Icons
-Moonlight
 Nature - Blue - KDE
 Nature - Cyan - KDE
 Nature - Green - KDE
@@ -55,42 +29,14 @@ Nature - Grey - KDE
 Nature - Orange - KDE
 Nature - Purple - KDE
 Nature - Red - KDE
-Nero-Cyber-Cyan
-Night Diamond (Blue)
-Night Diamond (Red)
-Nord-C
 Nordic-cursors
-Numix-C
 Orion
-Oxygen 06 Magenta
-Oxygen 07 Purple
-Oxygen 08 Indigo
-Oxygen 09 Lavender
-Oxygen 14 Matrix Green
-Oxygen 19 Pink Blossom
-Oxygen 20 Peach Fruit
-PeepO
-Polarnight-cursors
-Red-C
 Slot-Dark-Icons
 Slot-Gradient-Dark-Icons
 Slot-Multicolor-Dark-Icons
 Slot-Symbolic-Dark-Icons
-Sunset-cursors
 Sweet-cursors
-Tokyonight-C
-Twilight-cursors
 Vivid-Dark-Icons
 Vortex-Dark-Icons
 WhiteSur-cursors
-XenonBlue
 Zafiro-Nord-Black-Blue
-bes-rainbow
-bes-right-square
-bes-right-square-dark
-candy-icons
-cyberpunk-technotronic-icon-theme
-cyberpunk-technotronic-summer-icon-theme
-hicolor
-hotlineblack
-oxy-neon-colours

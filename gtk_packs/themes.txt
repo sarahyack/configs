@@ -1,18 +1,42 @@
 # GTK themes
-# Source: existing repository inventory from gtk_themes/
+# Source: /home/sarah/.themes
+# Generated: 2026-09-10 17:01:29
 # Install these independently on a new system; restoreConfigs.sh does not copy pack assets.
 
 Aretha-Dark-GTK
 Ars-Dark-GTK
+bes-theme-dark-black
+bes-theme-dark-blue
+bes-theme-dark-brown
+bes-theme-dark-green
+bes-theme-dark-grey
+bes-theme-dark-lemon
+bes-theme-dark-orange
+bes-theme-dark-pink
+bes-theme-dark-purple
+bes-theme-dark-red
+bes-theme-dark-steel
+bes-theme-dark-teal
+bes-theme-light-black
+bes-theme-light-blue
+bes-theme-light-brown
+bes-theme-light-green
+bes-theme-light-grey
+bes-theme-light-lemon
+bes-theme-light-orange
+bes-theme-light-pink
+bes-theme-light-purple
+bes-theme-light-red
+bes-theme-light-steel
+bes-theme-light-teal
 Breeze-Gently
 Breeze-Noir-Dark-GTK
+Carta
 CBlack-Remix
 CBlue
-CPurple
-Carta
 Cinnamox-Gold-Spice
 ClearCrystal-master
-Colorful-Dark-GTK
+CPurple
 Dream-Violet-Dark-GTK
 Faded-Dream
 Fluent
@@ -41,27 +65,3 @@ Win12X-Fantasy-Dark
 Win12X-Fantasy-Dark-Compact
 Win12X-Fantasy-Light
 Win12X-Fantasy-Light-Compact
-bes-theme-dark-black
-bes-theme-dark-blue
-bes-theme-dark-brown
-bes-theme-dark-green
-bes-theme-dark-grey
-bes-theme-dark-lemon
-bes-theme-dark-orange
-bes-theme-dark-pink
-bes-theme-dark-purple
-bes-theme-dark-red
-bes-theme-dark-steel
-bes-theme-dark-teal
-bes-theme-light-black
-bes-theme-light-blue
-bes-theme-light-brown
-bes-theme-light-green
-bes-theme-light-grey
-bes-theme-light-lemon
-bes-theme-light-orange
-bes-theme-light-pink
-bes-theme-light-purple
-bes-theme-light-red
-bes-theme-light-steel
-bes-theme-light-teal

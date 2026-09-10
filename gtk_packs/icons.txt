@@ -1,19 +1,16 @@
 # GTK icon packs
-# Source: existing repository inventory from gtk_icons/
+# Source: /home/sarah/.local/share/icons
+# Generated: 2026-09-10 17:01:30
 # Install these independently on a new system; restoreConfigs.sh does not copy pack assets.
 
 Afterglow-cursors
-Arc-Darkest-Nord-Frost-Suru
 ArcAurora-cursors
+Arc-Darkest-Nord-Frost-Suru
 ArcDusk-cursors
+ArchCursorTheme
 ArcMidnight-cursors
 ArcStarry-cursors
-ArchCursorTheme
-Aretha-Dark-Icons
-Ars-Dark-Icons
-Ars-Light-Icons
 Avidity-Dusk-Mixed-Suru
-Azure-Glassy-Dark-Icons
 BeautyLine
 Bibata-Modern-DarkRed
 Bibata-Modern-DodgerBlue
@@ -24,42 +21,39 @@ Bibata-Original-DodgerBlue
 Bibata-Original-Pink
 Bibata-Original-Turquoise
 Black-Frost-Numix-FLAT
-Breeze-Cheerful-Phantasy-Dark
+candy-icons
 Catppuccin-C
 Color-Icons
-ColorFlow
-ColorFlow.Agresive.Color
-Colorful-Dark-Icons
 Cosmic-C
 CosmicG-C
-DJ-FOX-C
+cyberpunk-technotronic-filled-folders
+cyberpunk-technotronic-summer-icon-theme
+cyberpunk-technotronic-summer-semitransparent-folders
+daemon-2.0
 Dark-Matter-C
+DJ-FOX-C
 Dracula-C
 DraculaP-C
 DraculaPP-C
 Duskfox-C
 Everforest-C
-Flight-Dark-Icons
 Future-dark-cursors
 Graphite-dark-nord-cursors
 Graphite-light-nord-cursors
 Gruvbox-C
 Hacker-C
 HaloAero
+hicolor
+hotlineblack
 Infinity
 Kanagawa-C
+kora
 LyraB-cursors
 LyraQ-cursors
-Magna-Glassy-Dark-Icons
 Moonlight
-Nature - Blue - KDE
-Nature - Cyan - KDE
 Nature - Green - KDE
-Nature - Grey - KDE
-Nature - Orange - KDE
-Nature - Purple - KDE
-Nature - Red - KDE
 Neon-Dreamscape
+neon-icons-master
 Nero-Cyber-Cyan
 Night Diamond (Blue)
 Night Diamond (Red)
@@ -68,7 +62,6 @@ Nordic-bluish
 Nordic-darker
 Nordic-green
 Numix-C
-Orion
 Oxygen 06 Magenta
 Oxygen 07 Purple
 Oxygen 08 Indigo
@@ -76,6 +69,7 @@ Oxygen 09 Lavender
 Oxygen 14 Matrix Green
 Oxygen 19 Pink Blossom
 Oxygen 20 Peach Fruit
+oxy-neon-colours
 Papirus
 Papirus-Colors
 Papirus-Colors-Dark
@@ -85,10 +79,6 @@ PeepO
 Polarnight-cursors
 Red-C
 Royal Z - Glass
-Slot-Dark-Icons
-Slot-Gradient-Dark-Icons
-Slot-Multicolor-Dark-Icons
-Slot-Symbolic-Dark-Icons
 Sours
 Sunset-cursors
 Tela
@@ -97,21 +87,4 @@ Tela-light
 Tokyonight-C
 Twilight-cursors
 Ultimate Edition Dark Glass
-Vivid-Dark-Icons
-Vortex-Dark-Icons
 XenonBlue
-Zafiro-Nord-Black-Blue
-bes-rainbow
-bes-right-square
-bes-right-square-dark
-candy-icons
-cyberpunk-technotronic-filled-folders
-cyberpunk-technotronic-icon-theme
-cyberpunk-technotronic-summer-icon-theme
-cyberpunk-technotronic-summer-semitransparent-folders
-daemon-2.0
-hicolor
-hotlineblack
-kora
-neon-icons-master
-oxy-neon-colours

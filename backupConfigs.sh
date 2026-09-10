@@ -7,16 +7,18 @@ set -o pipefail
 
 # ---- CLI flags ----
 DRY_RUN=0
+NO_GIT_SYNC=0
 for arg in "$@"; do
     case "$arg" in
     -n|--dry-run) DRY_RUN=1 ;;
+    --no-git-sync) NO_GIT_SYNC=1 ;;
     -h|--help)
-        echo "Usage: $0 [-n|--dry-run]"
+        echo "Usage: $0 [-n|--dry-run] [--no-git-sync]"
         exit 0
         ;;
     *)
         echo "Unknown argument: $arg" 1>&2
-        echo "Usage: $0 [-n|--dry-run]" 1>&2
+        echo "Usage: $0 [-n|--dry-run] [--no-git-sync]" 1>&2
         exit 2
         ;;
     esac
@@ -138,10 +140,14 @@ fi
 [ "$DRY_RUN" -eq 1 ] && say "DRY RUN - no changes will be made."
 
 # ---- Require git ----
-say "Checking for Git..."
-if ! command -v git >/dev/null 2>&1; then
-    say_err "Git is not installed. Please install Git and try again."
-    exit 1
+if [ "$NO_GIT_SYNC" -eq 0 ]; then
+    say "Checking for Git..."
+    if ! command -v git >/dev/null 2>&1; then
+        say_err "Git is not installed. Please install Git and try again."
+        exit 1
+    fi
+else
+    say "Skipping git sync."
 fi
 
 # ---- Ensure destination repo exists ----
@@ -152,7 +158,7 @@ say "Switching to $CONFIG_FOLDER..."
 cd "$CONFIG_FOLDER"
 
 # ---- Ensure it's a Git repo ----
-if [ ! -d ".git" ]; then
+if [ "$NO_GIT_SYNC" -eq 0 ] && [ ! -d ".git" ]; then
     if [ "$DRY_RUN" -eq 1 ]; then
         say "[DRY-RUN] git init"
     else
@@ -174,7 +180,9 @@ if [ ! -d ".git" ]; then
 fi
 
 # ---- Pull latest changes ----
-if [ "$DRY_RUN" -eq 1 ]; then
+if [ "$NO_GIT_SYNC" -eq 1 ]; then
+    say "Skipping pull."
+elif [ "$DRY_RUN" -eq 1 ]; then
     say "[DRY-RUN] git pull --rebase origin $REPO_BRANCH (if the remote branch exists)"
 elif git ls-remote --exit-code --heads origin "$REPO_BRANCH" >/dev/null 2>&1; then
     say "Pulling latest changes..."
@@ -276,7 +284,9 @@ else
 fi
 
 # ---- Git add/commit/push ----
-if [ "$DRY_RUN" -eq 1 ]; then
+if [ "$NO_GIT_SYNC" -eq 1 ]; then
+    say "Skipping git commit/push."
+elif [ "$DRY_RUN" -eq 1 ]; then
     say "[DRY-RUN] git add ."
     say "[DRY-RUN] git commit -m 'Automated backup $(date '+%Y-%m-%d %H:%M:%S')'"
     say "[DRY-RUN] git push origin $REPO_BRANCH"

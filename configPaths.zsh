@@ -20,7 +20,6 @@ CONFIG_PATHS_DEST_FILE="${CONFIG_PATHS_DEST_FILE:-"$CONFIG_FOLDER/configPaths.zs
 
 CONFIG_PATH_ENTRIES=(
     "dir|nvim|$XDG_CONFIG_HOME/nvim|Neovim config"
-    "dir|obsidian|$WORKDRIVE/Documents/Vaults/Beehive/.obsidian|Obsidian config"
     "dir|fastfetch|$XDG_CONFIG_HOME/fastfetch|Fastfetch config"
     "dir|kitty|$XDG_CONFIG_HOME/kitty|Kitty config"
     "file|zsh/.zshrc|$HOME/.zshrc|Zsh config"

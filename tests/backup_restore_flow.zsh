@@ -61,7 +61,6 @@ export RESTORE_SCRIPT_SOURCE="$PROJECT_ROOT/restoreConfigs.sh"
 
 mkdir -p \
     "$XDG_CONFIG_HOME/nvim" \
-    "$WORKDRIVE/Documents/Vaults/Beehive/.obsidian" \
     "$XDG_CONFIG_HOME/fastfetch" \
     "$XDG_CONFIG_HOME/kitty" \
     "$XDG_DATA_HOME/fooyin" \
@@ -73,7 +72,6 @@ mkdir -p \
     "$HOME/.icons/Cursor A"
 
 printf "nvim-backup\n" > "$XDG_CONFIG_HOME/nvim/init.lua"
-printf "obsidian-backup\n" > "$WORKDRIVE/Documents/Vaults/Beehive/.obsidian/app.json"
 printf "fastfetch-backup\n" > "$XDG_CONFIG_HOME/fastfetch/config.jsonc"
 printf "kitty-backup\n" > "$XDG_CONFIG_HOME/kitty/kitty.conf"
 printf "zsh-backup\n" > "$HOME/.zshrc"
@@ -83,7 +81,6 @@ printf "fooyin-backup\n" > "$XDG_DATA_HOME/fooyin/fooyin.db"
 zsh "$PROJECT_ROOT/backupConfigs.sh" --no-git-sync >/dev/null
 
 assert_file_text "$CONFIG_FOLDER/nvim/init.lua" "nvim-backup"
-assert_file_text "$CONFIG_FOLDER/obsidian/app.json" "obsidian-backup"
 assert_file_text "$CONFIG_FOLDER/fastfetch/config.jsonc" "fastfetch-backup"
 assert_file_text "$CONFIG_FOLDER/kitty/kitty.conf" "kitty-backup"
 assert_file_text "$CONFIG_FOLDER/zsh/.zshrc" "zsh-backup"

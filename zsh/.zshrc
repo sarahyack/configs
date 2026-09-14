@@ -1,6 +1,8 @@
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+typeset -U path PATH
+export TOOLS="/mnt/hive/Tools"
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$TOOLS/scripts:$PATH
 
 # Path to your Oh My Zsh installation.
 ZSH=/usr/share/oh-my-zsh/
@@ -167,6 +169,18 @@ clsd() {
   command lsd "$@"
 }
 
+orphan-cl() {
+    local -a orphans
+    orphans=("${(@f)$(pacman -Qdtq)}")
+
+    if (( ${#orphans[@]} == 0 )); then
+        echo "No orphaned dependencies."
+        return 0
+    fi
+
+    sudo pacman -Rns -- "${orphans[@]}"
+}
+
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
@@ -232,6 +246,10 @@ alias install="yay -S"
 alias install-local="yay -U"
 alias uninstall="yay -R"
 alias uninstall-full="yay -Rns"
+alias yolup="sudo tailscale up --ssh"
+alias yoldown="sudo tailscale down"
+alias yolst="tailscale status"
+alias irish="ssh irish"
 
 # Git
 alias gmm="gm --no-ff"

@@ -102,8 +102,6 @@ call plug#begin(g:PLUGDIR)
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kevinhwang91/promise-async'
 Plug 'tjdevries/colorbuddy.nvim'
-Plug 'nvzone/volt'
-Plug '2kabhishek/pickme.nvim'
 
 " MISC
 Plug 'y3owk1n/time-machine.nvim'
@@ -119,6 +117,7 @@ Plug '2KAbhishek/exercism.nvim'
 
 " UI
 Plug 'karb94/neoscroll.nvim'
+Plug 'sphamba/smear-cursor.nvim'
 Plug 'nvimdev/dashboard-nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-lua/popup.nvim'
@@ -130,7 +129,6 @@ Plug 'beauwilliams/focus.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvimdev/hlsearch.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'nvim-mini/mini.icons', {'branch': 'stable'}
 Plug 'rktjmp/lush.nvim'
 Plug '2kabhishek/nerdy.nvim'
 Plug 'nacro90/numb.nvim'
@@ -158,17 +156,15 @@ Plug 'hasansujon786/nvim-navbuddy'
 " Plug 'file:///mnt/hive/Work/dev/telekasten.nvim', { 'branch': 'main'}
 Plug '/mnt/hive/Work/dev/telekasten.nvim'
 Plug 'mikavilpas/yazi.nvim'
-Plug 'ahmedkhalf/project.nvim'
+Plug 'DrKJeff16/project.nvim'
 Plug 'dzfrias/arena.nvim'
 Plug 'mzlogin/vim-markdown-toc'
-Plug 'nvim-telescope/telescope-bibtex.nvim'
 Plug 'kdheepak/lazygit.nvim'
 
 " EDITING
 Plug 'chentoast/marks.nvim'
 Plug 'akinsho/toggleterm.nvim'
-Plug 'kevinhwang91/nvim-ufo'
-Plug 'chrisgrieser/nvim-origami', {'tag': 'v1.9'}
+Plug 'chrisgrieser/nvim-origami'
 Plug 'tpope/vim-commentary'
 Plug 'kylechui/nvim-surround'
 Plug 'windwp/nvim-autopairs'
@@ -213,6 +209,9 @@ local neoscroll = require('neoscroll')
 neoscroll.setup({
     easing = "sine",
 })
+
+local smear = require('smear_cursor')
+smear.setup()
 
 local peek = require('peek')
 peek.setup()
@@ -392,9 +391,6 @@ fusen.setup({
 local minid = require('mini.diff')
 minid.setup()
 
-local minic = require('mini.icons')
-minic.setup()
-
 local macrobank = require('macrobank')
 macrobank.setup({
     project_store_paths = '.macrobank.json',
@@ -417,20 +413,41 @@ marks.setup({
     }
 })
 
-local ufo = require('ufo')
-ufo.setup({
-  provider_selector = function(bufnr, filetype, buftype)
-    return {'treesitter', 'indent'}
-  end
+local origami = require('origami')
+
+origami.setup({
+    useLspFoldsWithTreesitterFallback = {
+        enabled = true,
+        foldmethodIfNeitherIsAvailable = "indent",
+    },
+
+    pauseFoldsOnSearch = true,
+
+    foldtext = {
+        enabled = true,
+        diagnosticsCount = true,
+        gitsignsCount = true,
+    },
+
+    autoFold = {
+        enabled = true,
+        kinds = { "comment", "imports" },
+    },
+
+    foldKeymaps = {
+        setup = true,
+        closeOnlyOnFirstColumn = false,
+        scrollLeftOnCaret = false,
+    },
 })
 
-local origami = require('origami')
-origami.setup()
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
 
 local sudoku = require('sudoku')
 sudoku.setup({})
 
-local project = require('project_nvim')
+local project = require('project')
 project.setup()
 
 local telescope = require('telescope')
@@ -459,7 +476,6 @@ telescope.setup {
     ["ui-select"] = { require("telescope.themes").get_dropdown() },
     ["frecency"] = { show_unindexed = false },
     ["fzf"] = { fuzzy = true, override_generic_sorter = true, override_file_sorter = true, case_mode = "smart_case" },
-    ["bibtex"] = {}
   }
 }
 
@@ -467,7 +483,6 @@ telescope.load_extension('fzf')
 telescope.load_extension('frecency')
 telescope.load_extension('ui-select')
 telescope.load_extension('projects')
-telescope.load_extension('bibtex')
 telescope.load_extension('media_files')
 
 local exercism = require('exercism')
@@ -607,7 +622,7 @@ db.setup({
       '',
     },
     center = {
-      { icon = '  ', desc = 'File Browser        ', action = 'Oil --float', key = 'b' },
+      { icon = '  ', desc = 'File Browser        ', action = 'Yazi', key = 'y' },
       { icon = '  ', desc = 'Find Files          ', action = 'Telescope find_files', key = 'f' },
       { icon = '  ', desc = 'Recent files        ', action = 'Telescope oldfiles', key = 'h' },
       { icon = '  ', desc = 'Projects            ', action = 'Telescope projects', key = 'a' },
@@ -1254,8 +1269,6 @@ function ShowShortcuts()
     "<Space>Fg          - Live Grep",
     "<Space>FG          - Search Word Under Cursor",
     "<Space>Fb          - Buffers",
-    "<Space>Fs          - Tmux Sessions",
-    "<Space>Fw          - Tmux Windows",
     "<Space>Ft          - Help Tags",
     "<Space>FT          - Tags",
     "<Space>Fc          - Commands",

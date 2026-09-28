@@ -210,7 +210,8 @@ export TMUX_CONFIG="/home/sarah/.tmux.conf"
 # For a full list of active aliases, run `alias`.
 
 # Recreation
-alias ls="lsdlol"
+unalias ls
+alias ls="lsd"
 alias lsd="lsdlol"
 alias parrot="curl parrot.live"
 alias tell="bannerize --lolcat"
@@ -241,6 +242,7 @@ alias fetch="fastfetch | lolcat"
 alias check="sudo timeshift --check"
 alias y="yazi"
 alias query="yay -Qs"
+alias queryi="yay -Qi"
 alias search="yay -Ss"
 alias install="yay -S"
 alias install-local="yay -U"

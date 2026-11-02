@@ -1,7 +1,7 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_THEME
-# Gruvbox Dark Hard
+# Aquarium Dark
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -1394,7 +1394,7 @@ background_blur 60
 #: decrease_background_opacity) or the remote control facility.
 #: Changing this option by reloading the config is not supported.
 
-background_image /home/sarah/Pictures/Wallpapers/Cool/Grey/c-grey-pinecone.jpg
+background_image /home/sarah/Pictures/Wallpapers/Warm/Green/w-green-apartments.png
 
 #: Path to a background image. Must be in PNG/JPEG/WEBP/TIFF/GIF/BMP
 #: format. Note that when using auto_color_scheme
@@ -2598,7 +2598,7 @@ map kitty_mod+alt+l next_layout
 #: Toggle fullscreen
 
 # map kitty_mod+f11 toggle_fullscreen
-# map ctrl+cmd+f    toggle_fullscreen
+map kitty_mod+f    toggle_fullscreen
 
 #: Toggle maximized
 

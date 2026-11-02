@@ -253,6 +253,7 @@ alias yolup="sudo tailscale up --ssh"
 alias yoldown="sudo tailscale down"
 alias yolst="tailscale status"
 alias irish="ssh irish"
+alias orphancl="orphan-cl"
 
 # Git
 alias gmm="gm --no-ff"

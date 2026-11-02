@@ -1,6 +1,6 @@
 # GTK cursor packs
 # Source: /home/sarah/.icons
-# Generated: 2026-10-26 11:30:01
+# Generated: 2026-11-02 10:29:33
 # Install these independently on a new system; restoreConfigs.sh does not copy pack assets.
 
 Aretha-Dark-Icons

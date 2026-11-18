@@ -44,7 +44,7 @@ syntax on
 set number
 set relativenumber
 set cursorline
-set nowrap
+set wrap
 set expandtab
 set tabstop=4
 set showtabline=2

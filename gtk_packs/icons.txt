@@ -1,6 +1,6 @@
 # GTK icon packs
 # Source: /home/sarah/.local/share/icons
-# Generated: 2026-11-09 09:15:28
+# Generated: 2026-11-18 08:40:07
 # Install these independently on a new system; restoreConfigs.sh does not copy pack assets.
 
 Afterglow-cursors
